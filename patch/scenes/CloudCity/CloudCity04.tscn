@@ -1,0 +1,406 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://scenes/CloudCity/CloudCity04.gd" type="Script" id=1]
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/CloudCity/Elevator_move.wav" type="AudioStream" id=3]
+[ext_resource path="res://scenes/Navigation.gd" type="Script" id=4]
+[ext_resource path="res://scenes/DesertOfGiants/DesertBackground.png" type="Texture" id=5]
+[ext_resource path="res://scenes/CloudCity/CloudCity03_Background01.png" type="Texture" id=6]
+[ext_resource path="res://global/Shapes/octagon-normal-XS.png" type="Texture" id=7]
+[ext_resource path="res://scenes/CloudCity/ElevatorOutside.png" type="Texture" id=8]
+[ext_resource path="res://scenes/CloudCity/ElevatorOutside2.png" type="Texture" id=9]
+[ext_resource path="res://scenes/CloudCity/ElevatorInside.png" type="Texture" id=10]
+[ext_resource path="res://scenes/CloudCity/ElevatorInside_ceiling.png" type="Texture" id=11]
+[ext_resource path="res://objects/LimiterEvent.gd" type="Script" id=12]
+[ext_resource path="res://player/Alibii.scn" type="PackedScene" id=13]
+[ext_resource path="res://player/PlayerDummy.scn" type="PackedScene" id=14]
+
+[sub_resource type="Animation" id=1]
+resource_name = "ElevatorDown"
+length = 16.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 3.3, 12.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "shake"
+}, {
+"args": [  ],
+"method": "shake"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/CloudCity:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3.9, 6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -68 ), Vector2( 0, -68 ), Vector2( 0, -388 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/Hills:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 4.1, 11.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -218.553, 112 ), Vector2( -218.553, 16 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/Particles2D:emitting")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 3.21, 11.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/Particles2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 352, 400 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/Particles2D:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -180.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Background/Landing:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 11, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 356 ), Vector2( 0, 356 ), Vector2( 0, -3.99994 ) ]
+}
+tracks/7/type = "audio"
+tracks/7/path = NodePath("SamplePlayer")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 3 )
+} ],
+"times": PoolRealArray( 2.3 )
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Background/Clouds:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 16 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -283.217, -1494.78 ), Vector2( -283.217, -1910.78 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "ElevatorUp"
+length = 16.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 3.3, 12.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "shake"
+}, {
+"args": [  ],
+"method": "shake"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/CloudCity:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 10.2, 12.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -388 ), Vector2( 0, -388 ), Vector2( 0, -68 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/Particles2D:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 3.21, 11.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/Particles2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 352, 8 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/Particles2D:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/Landing:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2.9, 4.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -3.99994 ), Vector2( 0, -3.99994 ), Vector2( 0, 396 ) ]
+}
+tracks/6/type = "audio"
+tracks/6/path = NodePath("SamplePlayer")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 3 )
+} ],
+"times": PoolRealArray( 2.2 )
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Background/Hills:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 11.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -218.553, 16 ), Vector2( -218.553, 112 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Background/Clouds:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 16 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -283.217, -1910.78 ), Vector2( -283.217, -1494.78 ) ]
+}
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 100, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+initial_velocity = 1.0
+angular_velocity = 4.59051e-41
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.3
+scale_random = 0.5
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 336, 196 )
+
+[node name="CC4" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D"
+}
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/ElevatorDown = SubResource( 1 )
+anims/ElevatorUp = SubResource( 2 )
+
+[node name="SamplePlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "FXBus"
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+visible = false
+z_index = 2
+script = ExtResource( 4 )
+
+[node name="Wall" type="TileMap" parent="Navigation2D"]
+modulate = Color( 1, 1, 1, 0.4 )
+z_index = 5
+z_as_relative = false
+cell_size = Vector2( 16, 16 )
+collision_use_kinematic = true
+bake_navigation = true
+format = 1
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+
+[node name="Collisions" type="Node2D" parent="Navigation2D"]
+position = Vector2( 8, 3 )
+z_index = 12
+
+[node name="Highwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 424, 365, 248, 365, 200, 317, 200, 269, 264, 205, 408, 205, 408, 221, 424, 221, 472, 269, 472, 317, 424, 365, 424, 349, 456, 317, 456, 269, 424, 237, 392, 237, 392, 221, 264, 221, 216, 269, 216, 317, 248, 349, 424, 349 )
+
+[node name="Lowwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 1024
+collision_mask = 2147483648
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 264, 221, 392, 221, 392, 237, 264, 237, 216, 285, 216, 269 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 392, 237, 424, 237, 456, 269, 456, 285, 424, 253, 392, 253 )
+
+[node name="Air" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Background" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hills" type="Sprite" parent="Background"]
+position = Vector2( -218.553, 112 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Clouds" type="Sprite" parent="Background"]
+position = Vector2( -283.217, -1494.78 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Particles2D" type="Particles2D" parent="Background"]
+modulate = Color( 0.192157, 0, 0.109804, 1 )
+position = Vector2( 352, 8 )
+emitting = false
+amount = 50
+lifetime = 2.0
+process_material = SubResource( 3 )
+texture = ExtResource( 7 )
+
+[node name="CloudCity" type="Sprite" parent="Background"]
+position = Vector2( 0, -68 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Landing" type="Sprite" parent="Background"]
+position = Vector2( 0, 396 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ElevatorInside" type="Sprite" parent="Background"]
+position = Vector2( 336, 196 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="Ceiling" type="Sprite" parent="Background/ElevatorInside"]
+z_index = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/ElevatorInside"]
+visible = false
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 12 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/ElevatorInside/Limiter"]
+shape = SubResource( 4 )
+
+[node name="Foreground" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Alibii" parent="Foreground" instance=ExtResource( 13 )]
+position = Vector2( 408, 288 )
+
+[node name="PlayerDummy" parent="Foreground" instance=ExtResource( 14 )]
+position = Vector2( 320, 296 )
+
+[node name="Events" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 842, 362 )

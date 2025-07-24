@@ -1,0 +1,828 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://scenes/DividedSea/DividedSea05.gd" type="Script" id=1]
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Navigation.gd" type="Script" id=3]
+[ext_resource path="res://scenes/DividedSea/DividedSea01_floor04_background02.png" type="Texture" id=4]
+[ext_resource path="res://scenes/DividedSea/DividedSea01_floor04_background01.png" type="Texture" id=5]
+[ext_resource path="res://scenes/DividedSea/DividedSea01_floor04.png" type="Texture" id=6]
+[ext_resource path="res://scenes/DividedSea/DividedSea01_floor04_ceiling.png" type="Texture" id=7]
+[ext_resource path="res://objects/LimiterEvent.gd" type="Script" id=8]
+[ext_resource path="res://objects/SaveStation.scn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/DividedSea/DividedSea04_SaveOverlay.png" type="Texture" id=10]
+[ext_resource path="res://objects/Memcloud.scn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/DividedSea/DividedSea01_floor04_barrier01.png" type="Texture" id=12]
+[ext_resource path="res://player/PlayerDummy.scn" type="PackedScene" id=13]
+[ext_resource path="res://objects/ItemPedestrial.scn" type="PackedScene" id=14]
+[ext_resource path="res://objects/Poles.png" type="Texture" id=15]
+[ext_resource path="res://objects/RocksS.scn" type="PackedScene" id=16]
+[ext_resource path="res://npcs/Rolav.scn" type="PackedScene" id=17]
+[ext_resource path="res://objects/Sack.scn" type="PackedScene" id=18]
+[ext_resource path="res://objects/Signs.png" type="Texture" id=19]
+[ext_resource path="res://objects/TriggerArea.scn" type="PackedScene" id=20]
+[ext_resource path="res://npcs/Atoller.scn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/ForestOfSelf/TreesXL.png" type="Texture" id=22]
+[ext_resource path="res://scenes/ParticleLayerL.scn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/ParticleLayerS.scn" type="PackedScene" id=24]
+[ext_resource path="res://objects/AreaEvent.gd" type="Script" id=25]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 1424, 720, 1424, 896, 1344, 896, 1344, 800, 1520, 1872, 1552, 1872, 1552, 1984, 1328, 2064, 1328, 2112, 1248, 2112, 1176, 2064, 1152, 1888, 1232, 1808, 1152, 2064, 1104, 2008, 1104, 1888, 608, 720, 704, 720, 704, 816, 624, 816, 560, 784, 560, 768, 480, 960, 384, 960, 384, 864, 480, 864, 512, 624, 464, 672, 384, 672, 384, 640, 496, 448, 560, 512, 1328, 1200, 1248, 992, 1312, 992, 1328, 1024, 1408, 1200, 1472, 2064, 1376, 1840, 1248, 208, 1440, 208, 1488, 256, 1488, 352, 1408, 416, 1312, 416, 288, 640, 224, 576, 224, 528, 304, 448, 576, 592, 640, 512, 752, 592, 688, 464, 816, 528, 1008, 464, 1088, 528, 1200, 416, 1408, 512, 1312, 512, 1568, 512, 1600, 544, 1600, 672, 1552, 720, 1232, 544, 1264, 512, 1344, 720, 1408, 1024, 1472, 1088, 1472, 1136, 1488, 1840, 1376, 1600, 1232, 1664, 1280, 1504, 1168, 1600, 1168, 1536, 1200, 1504, 1280, 1360, 1200, 1376, 1328, 1312, 1168, 1344, 1168, 1216, 1088, 1136, 1088, 1088, 1184, 1024, 1152, 1024, 1184, 960, 1232, 720, 1184, 672, 1184, 560, 1200, 544 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 6 ), PoolIntArray( 7, 8, 9, 10, 11, 12 ), PoolIntArray( 13, 14, 15, 11, 10 ), PoolIntArray( 16, 17, 18, 19, 20, 21 ), PoolIntArray( 22, 23, 24, 25 ), PoolIntArray( 19, 22, 25, 20 ), PoolIntArray( 26, 16, 21, 27 ), PoolIntArray( 26, 27, 28, 29, 30, 31 ), PoolIntArray( 32, 33, 34, 35, 36 ), PoolIntArray( 6, 37, 7, 12, 38 ), PoolIntArray( 39, 40, 41, 42, 43, 44 ), PoolIntArray( 29, 45, 46, 47, 48, 30 ), PoolIntArray( 49, 26, 31, 50 ), PoolIntArray( 51, 49, 50, 52, 53 ), PoolIntArray( 53, 52, 54, 55 ), PoolIntArray( 55, 54, 39, 56 ), PoolIntArray( 44, 56, 39 ), PoolIntArray( 44, 43, 57, 58 ), PoolIntArray( 57, 59, 60, 61, 62, 0 ), PoolIntArray( 58, 57, 0 ), PoolIntArray( 63, 64, 58, 0, 65 ), PoolIntArray( 35, 66, 67, 68, 36 ), PoolIntArray( 38, 69, 4, 6 ), PoolIntArray( 70, 38, 12, 71, 72 ), PoolIntArray( 72, 71, 73, 74, 75 ), PoolIntArray( 76, 72, 75, 77 ), PoolIntArray( 32, 78, 76, 77, 79, 80, 33 ), PoolIntArray( 33, 80, 81, 82, 83 ), PoolIntArray( 82, 84, 83 ), PoolIntArray( 33, 83, 85, 3, 2 ), PoolIntArray( 0, 3, 65 ), PoolIntArray( 63, 65, 86, 87, 88, 89 ) ]
+outlines = [ PoolVector2Array( 224, 528, 304, 448, 496, 448, 560, 512, 640, 512, 688, 464, 1008, 464, 1248, 208, 1440, 208, 1488, 256, 1488, 352, 1408, 416, 1408, 512, 1568, 512, 1600, 544, 1600, 672, 1552, 720, 1424, 720, 1424, 896, 1344, 896, 1248, 992, 1312, 992, 1328, 1024, 1408, 1024, 1472, 1088, 1472, 1136, 1408, 1200, 1328, 1200, 1328, 1312, 1280, 1360, 1280, 1504, 1376, 1600, 1376, 1840, 1488, 1840, 1520, 1872, 1552, 1872, 1552, 1984, 1472, 2064, 1328, 2064, 1328, 2112, 1248, 2112, 1176, 2064, 1152, 2064, 1104, 2008, 1104, 1888, 1152, 1888, 1232, 1808, 1232, 1664, 1168, 1600, 1168, 1536, 1200, 1504, 1200, 1376, 1168, 1344, 1168, 1216, 1088, 1136, 1088, 1088, 1152, 1024, 1184, 1024, 1184, 960, 1344, 800, 1344, 720, 1232, 720, 1184, 672, 1184, 560, 1200, 544, 1232, 544, 1264, 512, 1312, 512, 1312, 416, 1200, 416, 1088, 528, 816, 528, 752, 592, 576, 592, 512, 624, 608, 720, 704, 720, 704, 816, 624, 816, 480, 960, 384, 960, 384, 864, 480, 864, 560, 784, 560, 768, 464, 672, 384, 672, 384, 640, 288, 640, 224, 576 ) ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1000, 1232 )
+
+[sub_resource type="Curve2D" id=3]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1, -16, 0, 0, 0, 0, -63, -272, 0, 0, 0, 0, -47, -448, 0, 0, 0, 0, -47, -784, 0, 0, 0, 0, 81, -1040, 0, 0, 0, 0, 65, -1296 )
+}
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0.0045045, 0.495495, 0.986486 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 3500, 4000, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 5.0
+initial_velocity_random = 1.0
+angular_velocity = 4.55604e-41
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 5 )
+hue_variation_random = 1.0
+
+[sub_resource type="Gradient" id=7]
+offsets = PoolRealArray( 0, 0.00900901, 0.608108, 0.990991 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.0962963, 1, 1, 1, 1, 1, 1, 1, 0.00231373 )
+
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 7 )
+
+[sub_resource type="ParticlesMaterial" id=9]
+emission_shape = 2
+emission_box_extents = Vector3( 2500, 3500, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 20.0
+initial_velocity_random = 1.0
+angular_velocity = 100.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 8 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 4.8, 5 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 40, 16 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 10, 144 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 10, 168 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 10, 184 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 39.5979, 22.6274 )
+
+[node name="DS5" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D",
+"_edit_lock_": true
+}
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+visible = false
+z_index = 3
+script = ExtResource( 3 )
+show_awareness = false
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+visible = false
+z_index = 2
+navpoly = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Wall" type="TileMap" parent="Navigation2D"]
+modulate = Color( 1, 1, 1, 0.4 )
+z_index = 5
+z_as_relative = false
+cell_size = Vector2( 16, 16 )
+collision_use_kinematic = true
+bake_navigation = true
+format = 1
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Collisions" type="Node2D" parent="Navigation2D"]
+position = Vector2( 8, -3 )
+z_index = 20
+
+[node name="Highwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1272, 1507, 1272, 1363, 1320, 1315, 1320, 1219, 1336, 1203, 1400, 1203, 1464, 1139, 1464, 1091, 1400, 1027, 1320, 1027, 1304, 1011, 1304, 995, 1240, 995, 1336, 899, 1400, 899, 1416, 883, 1416, 819, 1400, 803, 1400, 739, 1416, 723, 1544, 723, 1592, 675, 1592, 547, 1560, 515, 1408, 515, 1400, 507, 1400, 427, 1408, 419, 1432, 419, 1496, 355, 1496, 259, 1432, 195, 1240, 195, 1160, 275, 1160, 291, 1000, 451, 680, 451, 632, 499, 552, 499, 488, 435, 328, 435, 328, 131, 296, 131, 296, 435, 280, 435, 216, 499, 216, 579, 280, 643, 368, 643, 376, 651, 376, 691, 360, 691, 360, 659, 280, 659, 200, 579, 200, 483, 280, 403, 280, 115, 344, 115, 344, 419, 504, 419, 520, 435, 664, 435, 968, 435, 1224, 179, 1448, 179, 1512, 243, 1512, 355, 1432, 435, 1416, 435, 1416, 499, 1560, 499, 1608, 547, 1608, 675, 1544, 739, 1432, 739, 1432, 915, 1336, 915, 1320, 931, 1320, 1011, 1400, 1011, 1480, 1091, 1480, 1139, 1400, 1219, 1336, 1219, 1336, 1315, 1288, 1363, 1288, 1507, 1384, 1603, 1384, 1827, 1368, 1827, 1368, 1603 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1080, 1859, 1160, 1859, 1160, 1827, 1192, 1795, 1208, 1795, 1208, 1699, 1144, 1635, 1144, 1539, 1176, 1507, 1176, 1379, 1144, 1347, 1144, 1219, 1064, 1139, 1064, 1091, 1144, 1011, 1160, 1011, 1160, 963, 1320, 803, 1320, 739, 1224, 739, 1160, 675, 1160, 563, 1192, 531, 1192, 435, 1080, 547, 1016, 547, 1016, 531, 1080, 531, 1192, 419, 1296, 419, 1304, 427, 1304, 507, 1296, 515, 1256, 515, 1224, 547, 1192, 547, 1176, 563, 1176, 675, 1224, 723, 1320, 723, 1336, 739, 1336, 803, 1176, 963, 1176, 1019, 1168, 1027, 1144, 1027, 1080, 1091, 1080, 1139, 1160, 1219, 1160, 1347, 1192, 1379, 1192, 1507, 1160, 1539, 1160, 1635, 1224, 1683, 1224, 1803, 1216, 1811, 1192, 1811, 1176, 1827, 1176, 1859, 1160, 1875, 1080, 1875 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 360, 835, 456, 835, 456, 851, 360, 851 )
+
+[node name="Lowwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 1024
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1184, 267, 1176, 259, 1240, 195, 1432, 195, 1464, 227, 1456, 235, 1368, 235, 1368, 251, 1360, 259, 1352, 251, 1352, 235, 1256, 235, 1224, 267 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1464, 227, 1496, 259, 1496, 275, 1456, 235 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 536, 507, 536, 499, 488, 451, 336, 451, 328, 443, 328, 435, 488, 435, 552, 499, 632, 499, 680, 451, 1000, 451, 1160, 291, 1160, 275, 1176, 259, 1184, 267, 1176, 275, 1176, 291, 1000, 467, 680, 467, 632, 515, 544, 515 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 216, 499, 280, 435, 296, 435, 296, 443, 288, 451, 280, 451, 248, 483, 248, 507, 240, 515, 216, 515 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 456, 691, 376, 691, 376, 659, 392, 675, 456, 675 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 360, 851, 472, 851, 472, 867, 360, 867 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 552, 1907, 520, 1907, 456, 1971, 440, 1971, 520, 1891, 584, 1891, 584, 1635, 600, 1635, 600, 1995, 591, 1995, 552, 1955 )
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 856, 2003, 640, 2003, 632, 1995, 632, 1635, 648, 1635, 648, 1987, 856, 1987 )
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1560, 1875, 1512, 1875, 1480, 1843, 1384, 1843, 1368, 1827, 1480, 1827, 1512, 1859, 1560, 1859 )
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1080, 1875, 1160, 1875, 1144, 1891, 1080, 1891 )
+
+[node name="Air" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 632, 1627, 640, 1619, 664, 1619, 712, 1571, 712, 1507, 664, 1459, 600, 1459, 456, 1315, 448, 1315, 440, 1307, 440, 971, 448, 963, 472, 963, 616, 819, 680, 819, 696, 803, 696, 739, 680, 723, 600, 723, 520, 643, 520, 635, 512, 627, 536, 627, 568, 595, 744, 595, 808, 531, 1016, 531, 1016, 547, 808, 547, 744, 611, 568, 611, 552, 627, 552, 659, 600, 707, 712, 707, 712, 835, 616, 835, 472, 979, 456, 979, 456, 1299, 600, 1443, 664, 1443, 728, 1507, 728, 1571, 664, 1635, 632, 1635 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 536, 771, 456, 691, 456, 675, 552, 771, 552, 787, 472, 867, 472, 851, 536, 787 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 600, 1627, 600, 1635, 504, 1635, 440, 1571, 440, 1491, 504, 1491, 504, 1475, 456, 1427, 392, 1427, 360, 1395, 360, 1331, 392, 1299, 392, 979, 360, 947, 360, 867, 376, 867, 376, 947, 392, 963, 400, 963, 408, 971, 408, 1307, 400, 1315, 392, 1315, 376, 1331, 376, 1395, 392, 1411, 456, 1411, 545, 1499, 544, 1507, 456, 1507, 456, 1571, 504, 1619, 592, 1619 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1160, 1603, 1224, 1667, 1224, 1683, 1160, 1635 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 856, 2227, 856, 2195, 776, 2115, 520, 2115, 440, 2035, 440, 1971, 456, 1971, 456, 2035, 520, 2099, 776, 2099, 880, 2211, 872, 2219, 872, 2227, 952, 2307, 1080, 2307, 1144, 2243, 1144, 2211, 1240, 2115, 1304, 2115, 1320, 2099, 1320, 2075, 1328, 2067, 1464, 2067, 1544, 1987, 1544, 1875, 1560, 1875, 1560, 1987, 1464, 2083, 1336, 2083, 1336, 2099, 1304, 2131, 1240, 2131, 1160, 2211, 1160, 2243, 1080, 2323, 952, 2323 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 888, 2099, 881, 2107, 863, 2107, 856, 2099, 856, 2083, 864, 2075, 864, 2059, 840, 2035, 840, 2003, 856, 2003, 856, 2035, 888, 2067, 888, 2083, 936, 2131, 1096, 2131, 1128, 2099, 1128, 2067, 1080, 2019, 1080, 1891, 1096, 1891, 1096, 2019, 1144, 2067, 1176, 2067, 1176, 2075, 1168, 2083, 1160, 2083, 1096, 2147, 936, 2147 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -2
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.6, 0.6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bg" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 679.51, 624.509 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Edges" type="Sprite" parent="ParallaxBackground/ParallaxLayer1"]
+position = Vector2( 899.51, 834.509 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Floor1" type="Sprite" parent="Background"]
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling1" type="Sprite" parent="Background/Floor1"]
+z_index = 1
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/Floor1"]
+visible = false
+position = Vector2( 1000, 1232 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor1/Limiter"]
+shape = SubResource( 2 )
+
+[node name="Floor1_spr" type="Sprite" parent="Background"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling1" type="Sprite" parent="Background/Floor1_spr"]
+z_index = 1
+texture = ExtResource( 7 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SaveStation" parent="Background" instance=ExtResource( 9 )]
+position = Vector2( 523.039, 1989.41 )
+
+[node name="SaveOverlay" parent="Background/SaveStation" index="4"]
+position = Vector2( 5, -6 )
+texture = ExtResource( 10 )
+
+[node name="RolavWalkPath2D" type="Path2D" parent="Background"]
+position = Vector2( 1295, 1776 )
+z_index = 2
+curve = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Background/RolavWalkPath2D"]
+position = Vector2( 65.4669, -1288.53 )
+rotation = -1.5708
+offset = 1312.16
+rotate = false
+cubic_interp = false
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Background/RolavWalkPath2D/PathFollow2D"]
+rotation = 1.5708
+update_scale = false
+
+[node name="Memcloud" parent="Background" instance=ExtResource( 11 )]
+position = Vector2( 1082, 416 )
+state = "IDLE"
+reset_state = false
+
+[node name="Sprite" parent="Background/Memcloud" index="0"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="CollisionPolygon2D" parent="Background/Memcloud" index="1"]
+polygon = PoolVector2Array( -95.9852, 32.0446, -79.9629, 80.0372, -47.9629, 80.0223, -31.948, 112.015, 16.052, 111.993, 16.0148, 31.9926 )
+
+[node name="Foreground" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerDummy" parent="Foreground" instance=ExtResource( 13 )]
+position = Vector2( 1342.09, 343.159 )
+
+[node name="PedestrialCalmer" parent="Foreground" instance=ExtResource( 14 )]
+position = Vector2( 1218, 257 )
+
+[node name="PedestrialHaven" parent="Foreground" instance=ExtResource( 14 )]
+position = Vector2( 1270, 229 )
+item = "haven"
+
+[node name="PedestrialResolver" parent="Foreground" instance=ExtResource( 14 )]
+position = Vector2( 1420, 226 )
+item = "resolver"
+
+[node name="Poles" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 608, 1592 )
+texture = ExtResource( 15 )
+offset = Vector2( 55.142, -80.02 )
+hframes = 3
+
+[node name="Poles2" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 568, 680 )
+texture = ExtResource( 15 )
+offset = Vector2( 40.405, -73.284 )
+hframes = 3
+frame = 1
+
+[node name="Poles3" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 1136, 1072 )
+texture = ExtResource( 15 )
+offset = Vector2( 41.88, -77.915 )
+hframes = 3
+frame = 1
+
+[node name="Poles4" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 1400, 1032 )
+texture = ExtResource( 15 )
+offset = Vector2( 42.09, -75.809 )
+hframes = 3
+frame = 2
+
+[node name="Poles5" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 1232, 800 )
+texture = ExtResource( 15 )
+offset = Vector2( 40.62, -79.599 )
+hframes = 3
+frame = 2
+
+[node name="Poles6" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 1232, 1632 )
+texture = ExtResource( 15 )
+offset = Vector2( 48.86, -77.1899 )
+hframes = 3
+
+[node name="Poles7" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 968, 2160 )
+texture = ExtResource( 15 )
+offset = Vector2( 42.45, -75.76 )
+hframes = 3
+frame = 1
+
+[node name="Poles8" type="Sprite" parent="Foreground"]
+modulate = Color( 0.654902, 0.517647, 0.368627, 1 )
+position = Vector2( 1136, 2224 )
+texture = ExtResource( 15 )
+offset = Vector2( 38.16, -77.8601 )
+hframes = 3
+frame = 2
+
+[node name="RockS" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 412.54, 882.615 )
+design = "SC"
+
+[node name="RockS10" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 402.536, 1329.3 )
+design = "SC"
+
+[node name="RockS11" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 491.375, 1525.7 )
+design = "SC"
+
+[node name="RockS2" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 426.258, 892.903 )
+design = "SC"
+
+[node name="RockS3" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 271.073, 486.507 )
+design = "SC"
+
+[node name="RockS4" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 282.218, 505.369 )
+design = "SC"
+
+[node name="RockS5" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 243.636, 539.664 )
+design = "SC"
+
+[node name="RockS6" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 968, 2276 )
+design = "SC"
+
+[node name="RockS7" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 992, 2284 )
+design = "SC"
+
+[node name="RockS8" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 539.796, 1902.54 )
+design = "SC"
+
+[node name="RockS9" parent="Foreground" instance=ExtResource( 16 )]
+position = Vector2( 524.642, 1927.19 )
+design = "SC"
+
+[node name="Rolav" parent="Foreground" instance=ExtResource( 17 )]
+position = Vector2( 1328, 184 )
+
+[node name="Sack" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 562.399, 517.773 )
+
+[node name="Sack10" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 689.747, 1547.34 )
+
+[node name="Sack11" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 530.502, 1512.05 )
+
+[node name="Sack12" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 698.423, 1570.15 )
+
+[node name="Sack13" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 825.37, 2017.67 )
+
+[node name="Sack14" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 805.968, 2008.82 )
+
+[node name="Sack2" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 575.482, 521.755 )
+
+[node name="Sack3" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 962.835, 489.333 )
+
+[node name="Sack4" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 976.112, 472.884 )
+
+[node name="Sack5" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 619.152, 788.097 )
+
+[node name="Sack6" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 639.06, 800.61 )
+
+[node name="Sack7" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 621.428, 801.748 )
+
+[node name="Sack8" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 486.18, 936.98 )
+
+[node name="Sack9" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 517.404, 1523.22 )
+
+[node name="Sackx15" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1404.35, 811.992 )
+
+[node name="Sackx32" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1204.35, 643.992 )
+
+[node name="Sackx16" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1407.61, 829.379 )
+
+[node name="Sackx31" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1215.61, 661.379 )
+
+[node name="Sackx17" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1532.4, 692.314 )
+
+[node name="Sackx26" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1572.4, 556.314 )
+
+[node name="Sackx22" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1152, 1056 )
+
+[node name="Sackx28" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1192, 968 )
+
+[node name="Sackx18" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1493.1, 711.249 )
+
+[node name="Sackx27" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1208, 568 )
+
+[node name="Sackx20" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1112, 1090.94 )
+
+[node name="Sackx29" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1104, 1112 )
+
+[node name="Sackx19" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1547.26, 701.964 )
+
+[node name="Sackx25" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1587.26, 565.964 )
+
+[node name="Sackx21" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1128, 1104 )
+
+[node name="Sackx30" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1120, 1141.06 )
+
+[node name="Sackx23" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1440, 1120 )
+
+[node name="Sackx24" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1430, 1128 )
+
+[node name="Sackx33" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1430, 1072 )
+
+[node name="Sack25" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1472, 1856 )
+
+[node name="Sack26" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1488, 1864 )
+
+[node name="Sack27" parent="Foreground" instance=ExtResource( 18 )]
+modulate = Color( 1, 0.678431, 0.517647, 1 )
+position = Vector2( 1528, 1896 )
+
+[node name="Sign1" type="Sprite" parent="Foreground"]
+modulate = Color( 1, 0.8, 0.65098, 1 )
+position = Vector2( 389.093, 461.107 )
+texture = ExtResource( 19 )
+offset = Vector2( 0, -21 )
+hframes = 2
+frame = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TriggerArea" parent="Foreground/Sign1" instance=ExtResource( 20 )]
+speaker_name = "DS1_SIGN1_NAME"
+dialog = "DS1_SIGN1"
+
+[node name="Sign2" type="Sprite" parent="Foreground"]
+modulate = Color( 1, 0.8, 0.65098, 1 )
+position = Vector2( 460.432, 868.79 )
+texture = ExtResource( 19 )
+offset = Vector2( 0, -21 )
+hframes = 2
+frame = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TriggerArea" parent="Foreground/Sign2" instance=ExtResource( 20 )]
+speaker_name = "DS1_SIGN2_NAME"
+dialog = "DS1_SIGN2"
+
+[node name="Atoller" parent="Foreground" instance=ExtResource( 21 )]
+position = Vector2( 1248, 592 )
+wake_up_dist = 160
+alert_dist = 1
+
+[node name="Atoller2" parent="Foreground" instance=ExtResource( 21 )]
+position = Vector2( 1512, 568 )
+wake_up_dist = 160
+alert_dist = 1
+
+[node name="Atoller3" parent="Foreground" instance=ExtResource( 21 )]
+position = Vector2( 1336, 1056 )
+wake_up_dist = 160
+alert_dist = 1
+
+[node name="Atoller4" parent="Foreground" instance=ExtResource( 21 )]
+position = Vector2( 1316, 1032 )
+wake_up_dist = 160
+alert_dist = 1
+
+[node name="ParallaxForeground" type="ParallaxBackground" parent="."]
+layer = 5
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxForeground"]
+z_as_relative = false
+motion_scale = Vector2( 0.9, 0.9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree" type="Sprite" parent="ParallaxForeground/ParallaxLayer"]
+modulate = Color( 0.0117647, 0.0352941, 0.0313726, 0.156863 )
+position = Vector2( 173.019, 386.255 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 22 )
+centered = false
+hframes = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree2" type="Sprite" parent="ParallaxForeground/ParallaxLayer"]
+modulate = Color( 0.0117647, 0.0352941, 0.0313726, 0.156863 )
+position = Vector2( 492.58, 1336.53 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 22 )
+centered = false
+hframes = 4
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree3" type="Sprite" parent="ParallaxForeground/ParallaxLayer"]
+modulate = Color( 0.0117647, 0.0352941, 0.0313726, 0.156863 )
+position = Vector2( 1123.29, 365.232 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 22 )
+centered = false
+hframes = 4
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree4" type="Sprite" parent="ParallaxForeground/ParallaxLayer"]
+modulate = Color( 0.0117647, 0.0352941, 0.0313726, 0.156863 )
+position = Vector2( 917.259, 1328.12 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 22 )
+centered = false
+hframes = 4
+frame = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParticleLayerL" parent="ParallaxForeground" instance=ExtResource( 23 )]
+modulate = Color( 1, 0.34902, 0.12549, 0.854902 )
+
+[node name="Particles2D" parent="ParallaxForeground/ParticleLayerL" index="0"]
+position = Vector2( 812.58, 1390 )
+amount = 3000
+visibility_rect = Rect2( -3503.94, -4002.09, 7014.49, 8018.08 )
+process_material = SubResource( 6 )
+
+[node name="ParticleLayerS" parent="ParallaxForeground" instance=ExtResource( 24 )]
+modulate = Color( 0.219608, 1, 0.65098, 0.862745 )
+
+[node name="Particles2D" parent="ParallaxForeground/ParticleLayerS" index="0"]
+position = Vector2( 850, 1232 )
+amount = 5000
+visibility_rect = Rect2( -2565.18, -3575.5, 5135, 7111.79 )
+process_material = SubResource( 9 )
+
+[node name="Events" type="Node2D" parent="."]
+z_index = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ExitA" type="Area2D" parent="Events"]
+position = Vector2( 320, 136 )
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 25 )
+function = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ExitA"]
+scale = Vector2( 5, 3 )
+shape = SubResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PreloadDS1" type="Area2D" parent="Events"]
+position = Vector2( 320, 416 )
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 25 )
+function = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/PreloadDS1"]
+shape = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ClimbArea0" type="Area2D" parent="Events"]
+position = Vector2( 320, 296 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 25 )
+function = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ClimbArea0"]
+shape = SubResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ClimbArea1" type="Area2D" parent="Events"]
+position = Vector2( 432, 1136 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 25 )
+function = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ClimbArea1"]
+position = Vector2( 0, -1 )
+shape = SubResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ClimbArea2" type="Area2D" parent="Events"]
+position = Vector2( 624, 1824 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 25 )
+function = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ClimbArea2"]
+position = Vector2( 0, -18 )
+shape = SubResource( 14 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MeetRolav" type="Area2D" parent="Events"]
+position = Vector2( 1216, 2088 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 25 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/MeetRolav"]
+rotation = 0.785398
+shape = SubResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1150.95, -4.41013 )
+z_index = 9
+
+[connection signal="item_collected" from="Foreground/PedestrialCalmer" to="." method="_on_Pedestrial_item_collected"]
+[connection signal="item_collected" from="Foreground/PedestrialHaven" to="." method="_on_Pedestrial_item_collected"]
+[connection signal="item_collected" from="Foreground/PedestrialResolver" to="." method="_on_Pedestrial_item_collected"]
+
+[editable path="Background/SaveStation"]
+[editable path="Background/Memcloud"]
+[editable path="ParallaxForeground/ParticleLayerL"]
+[editable path="ParallaxForeground/ParticleLayerS"]

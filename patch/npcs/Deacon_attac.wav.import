@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Deacon_attac.wav-9641ce15c2fe6db2b2b72c334258b97e.sample"
+
+[deps]
+
+source_file="res://npcs/Deacon_attac.wav"
+dest_files=[ "res://.import/Deacon_attac.wav-9641ce15c2fe6db2b2b72c334258b97e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

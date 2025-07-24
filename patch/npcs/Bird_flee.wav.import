@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Bird_flee.wav-547b1c2a189d6557c18cef56de7e9252.sample"
+
+[deps]
+
+source_file="res://npcs/Bird_flee.wav"
+dest_files=[ "res://.import/Bird_flee.wav-547b1c2a189d6557c18cef56de7e9252.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

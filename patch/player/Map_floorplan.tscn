@@ -1,0 +1,5220 @@
+[gd_scene format=2]
+
+[node name="Floorplan" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true,
+"_height_": 166.195,
+"_width_": 131.865
+}
+
+[node name="layer2" type="Node2D" parent="."]
+position = Vector2( 0, -201.75 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="DG1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 867.256, -255.492 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -153.226
+margin_top = -86.151
+margin_right = 153.226
+margin_bottom = 86.151
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -133.953
+margin_top = -17.7686
+margin_right = -129.953
+margin_bottom = -12.7686
+
+[node name="Exit2" type="ColorRect" parent="layer2/DG1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.358948
+margin_top = -42.559
+margin_right = 4.35895
+margin_bottom = -37.559
+
+[node name="Exit3" type="ColorRect" parent="layer2/DG1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -22.9241
+margin_top = -27.1016
+margin_right = -18.9241
+margin_bottom = -22.1016
+
+[node name="Exit4" type="ColorRect" parent="layer2/DG1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 32.68
+margin_top = -35.9296
+margin_right = 36.68
+margin_bottom = -30.9296
+
+[node name="Exit5" type="ColorRect" parent="layer2/DG1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 76.7324
+margin_top = 47.923
+margin_right = 80.7324
+margin_bottom = 52.923
+
+[node name="Wall0" type="Line2D" parent="layer2/DG1_Floor1"]
+position = Vector2( -867.256, 255.492 )
+points = PoolVector2Array( 711.756, -232.965, 714.03, -233.046, 714.03, -241.244, 711.756, -241.305 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Wall1" type="Line2D" parent="layer2/DG1_Floor1"]
+position = Vector2( -867.256, 255.492 )
+points = PoolVector2Array( 711.756, -246.681, 714.03, -246.683, 714.03, -303.362, 752.336, -341.651, 982.175, -341.651, 1020.48, -303.362, 1020.48, -276.355, 1023.3, -276.355 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036773120
+
+[node name="Wall2" type="Line2D" parent="layer2/DG1_Floor1"]
+position = Vector2( -867.256, 255.492 )
+points = PoolVector2Array( 711.756, -228.26, 714.03, -228.26, 714.03, -207.641, 752.336, -169.352, 770.381, -169.352, 770.381, -158.832 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2041503184
+
+[node name="Wall3" type="Line2D" parent="layer2/DG1_Floor1"]
+position = Vector2( -867.256, 255.492 )
+points = PoolVector2Array( 1023.22, -269.469, 1020.48, -269.469, 1020.48, -207.641, 982.175, -169.352, 776.799, -169.352, 776.799, -158.832 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="SC2_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1212.2, 249.095 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -119.708
+margin_top = -72.5403
+margin_right = 119.708
+margin_bottom = 72.5403
+
+[node name="Exit" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 38.8698
+margin_top = -11.2923
+margin_right = 42.8698
+margin_bottom = -6.29227
+
+[node name="Exit2" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -65.9589
+margin_top = -38.4389
+margin_right = -61.9589
+margin_bottom = -33.4389
+
+[node name="Exit3" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 54.7063
+margin_top = 33.5117
+margin_right = 58.7063
+margin_bottom = 38.5117
+
+[node name="Exit4" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 64.7955
+margin_top = 47.9019
+margin_right = 68.7955
+margin_bottom = 52.9019
+
+[node name="Exit5" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 44.2633
+margin_top = 47.9019
+margin_right = 48.2633
+margin_bottom = 52.9019
+
+[node name="Wall0" type="Line2D" parent="layer2/SC2_Floor2"]
+position = Vector2( -1212.2, -249.095 )
+points = PoolVector2Array( 1301.98, 180.224, 1331.91, 210.137, 1331.91, 291.692, 1301.98, 321.605, 1122.42, 321.605, 1092.49, 291.692, 1092.49, 210.137, 1122.42, 180.224, 1301.98, 180.224 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308532992
+
+[node name="Exit6" type="ColorRect" parent="layer2/SC2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.2207
+margin_top = 30.82
+margin_right = -0.220703
+margin_bottom = 35.82
+
+[node name="SC1_Floor3WaleBack" type="Node2D" parent="layer2"]
+position = Vector2( 1231.73, 172.115 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC1_Floor3WaleBack"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -59.8538
+margin_top = -50.7334
+margin_right = 59.8538
+margin_bottom = 50.7334
+
+[node name="Exit" type="ColorRect" parent="layer2/SC1_Floor3WaleBack"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -20.47
+margin_top = 4.11247
+margin_right = -16.47
+margin_bottom = 9.11247
+
+[node name="Exit2" type="ColorRect" parent="layer2/SC1_Floor3WaleBack"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 19.7517
+margin_top = -2.09395
+margin_right = 23.7517
+margin_bottom = 2.90605
+
+[node name="Wall0" type="Line2D" parent="layer2/SC1_Floor3WaleBack"]
+position = Vector2( -1231.73, -172.115 )
+points = PoolVector2Array( 1186.84, 200.638, 1175.57, 185.681, 1175.57, 165.888, 1186.84, 150.932, 1253.36, 150.932, 1264.06, 165.888, 1264.06, 185.681, 1253.36, 200.638, 1186.84, 200.638 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="SC1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 1254.95, 98.8848 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -67.0363
+margin_top = -78.9717
+margin_right = 67.0361
+margin_bottom = 78.9717
+
+[node name="Exit" type="ColorRect" parent="layer2/SC1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -59.2554
+margin_top = 35.5373
+margin_right = -55.2554
+margin_bottom = 40.5373
+
+[node name="Exit2" type="ColorRect" parent="layer2/SC1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -16.0933
+margin_top = 2.0986
+margin_right = -12.0933
+margin_bottom = 7.0986
+
+[node name="Exit3" type="ColorRect" parent="layer2/SC1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -13.6427
+margin_top = 16.665
+margin_right = -9.6427
+margin_bottom = 21.665
+
+[node name="Wall0" type="Line2D" parent="layer2/SC1_Floor1"]
+position = Vector2( -1254.95, -98.8848 )
+points = PoolVector2Array( 1204.68, 177.831, 1187.92, 161.08, 1187.92, 36.6418, 1204.68, 19.8905, 1321.99, 19.8905, 1321.99, 161.08, 1305.23, 177.831, 1215.66, 177.831, 1215.66, 174.901, 1210.47, 174.901, 1210.47, 177.831, 1204.68, 177.831 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Exit4" type="ColorRect" parent="layer2/SC1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 55.0654
+margin_top = -79.4503
+margin_right = 59.0654
+margin_bottom = -74.4503
+
+[node name="FS4_ForestFloor01" type="Node2D" parent="layer2"]
+position = Vector2( 253.37, -668.08 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS4_ForestFloor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -92.7218
+margin_top = -59.9663
+margin_right = 92.7218
+margin_bottom = 59.9663
+
+[node name="Exit" type="ColorRect" parent="layer2/FS4_ForestFloor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -80.4935
+margin_top = 24.0594
+margin_right = -76.4935
+margin_bottom = 29.0594
+
+[node name="Wall0" type="Line2D" parent="layer2/FS4_ForestFloor01"]
+position = Vector2( -253.37, 668.08 )
+points = PoolVector2Array( 313.721, -711.201, 309.621, -711.201, 309.621, -661.387, 342.395, -661.387, 342.395, -636.976, 345.689, -636.859 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Wall1" type="Line2D" parent="layer2/FS4_ForestFloor01"]
+position = Vector2( -253.37, 668.08 )
+points = PoolVector2Array( 313.639, -717.561, 309.621, -717.561, 309.621, -728.047, 183.828, -728.047, 160.648, -715.688, 160.648, -610.26, 165.427, -610.26, 165.427, -608.208 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2041503088
+
+[node name="Wall2" type="Line2D" parent="layer2/FS4_ForestFloor01"]
+position = Vector2( -253.37, 668.08 )
+points = PoolVector2Array( 345.631, -631.841, 342.395, -631.841, 342.395, -620.473, 322.911, -610.26, 183.828, -610.26, 172.441, -610.26, 172.441, -608.208 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="PP3_Floor01" type="Node2D" parent="layer2"]
+position = Vector2( 246.653, -487.348 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP3_Floor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -28.9545
+margin_top = -19.0959
+margin_right = 28.9545
+margin_bottom = 19.0959
+
+[node name="Wall0" type="Line2D" parent="layer2/PP3_Floor01"]
+position = Vector2( -246.653, 487.348 )
+points = PoolVector2Array( 238.86, -466.352, 238.86, -468.253, 224.937, -468.253, 219.528, -478.451, 219.528, -479.912, 216.422, -479.912 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/PP3_Floor01"]
+position = Vector2( -246.653, 487.348 )
+points = PoolVector2Array( 242.769, -466.352, 242.769, -468.253, 268.369, -468.253, 275.608, -479.912, 275.608, -482.042, 278.567, -482.042 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall2" type="Line2D" parent="layer2/PP3_Floor01"]
+position = Vector2( -246.653, 487.348 )
+points = PoolVector2Array( 216.422, -485.384, 219.528, -485.384, 219.528, -494.785, 224.937, -502.747, 245.103, -502.747, 245.103, -505.39 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308600816
+
+[node name="Wall3" type="Line2D" parent="layer2/PP3_Floor01"]
+position = Vector2( -246.653, 487.348 )
+points = PoolVector2Array( 278.649, -487.942, 275.608, -487.942, 275.608, -494.785, 268.369, -502.747, 249.303, -502.747, 249.303, -505.448 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="PP1_Floor01" type="Node2D" parent="layer2"]
+position = Vector2( 137.5, -534.819 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -78.0493
+margin_top = -68.9208
+margin_right = 78.0493
+margin_bottom = 68.9207
+
+[node name="Exit" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.18982
+margin_top = -13.1498
+margin_right = -0.189819
+margin_bottom = -8.14978
+
+[node name="Exit2" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -11.8512
+margin_top = -17.9359
+margin_right = -7.8512
+margin_bottom = -12.9359
+
+[node name="Exit3" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 14.0057
+margin_top = -63.8831
+margin_right = 18.0057
+margin_bottom = -58.8831
+
+[node name="Exit4" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 14.0057
+margin_top = -38.9951
+margin_right = 18.0057
+margin_bottom = -33.9951
+
+[node name="Exit5" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -35.7927
+margin_top = 41.4125
+margin_right = -31.7927
+margin_bottom = 46.4125
+
+[node name="Exit6" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -5.14746
+margin_top = 46.1987
+margin_right = -1.14746
+margin_bottom = 51.1987
+
+[node name="Exit7" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -64.0437
+margin_top = -12.803
+margin_right = -60.0437
+margin_bottom = -7.80298
+
+[node name="Exit8" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -76.5696
+margin_top = 17.4817
+margin_right = -72.5696
+margin_bottom = 22.4817
+
+[node name="Exit9" type="ColorRect" parent="layer2/PP1_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -14.2468
+margin_top = 16.8767
+margin_right = -10.2468
+margin_bottom = 21.8767
+
+[node name="Wall0" type="Line2D" parent="layer2/PP1_Floor01"]
+position = Vector2( -137.5, 534.819 )
+points = PoolVector2Array( 165.757, -603.656, 165.757, -601.331, 78.9605, -601.331, 59.4481, -584.241, 59.4481, -485.409, 78.9605, -465.905, 196.035, -465.905, 210.4, -480.264, 215.547, -480.264 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2041503184
+
+[node name="Wall1" type="Line2D" parent="layer2/PP1_Floor01"]
+position = Vector2( -137.5, 534.819 )
+points = PoolVector2Array( 172.441, -603.715, 172.441, -601.331, 196.035, -601.331, 213.33, -584.241, 213.33, -485.409, 215.429, -485.409 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="CC3_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 858.381, -778.414 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC3_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -117.522
+margin_top = -168.419
+margin_right = 117.522
+margin_bottom = 168.419
+
+[node name="Exit" type="ColorRect" parent="layer2/CC3_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 75.6922
+margin_top = -0.643066
+margin_right = 79.6922
+margin_bottom = 4.35693
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC3_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 23.2775
+margin_top = 68.3457
+margin_right = 27.2775
+margin_bottom = 73.3457
+
+[node name="Exit3" type="ColorRect" parent="layer2/CC3_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 101.973
+margin_top = 129.799
+margin_right = 105.973
+margin_bottom = 134.799
+
+[node name="Wall0" type="Line2D" parent="layer2/CC3_Floor1"]
+position = Vector2( -858.381, 778.414 )
+points = PoolVector2Array( 946.522, -946.833, 975.903, -889.422, 975.903, -609.995, 770.239, -609.995, 740.859, -622.281, 740.859, -666.164, 764.028, -666.164, 764.028, -673.575 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/CC3_Floor1"]
+position = Vector2( -858.381, 778.414 )
+points = PoolVector2Array( 768.661, -673.575, 768.661, -666.164, 834.198, -666.164, 833.654, -908.974, 828.779, -908.974 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308601136
+
+[node name="Wall2" type="Line2D" parent="layer2/CC3_Floor1"]
+position = Vector2( -858.381, 778.414 )
+points = PoolVector2Array( 828.779, -913.747, 833.643, -913.747, 833.569, -946.834, 946.522, -946.834 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Exit4" type="ColorRect" parent="layer2/CC3_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 75.6922
+margin_top = -112.941
+margin_right = 79.6922
+margin_bottom = -107.941
+
+[node name="Exit5" type="ColorRect" parent="layer2/CC3_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 19.4194
+margin_top = -63.4927
+margin_right = 23.4194
+margin_bottom = -58.4927
+
+[node name="CC3_ElevatorRoom1" type="Node2D" parent="layer2"]
+position = Vector2( 883.676, -733.452 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC3_ElevatorRoom1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -16.8187
+margin_top = -25.2527
+margin_right = 16.8187
+margin_bottom = 25.2527
+
+[node name="Exit" type="ColorRect" parent="layer2/CC3_ElevatorRoom1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.10297
+margin_top = -14.8265
+margin_right = 1.89703
+margin_bottom = -9.82648
+
+[node name="Wall0" type="Line2D" parent="layer2/CC3_ElevatorRoom1"]
+position = Vector2( -883.676, 733.452 )
+points = PoolVector2Array( 871.062, -708.2, 866.857, -713.687, 866.857, -753.218, 871.062, -758.705, 896.29, -758.705, 900.495, -753.218, 900.495, -713.687, 896.29, -708.2, 886.154, -708.2, 886.154, -711.758, 880.823, -711.758, 880.823, -708.2, 871.062, -708.2 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2030641360
+
+[node name="CC3_Storage5F1" type="Node2D" parent="layer2"]
+position = Vector2( 935.355, -788.959 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC3_Storage5F1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.6978
+margin_top = -11.8035
+margin_right = 15.6978
+margin_bottom = 11.8036
+
+[node name="Exit" type="ColorRect" parent="layer2/CC3_Storage5F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.60205
+margin_top = -6.03625
+margin_right = 0.397949
+margin_bottom = -1.03625
+
+[node name="Wall0" type="Line2D" parent="layer2/CC3_Storage5F1"]
+position = Vector2( -935.355, 788.959 )
+points = PoolVector2Array( 923.581, -777.155, 919.656, -782.287, 919.656, -795.63, 923.581, -800.762, 947.128, -800.762, 951.052, -795.63, 951.052, -782.287, 947.128, -777.155, 938.606, -777.155, 938.606, -779.961, 932.995, -779.961, 932.995, -777.155, 923.581, -777.155 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="CC3_Storage5F3" type="Node2D" parent="layer2"]
+position = Vector2( 935.356, -885.184 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC3_Storage5F3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.6978
+margin_top = -11.547
+margin_right = 15.6978
+margin_bottom = 11.5469
+
+[node name="Wall" type="Line2D" parent="layer2/CC3_Storage5F3"]
+position = Vector2( -935.356, 885.184 )
+points = PoolVector2Array( 947.128, -896.73, 951.052, -891.598, 951.052, -878.768, 947.128, -873.636, 923.581, -873.636, 919.657, -878.768, 919.657, -891.598, 923.581, -896.73, 947.128, -896.73 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="CC3_Storage5F2" type="Node2D" parent="layer2"]
+position = Vector2( 935.356, -837.2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC3_Storage5F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.6978
+margin_top = -36.4371
+margin_right = 15.6978
+margin_bottom = 36.4371
+
+[node name="Exit" type="ColorRect" parent="layer2/CC3_Storage5F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.103271
+margin_top = -30.2494
+margin_right = 4.10327
+margin_bottom = -25.2494
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC3_Storage5F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.44983
+margin_top = -30.2804
+margin_right = 0.550171
+margin_bottom = -25.2804
+
+[node name="Wall" type="Line2D" parent="layer2/CC3_Storage5F2"]
+position = Vector2( -935.356, 837.2 )
+points = PoolVector2Array( 947.128, -873.636, 951.052, -868.504, 951.052, -805.894, 947.128, -800.762, 923.581, -800.762, 919.657, -805.894, 919.657, -868.504, 923.581, -873.636, 947.128, -873.636 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DS2_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 1043.96, 6.23987 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -63.9291
+margin_top = -37.8107
+margin_right = 63.9291
+margin_bottom = 37.8107
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 34.577
+margin_top = 5.86309
+margin_right = 38.577
+margin_bottom = 10.8631
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS2_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -10.45
+margin_top = 39.2465
+margin_right = -6.44995
+margin_bottom = 44.2465
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_Floor1"]
+position = Vector2( -1043.96, -6.23987 )
+points = PoolVector2Array( 977.99, 9.80811, 980.032, 9.80811, 980.032, -11.7509, 996.014, -24.1948, 1091.91, -24.1948, 1107.89, -11.7509, 1107.89, 31.5874, 1091.91, 44.0312, 996.014, 44.0312, 980.032, 31.5874, 980.032, 15.7601, 977.99, 15.7601 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="FC1_Stadium" type="Node2D" parent="layer2"]
+position = Vector2( 1234.55, -649.075 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -101.991
+margin_top = -67.0063
+margin_right = 101.991
+margin_bottom = 67.0063
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -48.2422
+margin_top = 23.0933
+margin_right = -44.2422
+margin_bottom = 28.0933
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -39.6232
+margin_top = 28.8367
+margin_right = -35.6232
+margin_bottom = 33.8367
+
+[node name="Exit3" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 5.38684
+margin_top = 15.914
+margin_right = 9.38684
+margin_bottom = 20.914
+
+[node name="Exit4" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 74.4457
+margin_top = -26.9167
+margin_right = 78.4457
+margin_bottom = -21.9167
+
+[node name="Exit5" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -91.9354
+margin_top = 22.495
+margin_right = -87.9354
+margin_bottom = 27.495
+
+[node name="Exit6" type="ColorRect" parent="layer2/FC1_Stadium"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -18.1957
+margin_top = -11.3055
+margin_right = -14.1957
+margin_bottom = -6.30548
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Stadium"]
+position = Vector2( -1234.55, 649.075 )
+points = PoolVector2Array( 1218.17, -578.47, 1218.17, -582.068, 1158.06, -582.068, 1139.96, -607.554, 1139.96, -638.834, 1158.06, -664.32, 1269.93, -664.32, 1269.93, -690.593, 1292.57, -690.593, 1318.06, -690.593, 1318.06, -607.554, 1292.57, -582.068, 1223.7, -582.068, 1223.7, -578.553 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1903796944
+
+[node name="DS1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 872.217, -90.6011 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -152.983
+margin_top = -61.2629
+margin_right = 152.983
+margin_bottom = 61.2629
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -124.026
+margin_top = 24.4123
+margin_right = -120.026
+margin_bottom = 29.4123
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -81.6721
+margin_top = 3.73392
+margin_right = -77.6721
+margin_bottom = 8.73392
+
+[node name="Exit3" type="ColorRect" parent="layer2/DS1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 84.4084
+margin_top = 11.1278
+margin_right = 88.4084
+margin_bottom = 16.1278
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_Floor1"]
+position = Vector2( -872.217, 90.6011 )
+points = PoolVector2Array( 776.857, -159.007, 776.857, -151.882, 1012.83, -151.882, 1021.51, -144.115, 1021.51, -60.3321, 1025.06, -60.3321 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 1
+
+[node name="Wall1" type="Line2D" parent="layer2/DS1_Floor1"]
+position = Vector2( -872.217, 90.6011 )
+points = PoolVector2Array( 770.381, -158.89, 770.381, -151.882, 731.604, -151.882, 722.929, -144.115, 722.929, -50.361, 719.413, -50.361 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2042876928
+
+[node name="Wall2" type="Line2D" parent="layer2/DS1_Floor1"]
+position = Vector2( -872.217, 90.6011 )
+points = PoolVector2Array( 1025.06, -55.3138, 1021.51, -55.3138, 1021.51, -35.9586, 1012.83, -29.3585, 730.632, -29.3585, 722.929, -35.9586, 722.929, -45.9047, 719.537, -45.9047 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DS2_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1120.44, -56.6191 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -64.0667
+margin_top = -119.175
+margin_right = 64.0667
+margin_bottom = 119.175
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 46.9825
+margin_top = 92.4595
+margin_right = 50.9825
+margin_bottom = 97.4595
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -27.7211
+margin_top = -5.83883
+margin_right = -23.7211
+margin_bottom = -0.838829
+
+[node name="Exit3" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -50.274
+margin_top = -6.71188
+margin_right = -46.274
+margin_bottom = -1.71188
+
+[node name="Exit4" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 48.6488
+margin_top = -28.6262
+margin_right = 52.6488
+margin_bottom = -23.6262
+
+[node name="Exit5" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -27.8126
+margin_top = -34.4228
+margin_right = -23.8126
+margin_bottom = -29.4228
+
+[node name="Exit6" type="ColorRect" parent="layer2/DS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -19.801
+margin_top = -38.8276
+margin_right = -15.801
+margin_bottom = -33.8276
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_Floor2"]
+position = Vector2( -1120.44, 56.6191 )
+points = PoolVector2Array( 1052.6, -61.5429, 1056.38, -61.5429, 1056.38, -157.039, 1071.46, -172.115, 1142.5, -172.115, 1142.5, -175.462 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Wall1" type="Line2D" parent="layer2/DS2_Floor2"]
+position = Vector2( -1120.44, 56.6191 )
+points = PoolVector2Array( 1149.62, -175.462, 1149.62, -172.115, 1161.96, -172.115, 1177.05, -157.039, 1177.05, -61.4992, 1183.17, -61.4992 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 1065353216
+
+[node name="Wall2" type="Line2D" parent="layer2/DS2_Floor2"]
+position = Vector2( -1120.44, 56.6191 )
+points = PoolVector2Array( 1052.6, -55.8488, 1056.38, -55.8488, 1056.38, 47.4581, 1071.46, 62.5342, 1161.96, 62.5342, 1177.05, 47.4581, 1177.05, -55.8973, 1183.05, -55.8973 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FS3_ForestFloor02" type="Node2D" parent="layer2"]
+position = Vector2( 385.777, -737.787 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS3_ForestFloor02"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -72.3034
+margin_top = -73.7069
+margin_right = 72.3034
+margin_bottom = 73.707
+
+[node name="Exit" type="ColorRect" parent="layer2/FS3_ForestFloor02"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 7.78091
+margin_top = 63.2971
+margin_right = 11.7809
+margin_bottom = 68.2971
+
+[node name="Exit2" type="ColorRect" parent="layer2/FS3_ForestFloor02"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 57.2439
+margin_top = 20.3412
+margin_right = 61.2439
+margin_bottom = 25.3412
+
+[node name="Exit3" type="ColorRect" parent="layer2/FS3_ForestFloor02"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -5.14749
+margin_top = 7.77759
+margin_right = -1.14749
+margin_bottom = 12.7776
+
+[node name="Wall0" type="Line2D" parent="layer2/FS3_ForestFloor02"]
+position = Vector2( -385.777, 737.787 )
+points = PoolVector2Array( 313.658, -717.678, 317.169, -717.678, 317.169, -745.355, 335.244, -763.423, 440.003, -763.423, 458.079, -745.355, 458.079, -682.14, 440.003, -664.073, 335.244, -664.073, 317.169, -682.14, 317.169, -711.084, 313.716, -711.084 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 1
+
+[node name="DG3_CaveFloor2" type="Node2D" parent="layer2"]
+position = Vector2( 352.937, -175.459 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG3_CaveFloor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -53.629
+margin_top = -41.6396
+margin_right = 53.629
+margin_bottom = 41.6396
+
+[node name="Exit" type="ColorRect" parent="layer2/DG3_CaveFloor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 33.6378
+margin_top = -15.1961
+margin_right = 37.6378
+margin_bottom = -10.1961
+
+[node name="Wall0" type="Line2D" parent="layer2/DG3_CaveFloor2"]
+position = Vector2( -352.937, 175.459 )
+points = PoolVector2Array( 331.648, -196.58, 331.648, -193.18, 312.713, -193.18, 299.306, -179.779, 299.306, -150.931, 312.713, -137.53, 322.324, -137.53, 322.324, -134.04 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/DG3_CaveFloor2"]
+position = Vector2( -352.937, 175.459 )
+points = PoolVector2Array( 336.864, -196.58, 336.864, -193.18, 393.157, -193.18, 406.564, -179.779, 406.564, -150.931, 393.157, -137.53, 328.595, -137.53, 328.595, -134.04 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="DG2_DesertFloor" type="Node2D" parent="layer2"]
+position = Vector2( 542.014, -199.212 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG2_DesertFloor"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -126.411
+margin_top = -75.6214
+margin_right = 126.411
+margin_bottom = 75.6214
+
+[node name="Exit" type="ColorRect" parent="layer2/DG2_DesertFloor"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 93.4916
+margin_top = 21.6573
+margin_right = 97.4916
+margin_bottom = 26.6573
+
+[node name="Limiter2" type="ColorRect" parent="layer2/DG2_DesertFloor"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -91.6704
+margin_top = -25.42
+margin_right = -84.5735
+margin_bottom = -21.4031
+
+[node name="Wall0" type="Line2D" parent="layer2/DG2_DesertFloor"]
+position = Vector2( -542.014, 199.212 )
+points = PoolVector2Array( 666.708, -238.32, 666.708, -232.839, 669.936, -232.839 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 30283
+
+[node name="Wall1" type="Line2D" parent="layer2/DG2_DesertFloor"]
+position = Vector2( -542.014, 199.212 )
+points = PoolVector2Array( 669.998, -229.067, 666.708, -229.067, 666.708, -155.191, 636.822, -123.603, 447.205, -123.603, 415.602, -155.191, 415.602, -243.255, 447.205, -272.859, 655.305, -272.859 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1303982688
+
+[node name="DG4_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 1158.86, -296.77 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -91.9354
+margin_top = -75.6214
+margin_right = 91.9354
+margin_bottom = 75.6214
+
+[node name="Exit" type="ColorRect" parent="layer2/DG4_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -74.5779
+margin_top = -18.6062
+margin_right = -70.5779
+margin_bottom = -13.6062
+
+[node name="Exit2" type="ColorRect" parent="layer2/DG4_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 25.9764
+margin_top = 18.7857
+margin_right = 29.9764
+margin_bottom = 23.7857
+
+[node name="Wall0" type="Line2D" parent="layer2/DG4_Floor1"]
+position = Vector2( -1158.86, 296.77 )
+points = PoolVector2Array( 1064.23, -291.877, 1066.93, -291.877, 1066.93, -349.427, 1089.91, -372.4, 1141.38, -372.4, 1141.38, -374.761 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 1
+
+[node name="Wall1" type="Line2D" parent="layer2/DG4_Floor1"]
+position = Vector2( -1158.86, 296.77 )
+points = PoolVector2Array( 1064.23, -286.275, 1066.93, -286.275, 1066.93, -247.83, 1089.91, -224.857, 1119.02, -224.857, 1119.02, -220.803 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2030614608
+
+[node name="Wall2" type="Line2D" parent="layer2/DG4_Floor1"]
+position = Vector2( -1158.86, 296.77 )
+points = PoolVector2Array( 1147.32, -374.843, 1147.32, -372.4, 1227.82, -372.4, 1250.8, -349.427, 1250.8, -247.83, 1227.82, -224.857, 1125.29, -224.857, 1125.29, -220.803 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="CC1_CC1Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 675.551, -885.731 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -149.874
+margin_top = -65.5704
+margin_right = 149.874
+margin_bottom = 65.5704
+
+[node name="Exit" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -66.4083
+margin_top = 8.0072
+margin_right = -62.4083
+margin_bottom = 13.0072
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -134.103
+margin_top = 42.7583
+margin_right = -130.103
+margin_bottom = 47.7583
+
+[node name="Exit3" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -53.48
+margin_top = -2.70197
+margin_right = -49.48
+margin_bottom = 2.29803
+
+[node name="Exit4" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -24.2701
+margin_top = -5.8728
+margin_right = -20.2701
+margin_bottom = -0.872803
+
+[node name="Exit5" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -32.8906
+margin_top = -49.4602
+margin_right = -28.8906
+margin_bottom = -44.4602
+
+[node name="Exit6" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 58.1473
+margin_top = -41.0938
+margin_right = 62.1473
+margin_bottom = -36.0938
+
+[node name="Exit7" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 104.055
+margin_top = -8.14618
+margin_right = 108.055
+margin_bottom = -3.14618
+
+[node name="Exit8" type="ColorRect" parent="layer2/CC1_CC1Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 106.331
+margin_top = 23.4903
+margin_right = 110.331
+margin_bottom = 28.4903
+
+[node name="Wall0" type="Line2D" parent="layer2/CC1_CC1Floor1"]
+position = Vector2( -675.551, 885.731 )
+points = PoolVector2Array( 825.424, -896.433, 825.424, -836.074, 809.503, -820.16, 541.597, -820.16, 525.676, -836.074, 525.676, -935.385, 541.597, -951.298, 809.503, -951.298, 825.424, -935.385, 825.424, -929.624 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036038096
+
+[node name="CC1_Storage2" type="Node2D" parent="layer2"]
+position = Vector2( 645.428, -915.521 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_Storage2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -25.7643
+margin_right = 19.1532
+margin_bottom = 25.7643
+
+[node name="Exit" type="ColorRect" parent="layer2/CC1_Storage2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 5.87567
+margin_top = 23.0341
+margin_right = 9.87567
+margin_bottom = 28.0341
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC1_Storage2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.76764
+margin_top = -19.3339
+margin_right = 1.23236
+margin_bottom = -14.3339
+
+[node name="Wall" type="Line2D" parent="layer2/CC1_Storage2"]
+position = Vector2( -645.428, 915.521 )
+points = PoolVector2Array( 664.581, -895.479, 659.792, -889.753, 631.062, -889.753, 626.274, -895.479, 626.274, -935.556, 631.062, -941.281, 659.792, -941.281, 664.581, -935.556, 664.581, -895.479 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2030373184
+
+[node name="CC1_Storage3" type="Node2D" parent="layer2"]
+position = Vector2( 738.355, -950.286 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_Storage3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -36.8624
+margin_right = 19.1532
+margin_bottom = 36.8624
+
+[node name="Wall0" type="Line2D" parent="layer2/CC1_Storage3"]
+position = Vector2( -738.355, 950.286 )
+points = PoolVector2Array( 719.202, -982.358, 723.99, -987.144, 752.72, -987.144, 757.508, -982.358, 757.508, -930.172, 752.72, -925.386, 737.247, -925.386, 737.247, -927.352, 733.613, -927.352, 733.613, -925.386, 723.99, -925.386, 719.202, -930.172, 719.202, -982.358 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2030588176
+
+[node name="CC1_Storage1a" type="Node2D" parent="layer2"]
+position = Vector2( 602.181, -887.092 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_Storage1a"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -24.8992
+margin_top = -11.9654
+margin_right = 24.8992
+margin_bottom = 11.9654
+
+[node name="Exit" type="ColorRect" parent="layer2/CC1_Storage1a"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 7.78656
+margin_top = 9.20178
+margin_right = 11.7866
+margin_bottom = 14.2018
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC1_Storage1a"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 6.82751
+margin_top = -7.5498
+margin_right = 10.8275
+margin_bottom = -2.5498
+
+[node name="Wall" type="Line2D" parent="layer2/CC1_Storage1a"]
+position = Vector2( -602.181, 887.092 )
+points = PoolVector2Array( 577.281, -892.832, 583.506, -899.054, 620.855, -899.054, 627.079, -892.832, 627.079, -881.346, 620.855, -875.124, 583.506, -875.124, 577.281, -881.346, 577.281, -892.832 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2030591568
+
+[node name="CC1_Storage1b" type="Node2D" parent="layer2"]
+position = Vector2( 609.769, -887.099 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_Storage1b"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -16.1907
+margin_top = -10.9026
+margin_right = 16.1907
+margin_bottom = 10.9027
+
+[node name="Exit" type="ColorRect" parent="layer2/CC1_Storage1b"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.32385
+margin_top = -7.31287
+margin_right = 1.67615
+margin_bottom = -2.31287
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC1_Storage1b"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 12.6537
+margin_top = -1.04382
+margin_right = 16.6537
+margin_bottom = 3.95618
+
+[node name="Wall" type="Line2D" parent="layer2/CC1_Storage1b"]
+position = Vector2( -609.769, 887.099 )
+points = PoolVector2Array( 625.961, -880.557, 621.913, -876.196, 597.627, -876.196, 593.58, -880.557, 593.58, -893.641, 597.627, -898.002, 621.913, -898.002, 625.961, -893.641, 625.961, -880.557 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -598721376
+
+[node name="CC1_ElevatorRoom2" type="Node2D" parent="layer2"]
+position = Vector2( 543.225, -851.215 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_ElevatorRoom2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -16.0806
+margin_top = -9.98901
+margin_right = 16.0807
+margin_bottom = 9.98907
+
+[node name="Exit" type="ColorRect" parent="layer2/CC1_ElevatorRoom2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.00543
+margin_top = -5.57922
+margin_right = 1.99457
+margin_bottom = -0.579224
+
+[node name="Wall0" type="Line2D" parent="layer2/CC1_ElevatorRoom2"]
+position = Vector2( -543.225, 851.215 )
+points = PoolVector2Array( 527.147, -857.188, 531.168, -861.204, 555.288, -861.204, 559.308, -857.188, 559.308, -845.241, 555.288, -841.226, 544.689, -841.226, 544.689, -843.149, 541.183, -843.149, 541.183, -841.226, 531.168, -841.226, 527.147, -845.241, 527.147, -857.188 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1303987104
+
+[node name="CC1_Storage4" type="Node2D" parent="layer2"]
+position = Vector2( 800.088, -913.279 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC1_Storage4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -28.7191
+margin_top = -20.5945
+margin_right = 28.7192
+margin_bottom = 20.5945
+
+[node name="Wall0" type="Line2D" parent="layer2/CC1_Storage4"]
+position = Vector2( -800.088, 913.279 )
+points = PoolVector2Array( 828.73, -908.826, 825.455, -908.826, 825.455, -899.858, 818.275, -892.682, 783.315, -892.682, 783.315, -894.616, 779.627, -894.616, 779.627, -892.682, 778.548, -892.682, 771.369, -899.858, 771.369, -926.694, 778.548, -933.87, 818.275, -933.87, 825.455, -926.694, 825.455, -913.681, 828.73, -913.681 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578164048
+
+[node name="FC2_Floor01" type="Node2D" parent="layer2"]
+position = Vector2( 1412.4, -550.835 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -119.708
+margin_top = -98.3557
+margin_right = 119.708
+margin_bottom = 98.3557
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.79553
+margin_top = 46.3062
+margin_right = 2.20447
+margin_bottom = 51.3062
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 2.51392
+margin_top = -13.5209
+margin_right = 6.51392
+margin_bottom = -8.52087
+
+[node name="Exit3" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 8.73865
+margin_top = -47.9813
+margin_right = 12.7386
+margin_bottom = -42.9813
+
+[node name="Exit4" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -37.2491
+margin_top = 70.5046
+margin_right = -33.2491
+margin_bottom = 75.5046
+
+[node name="Exit5" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -35.3137
+margin_top = 40.0842
+margin_right = -31.3137
+margin_bottom = 45.0842
+
+[node name="Exit6" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 37.4685
+margin_top = 6.58099
+margin_right = 41.4685
+margin_bottom = 11.581
+
+[node name="Exit7" type="ColorRect" parent="layer2/FC2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 45.6086
+margin_top = -17.3499
+margin_right = 49.6086
+margin_bottom = -12.3499
+
+[node name="Wall0" type="Line2D" parent="layer2/FC2_Floor01"]
+position = Vector2( -1412.4, 550.835 )
+points = PoolVector2Array( 1425.22, -649.034, 1425.22, -643.632, 1341.11, -643.632, 1341.11, -578.616, 1292.7, -578.616, 1292.7, -482.401, 1322.62, -452.488, 1502.19, -452.488, 1532.11, -482.401, 1532.11, -619.283, 1502.19, -643.632, 1432.15, -643.632, 1432.15, -649.151 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2030614608
+
+[node name="CC3_Staircase" type="Node2D" parent="layer2"]
+position = Vector2( 967.317, -639.965 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC3_Staircase"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -18.3199
+margin_right = 19.1533
+margin_bottom = 18.3199
+
+[node name="Exit" type="ColorRect" parent="layer2/CC3_Staircase"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -7.40857
+margin_top = -9.23969
+margin_right = -3.40857
+margin_bottom = -4.23969
+
+[node name="Wall0" type="Line2D" parent="layer2/CC3_Staircase"]
+position = Vector2( -967.317, 639.965 )
+points = PoolVector2Array( 986.47, -623.874, 952.952, -623.874, 948.164, -627.186, 948.164, -655.551, 952.952, -658.285, 979.388, -658.285, 984.176, -655.551, 984.176, -627.077, 986.47, -627.082 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578164048
+
+[node name="DG1_WesternCave" type="Node2D" parent="layer2"]
+position = Vector2( 737.946, -281.41 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_WesternCave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.2528
+margin_top = -10.008
+margin_right = 13.2527
+margin_bottom = 10.008
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_WesternCave"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.47485
+margin_top = 8.15167
+margin_right = 0.525146
+margin_bottom = 13.1517
+
+[node name="Wall" type="Line2D" parent="layer2/DG1_WesternCave"]
+position = Vector2( -737.946, 281.41 )
+points = PoolVector2Array( 751.198, -274.722, 747.884, -271.413, 728.005, -271.413, 724.692, -274.722, 724.692, -288.119, 728.005, -291.428, 747.884, -291.428, 751.198, -288.119, 751.198, -274.722 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036157264
+
+[node name="DG1_LibraryF3" type="Node2D" parent="layer2"]
+position = Vector2( 900.321, -368.976 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_LibraryF3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -25.9939
+margin_top = -16.6138
+margin_right = 25.9939
+margin_bottom = 16.6138
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_LibraryF3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 17.7625
+margin_top = -7.09549
+margin_right = 21.7625
+margin_bottom = -2.09549
+
+[node name="Wall0" type="Line2D" parent="layer2/DG1_LibraryF3"]
+position = Vector2( -900.321, 368.976 )
+points = PoolVector2Array( 878.023, -379.108, 884.521, -385.597, 917.541, -385.597, 924.039, -379.108, 924.039, -358.86, 917.541, -352.37, 884.521, -352.37, 878.023, -358.86, 878.023, -379.108 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG1_Hut3inside" type="Node2D" parent="layer2"]
+position = Vector2( 945.667, -211.036 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_Hut3inside"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -10.7689
+margin_right = 19.1532
+margin_bottom = 10.7689
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_Hut3inside"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.79559
+margin_top = 3.3504
+margin_right = 2.20441
+margin_bottom = 8.3504
+
+[node name="Wall" type="Line2D" parent="layer2/DG1_Hut3inside"]
+position = Vector2( -945.667, 211.036 )
+points = PoolVector2Array( 926.514, -217.029, 931.303, -221.815, 960.032, -221.815, 964.821, -217.029, 964.821, -205.064, 960.032, -200.278, 931.303, -200.278, 926.514, -205.064, 926.514, -217.029 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2042953408
+
+[node name="DG1_EasternCave" type="Node2D" parent="layer2"]
+position = Vector2( 945.484, -185.117 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_EasternCave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -20.5897
+margin_top = -14.8901
+margin_right = 20.5897
+margin_bottom = 14.8901
+
+[node name="Wall" type="Line2D" parent="layer2/DG1_EasternCave"]
+position = Vector2( -945.484, 185.117 )
+points = PoolVector2Array( 966.075, -173.861, 960.927, -170.223, 930.043, -170.223, 924.895, -173.861, 924.895, -196.366, 930.043, -200.004, 960.927, -200.004, 966.075, -196.366, 966.075, -173.861 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 30283
+
+[node name="DG1_ElevatorLanding" type="Node2D" parent="layer2"]
+position = Vector2( 886.793, -414.2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_ElevatorLanding"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -30.6451
+margin_top = -32.5459
+margin_right = 30.6451
+margin_bottom = 32.5459
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_ElevatorLanding"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.30945
+margin_top = -22.9736
+margin_right = -0.309448
+margin_bottom = -17.9736
+
+[node name="Wall0" type="Line2D" parent="layer2/DG1_ElevatorLanding"]
+position = Vector2( -886.793, 414.2 )
+points = PoolVector2Array( 867.561, -391.087, 867.561, -395.128, 863.809, -395.128, 856.148, -402.786, 856.148, -439.093, 863.809, -446.751, 909.777, -446.751, 917.438, -439.093, 917.438, -402.786, 909.777, -395.128, 880.147, -395.128, 880.147, -391.029 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG2_DesertFloor2" type="Node2D" parent="layer2"]
+position = Vector2( 654.97, -253.569 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG2_DesertFloor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -12.6109
+margin_top = -15.315
+margin_right = 12.6108
+margin_bottom = 15.315
+
+[node name="Wall0" type="Line2D" parent="layer2/DG2_DesertFloor2"]
+position = Vector2( -654.97, 253.569 )
+points = PoolVector2Array( 658.557, -270.95, 658.557, -268.884, 645.512, -268.884, 642.359, -263.715, 642.359, -253.163, 644.451, -253.163, 644.451, -250.481, 642.359, -250.481, 642.359, -243.422, 645.512, -238.254, 663.108, -238.254, 666.261, -243.422, 666.261, -263.715, 663.108, -268.884, 662.043, -268.884, 662.043, -270.907 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7317
+
+[node name="DG2_Peak" type="Node2D" parent="layer2"]
+position = Vector2( 675.724, -288.037 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG2_Peak"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -45.01
+margin_top = -24.888
+margin_right = 45.0101
+margin_bottom = 24.8881
+
+[node name="Wall0" type="Line2D" parent="layer2/DG2_Peak"]
+position = Vector2( -675.724, 288.037 )
+points = PoolVector2Array( 678.179, -269.469, 678.179, -276.427, 697.405, -276.427, 707.46, -286.478, 707.46, -301.686, 697.405, -312.933, 641.966, -312.933, 630.713, -301.686, 630.713, -286.478, 641.966, -276.427, 658.749, -276.427, 658.749, -270.14 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578141840
+
+[node name="Wall1" type="Line2D" parent="layer2/DG2_Peak"]
+position = Vector2( -675.724, 288.037 )
+points = PoolVector2Array( 673.989, -269.469, 673.989, -276.427, 661.908, -276.427, 661.908, -270.14 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036075600
+
+[node name="DG2_DesertFloor3" type="Node2D" parent="layer2"]
+position = Vector2( 689.61, -238.26 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG2_DesertFloor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -27.7597
+margin_right = 19.1532
+margin_bottom = 27.7597
+
+[node name="Wall0" type="Line2D" parent="layer2/DG2_DesertFloor3"]
+position = Vector2( -689.61, 238.26 )
+points = PoolVector2Array( 711.366, -241.379, 708.763, -241.379, 708.763, -232.918, 711.366, -232.918 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578138384
+
+[node name="Wall1" type="Line2D" parent="layer2/DG2_DesertFloor3"]
+position = Vector2( -689.61, 238.26 )
+points = PoolVector2Array( 711.366, -228.303, 708.763, -228.303, 708.763, -215.297, 703.975, -210.511, 675.245, -210.511, 670.456, -215.297, 670.456, -229.05, 668.352, -229.05 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2032732864
+
+[node name="Wall2" type="Line2D" parent="layer2/DG2_DesertFloor3"]
+position = Vector2( -689.61, 238.26 )
+points = PoolVector2Array( 668.352, -232.823, 670.456, -232.823, 670.456, -266.03, 674.001, -266.03, 674.001, -269.858 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall3" type="Line2D" parent="layer2/DG2_DesertFloor3"]
+position = Vector2( -689.61, 238.26 )
+points = PoolVector2Array( 678.231, -269.858, 678.231, -266.03, 703.975, -266.03, 708.763, -261.244, 708.763, -246.678, 711.366, -246.678 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG2_Cave" type="Node2D" parent="layer2"]
+position = Vector2( 647.197, -53.032 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG2_Cave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -20.7448
+margin_top = -13.3058
+margin_right = 20.7448
+margin_bottom = 13.3058
+
+[node name="Exit" type="ColorRect" parent="layer2/DG2_Cave"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -16.4661
+margin_top = -12.1083
+margin_right = -12.4661
+margin_bottom = -7.10832
+
+[node name="Wall0" type="Line2D" parent="layer2/DG2_Cave"]
+position = Vector2( -647.197, 53.032 )
+points = PoolVector2Array( 667.738, -42.5732, 663.413, -42.5732, 660.582, -39.7287, 631.646, -39.7287, 626.46, -45.051, 626.46, -61.0179, 631.646, -66.3402, 660.582, -66.3402, 665.768, -61.0179, 665.768, -50.1444, 667.738, -50.1444 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG3_CaveFloor3" type="Node2D" parent="layer2"]
+position = Vector2( 387.966, -197.124 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG3_CaveFloor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -9.66055
+margin_top = -8.68329
+margin_right = 9.66052
+margin_bottom = 8.68329
+
+[node name="Exit" type="ColorRect" parent="layer2/DG3_CaveFloor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -0.90567
+margin_top = 6.814
+margin_right = 3.09433
+margin_bottom = 11.814
+
+[node name="Wall" type="Line2D" parent="layer2/DG3_CaveFloor3"]
+position = Vector2( -387.966, 197.124 )
+points = PoolVector2Array( 397.618, -190.852, 395.203, -188.44, 380.712, -188.44, 378.297, -190.852, 378.297, -203.395, 380.712, -205.807, 395.203, -205.807, 397.618, -203.395, 397.618, -190.852 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2043403728
+
+[node name="DG3_InnerCradle" type="Node2D" parent="layer2"]
+position = Vector2( 362.514, -337.234 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG3_InnerCradle"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -43.0947
+margin_top = -46.9044
+margin_right = 43.0947
+margin_bottom = 46.9044
+
+[node name="Wall0" type="Line2D" parent="layer2/DG3_InnerCradle"]
+position = Vector2( -362.514, 337.234 )
+points = PoolVector2Array( 353.545, -382.89, 353.545, -376.751, 326.494, -376.751, 315.721, -365.982, 315.721, -304.803, 326.494, -294.035, 351.672, -294.035, 351.672, -289.783 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1909651632
+
+[node name="Wall1" type="Line2D" parent="layer2/DG3_InnerCradle"]
+position = Vector2( -362.514, 337.234 )
+points = PoolVector2Array( 359.29, -289.783, 359.29, -294.035, 391.137, -294.035, 401.91, -304.803, 401.91, -365.982, 391.137, -376.751, 361.83, -376.751, 361.83, -382.89 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1904555520
+
+[node name="DG3_CaveFloor" type="Node2D" parent="layer2"]
+position = Vector2( 383.103, -269.747 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG3_CaveFloor"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -70.3881
+margin_top = -71.3138
+margin_right = 70.388
+margin_bottom = 71.3138
+
+[node name="Wall0" type="Line2D" parent="layer2/DG3_CaveFloor"]
+position = Vector2( -383.103, 269.747 )
+points = PoolVector2Array( 331.566, -195.069, 331.566, -198.445, 330.311, -198.445, 312.714, -216.034, 312.714, -268.025, 330.311, -285.614, 351.757, -285.614, 351.757, -292.054 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578119568
+
+[node name="Wall1" type="Line2D" parent="layer2/DG3_CaveFloor"]
+position = Vector2( -383.103, 269.747 )
+points = PoolVector2Array( 359.225, -292.054, 359.225, -285.614, 387.178, -285.614, 404.775, -268.025, 404.775, -261.323, 436.067, -261.323, 453.49, -246.535, 453.49, -228.739, 453.49, -224.627, 449.728, -224.627, 449.728, -219.756, 453.49, -219.756, 453.49, -216.034, 435.893, -198.445, 336.868, -198.445, 336.868, -195.069 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG4_Cave" type="Node2D" parent="layer2"]
+position = Vector2( 1098.09, -331.128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_Cave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -20.9058
+margin_top = -17.5103
+margin_right = 20.9058
+margin_bottom = 17.5103
+
+[node name="Exit" type="ColorRect" parent="layer2/DG4_Cave"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -12.5281
+margin_top = 15.7439
+margin_right = -8.52808
+margin_bottom = 20.7439
+
+[node name="Wall" type="Line2D" parent="layer2/DG4_Cave"]
+position = Vector2( -1098.09, 331.128 )
+points = PoolVector2Array( 1119.01, -318.842, 1113.78, -313.62, 1082.42, -313.62, 1077.19, -318.842, 1077.19, -343.418, 1082.42, -348.64, 1113.78, -348.64, 1119.01, -343.418, 1119.01, -318.842 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2039742208
+
+[node name="DG4_DesertHut" type="Node2D" parent="layer2"]
+position = Vector2( 1186.97, -280.664 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_DesertHut"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -12.3152
+margin_top = -6.90085
+margin_right = 12.3153
+margin_bottom = 6.90088
+
+[node name="Exit" type="ColorRect" parent="layer2/DG4_DesertHut"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.77014
+margin_top = 3.14371
+margin_right = 2.22986
+margin_bottom = 8.14371
+
+[node name="Wall" type="Line2D" parent="layer2/DG4_DesertHut"]
+position = Vector2( -1186.97, 280.664 )
+points = PoolVector2Array( 1199.29, -276.826, 1196.21, -273.759, 1177.73, -273.759, 1174.65, -276.826, 1174.65, -284.494, 1177.73, -287.561, 1196.21, -287.561, 1199.29, -284.494, 1199.29, -276.826 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2043403728
+
+[node name="DG4_Floor5" type="Node2D" parent="layer2"]
+position = Vector2( 1166.76, -201.492 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_Floor5"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -25.7656
+margin_top = -17.5719
+margin_right = 25.7656
+margin_bottom = 17.5719
+
+[node name="Wall0" type="Line2D" parent="layer2/DG4_Floor5"]
+position = Vector2( -1166.76, 201.492 )
+points = PoolVector2Array( 1152.09, -205.24, 1158.53, -211.673, 1186.09, -211.673, 1192.53, -205.24, 1192.53, -190.356, 1186.09, -183.923, 1158.53, -183.923, 1152.09, -190.356 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578119568
+
+[node name="DG4_FloorConnection" type="Node2D" parent="layer2"]
+position = Vector2( 1043.47, -278.593 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_FloorConnection"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -22.2685
+margin_top = -29.6737
+margin_right = 22.2684
+margin_bottom = 29.6737
+
+[node name="Wall0" type="Line2D" parent="layer2/DG4_FloorConnection"]
+position = Vector2( -1043.47, 278.593 )
+points = PoolVector2Array( 1022.15, -276.393, 1024.9, -276.393, 1024.9, -300.848, 1030.46, -308.267, 1056.47, -308.267, 1062.04, -300.848, 1062.04, -291.401, 1064.23, -291.401 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/DG4_FloorConnection"]
+position = Vector2( -1043.47, 278.593 )
+points = PoolVector2Array( 1022.15, -269.461, 1024.9, -269.461, 1024.9, -263.732, 1030.46, -256.314, 1056.47, -256.314, 1062.04, -263.732, 1062.04, -285.778, 1064.23, -285.778 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 4812
+
+[node name="DG4_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1121.76, -398.716 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -29.9271
+margin_top = -23.1228
+margin_right = 29.9271
+margin_bottom = 23.1228
+
+[node name="Wall0" type="Line2D" parent="layer2/DG4_Floor2"]
+position = Vector2( -1121.76, 398.716 )
+points = PoolVector2Array( 1144.25, -423.823, 1144.25, -418.949, 1151.68, -418.949, 1151.68, -375.593, 1147.32, -375.593, 1147.32, -373.475 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578124240
+
+[node name="Wall1" type="Line2D" parent="layer2/DG4_Floor2"]
+position = Vector2( -1121.76, 398.716 )
+points = PoolVector2Array( 1141.38, -373.475, 1141.38, -375.593, 1136.27, -375.593, 1128.79, -375.593, 1128.79, -418.949, 1138.19, -418.949, 1138.19, -423.823 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG4_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 1127.88, -198.583 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG4_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -41.317
+margin_top = -21.9113
+margin_right = 41.3171
+margin_bottom = 21.9113
+
+[node name="Wall0" type="Line2D" parent="layer2/DG4_Floor3"]
+position = Vector2( -1127.88, 198.583 )
+points = PoolVector2Array( 1142.56, -174.295, 1142.56, -176.671, 1096.89, -176.671, 1086.56, -182.278, 1086.56, -211.19, 1096.89, -216.797, 1119.11, -216.797, 1119.11, -220.569 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1909651632
+
+[node name="Wall1" type="Line2D" parent="layer2/DG4_Floor3"]
+position = Vector2( -1127.88, 198.583 )
+points = PoolVector2Array( 1149.53, -174.295, 1149.53, -176.671, 1151.47, -176.671, 1151.47, -194.818, 1150.52, -196.923, 1151.69, -199.16, 1150.81, -201.173, 1152.06, -202.914, 1151.47, -204.969, 1151.47, -216.797, 1125.29, -216.797, 1125.29, -220.803 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578111440
+
+[node name="g2734" type="Node2D" parent="layer2"]
+position = Vector2( 781.674, -77.9696 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/g2734"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -23.4681
+margin_top = -10.0043
+margin_right = 23.4681
+margin_bottom = 10.0043
+
+[node name="Exit" type="ColorRect" parent="layer2/g2734"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -15.1075
+margin_top = 3.77918
+margin_right = -11.1075
+margin_bottom = 8.77918
+
+[node name="Exit2" type="ColorRect" parent="layer2/g2734"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 6.60046
+margin_top = -8.67052
+margin_right = 10.6005
+margin_bottom = -3.67052
+
+[node name="Wall" type="Line2D" parent="layer2/g2734"]
+position = Vector2( -781.674, 77.9696 )
+points = PoolVector2Array( 805.142, -83.5276, 805.142, -72.4119, 799.275, -67.9655, 764.073, -67.9655, 758.206, -72.4119, 758.206, -83.5276, 764.073, -87.974, 799.275, -87.974, 805.142, -83.5276 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 4812
+
+[node name="DS1_SmithsCabin" type="Node2D" parent="layer2"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="g4756-1" type="Node2D" parent="layer2/DS1_SmithsCabin"]
+position = Vector2( 820.349, -137.278 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_SmithsCabin/g4756-1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.5638
+margin_top = -26.8112
+margin_right = 19.5638
+margin_bottom = 26.8112
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_SmithsCabin/g4756-1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -10.5837
+margin_top = 8.67416
+margin_right = -6.58374
+margin_bottom = 13.6742
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_SmithsCabin"]
+points = PoolVector2Array( 800.716, -154.558, 806.52, -164.469, 833.849, -164.469, 839.653, -154.558, 839.653, -118.056, 833.849, -110.804, 806.52, -110.804, 800.716, -118.056, 800.716, -154.558 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586908896
+
+[node name="DS1_House1F3" type="Node2D" parent="layer2"]
+position = Vector2( 959.217, -80.2626 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_House1F3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -10.7689
+margin_right = 19.1532
+margin_bottom = 10.7689
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_House1F3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.71094
+margin_top = 8.49554
+margin_right = 0.289063
+margin_bottom = 13.4955
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS1_House1F3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.11969
+margin_top = -4.90571
+margin_right = 4.11969
+margin_bottom = 0.0942917
+
+[node name="Exit3" type="ColorRect" parent="layer2/DS1_House1F3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.7533
+margin_top = 0.837578
+margin_right = 1.2467
+margin_bottom = 5.83758
+
+[node name="Wall" type="Line2D" parent="layer2/DS1_House1F3"]
+position = Vector2( -959.217, 80.2626 )
+points = PoolVector2Array( 973.582, -69.5153, 944.852, -69.5153, 940.064, -74.3015, 940.064, -86.2666, 944.852, -91.0526, 973.582, -91.0526, 978.371, -86.2666, 978.371, -74.3015, 973.582, -69.5153 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1879376240
+
+[node name="DS1_House1F2" type="Node2D" parent="layer2"]
+position = Vector2( 958.843, -18.7665 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_House1F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -15.7944
+margin_right = 19.1532
+margin_bottom = 15.7944
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_House1F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.75323
+margin_top = -16.6319
+margin_right = 1.24677
+margin_bottom = -11.6319
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS1_House1F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.119751
+margin_top = 0.119698
+margin_right = 4.11975
+margin_bottom = 5.1197
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_House1F2"]
+position = Vector2( -958.843, 18.7665 )
+points = PoolVector2Array( 944.478, -2.99449, 939.69, -7.78056, 939.69, -29.7966, 944.478, -34.5826, 972.383, -34.5826, 977.171, -29.7966, 977.171, -7.78056, 972.383, -2.99449, 944.478, -2.99449 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DS1_DamnControll1" type="Node2D" parent="layer2"]
+position = Vector2( 767.349, -67.8014 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_DamnControll1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -24.7111
+margin_top = -11.4525
+margin_right = 24.7112
+margin_bottom = 11.4525
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_DamnControll1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.77972
+margin_top = -6.68884
+margin_right = 2.22028
+margin_bottom = -1.68884
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_DamnControll1"]
+position = Vector2( -767.349, 67.8014 )
+points = PoolVector2Array( 753.461, -66.7511, 750.03, -66.7511, 750.03, -74.2811, 756.208, -79.2539, 785.882, -79.2539, 792.06, -74.2811, 792.06, -61.3217, 785.882, -56.3489, 756.208, -56.3489, 750.03, -61.3217, 750.016, -62.022, 753.459, -62.022, 753.461, -66.7511 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 296
+
+[node name="DS1_House1F4" type="Node2D" parent="layer2"]
+position = Vector2( 959.217, -108.74 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_House1F4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -17.7088
+margin_right = 19.1532
+margin_bottom = 17.7088
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_House1F4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.11969
+margin_top = 1.55548
+margin_right = 4.11969
+margin_bottom = 6.55548
+
+[node name="Wall" type="Line2D" parent="layer2/DS1_House1F4"]
+position = Vector2( -959.217, 108.74 )
+points = PoolVector2Array( 973.582, -91.0526, 944.852, -91.0526, 940.064, -95.8386, 940.064, -121.683, 944.852, -126.469, 973.582, -126.469, 978.371, -121.683, 978.371, -95.8386, 973.582, -91.0526 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -749828253
+
+[node name="DS1_House1F1" type="Node2D" parent="layer2"]
+position = Vector2( 958.843, 8.99326 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_House1F1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -11.9654
+margin_right = 19.1532
+margin_bottom = 11.9654
+
+[node name="Exit" type="ColorRect" parent="layer2/DS1_House1F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -0.34021
+margin_top = -4.18784
+margin_right = 3.65979
+margin_bottom = 0.812159
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_House1F1"]
+position = Vector2( -958.843, -8.99326 )
+points = PoolVector2Array( 978.151, 15.6434, 975.7, 15.6434, 975.7, 16.1498, 970.912, 20.9358, 944.478, 20.9358, 939.69, 16.1498, 939.69, 1.79149, 944.478, -2.99458, 970.912, -2.99458, 975.7, 1.79149, 975.7, 9.98312, 978.151, 9.98312 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DS1_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1038.95, -63.3397 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -12.6154
+margin_top = -23.4518
+margin_right = 12.6154
+margin_bottom = 23.4518
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_Floor2"]
+position = Vector2( -1038.95, 63.3397 )
+points = PoolVector2Array( 1023.31, -60.3877, 1026.34, -60.3877, 1026.34, -66.2807, 1029.49, -73.8188, 1048.41, -73.8188, 1051.57, -66.2807, 1051.57, -61.5431, 1053.83, -61.5431 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1903796944
+
+[node name="Wall1" type="Line2D" parent="layer2/DS1_Floor2"]
+position = Vector2( -1038.95, 63.3397 )
+points = PoolVector2Array( 1023.31, -55.1887, 1026.34, -55.1887, 1026.34, -51.1231, 1029.49, -43.585, 1048.41, -43.585, 1051.57, -51.1231, 1051.57, -55.8489, 1053.67, -55.8489 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DS1_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 694.396, -42.9458 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS1_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -24.1304
+margin_top = -14.7985
+margin_right = 24.1303
+margin_bottom = 14.7985
+
+[node name="Wall0" type="Line2D" parent="layer2/DS1_Floor3"]
+position = Vector2( -694.396, 42.9458 )
+points = PoolVector2Array( 670.153, -50.2373, 673.961, -50.2373, 673.961, -51.3524, 679.994, -57.7581, 710.843, -57.7581, 716.876, -50.5272, 718.51, -50.5077 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/DS1_Floor3"]
+position = Vector2( -694.396, 42.9458 )
+points = PoolVector2Array( 670.318, -43.5115, 673.961, -43.5115, 673.961, -35.3926, 679.994, -28.1616, 710.843, -28.1616, 716.876, -35.3926, 716.876, -45.9601, 718.425, -45.9601 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -598721376
+
+[node name="DS2_SeaHut3" type="Node2D" parent="layer2"]
+position = Vector2( 1091.47, -97.5913 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_SeaHut3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -12.5516
+margin_top = -8.97603
+margin_right = 12.5515
+margin_bottom = 8.97603
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_SeaHut3"]
+position = Vector2( -1091.47, 97.5913 )
+points = PoolVector2Array( 1082.05, -88.6436, 1078.91, -91.2835, 1078.91, -103.955, 1082.05, -106.595, 1100.88, -106.595, 1104.01, -103.955, 1104.01, -96.7551, 1099.15, -96.7551, 1099.15, -91.7983, 1104.01, -91.7983, 1104.01, -88.6436, 1096.01, -88.6436, 1096.01, -92.5533, 1091.46, -92.5533, 1091.46, -88.6436, 1082.05, -88.6436 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578213008
+
+[node name="DS2_SeaHut4" type="Node2D" parent="layer2"]
+position = Vector2( 1167.88, -83.369 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_SeaHut4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.4517
+margin_top = -8.10973
+margin_right = 14.4517
+margin_bottom = 8.10973
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_SeaHut4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 1.53503
+margin_top = -2.07249
+margin_right = 5.53503
+margin_bottom = 2.92751
+
+[node name="Wall" type="Line2D" parent="layer2/DS2_SeaHut4"]
+position = Vector2( -1167.88, 83.369 )
+points = PoolVector2Array( 1153.44, -87.8865, 1157.05, -91.4908, 1178.73, -91.4908, 1182.35, -87.8865, 1182.35, -78.8758, 1178.73, -75.2716, 1157.05, -75.2716, 1153.44, -78.8758, 1153.44, -87.8865 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578213008
+
+[node name="DS2_SeaHut2F2" type="Node2D" parent="layer2"]
+position = Vector2( 1082.11, -24.3907 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_SeaHut2F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -10.7689
+margin_right = 19.1532
+margin_bottom = 10.7689
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_SeaHut2F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.71094
+margin_top = -5.14521
+margin_right = 0.289063
+margin_bottom = -0.145212
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS2_SeaHut2F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.119751
+margin_top = -5.14521
+margin_right = 4.11975
+margin_bottom = -0.145212
+
+[node name="Wall" type="Line2D" parent="layer2/DS2_SeaHut2F2"]
+position = Vector2( -1082.11, 24.3907 )
+points = PoolVector2Array( 1101.27, -30.392, 1101.27, -18.4268, 1096.48, -13.6408, 1067.75, -13.6408, 1062.96, -18.4268, 1062.96, -30.392, 1067.75, -35.1781, 1096.48, -35.1781, 1101.27, -30.392 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 3014759
+
+[node name="DS2_SeaHut2F1" type="Node2D" parent="layer2"]
+position = Vector2( 1082.11, 1.45494 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_SeaHut2F1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -13.8799
+margin_right = 19.1532
+margin_bottom = 13.8799
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_SeaHut2F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 1.55615
+margin_top = -7.53819
+margin_right = 5.55615
+margin_bottom = -2.53819
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS2_SeaHut2F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.23218
+margin_top = 8.25612
+margin_right = 0.767822
+margin_bottom = 13.2561
+
+[node name="Wall" type="Line2D" parent="layer2/DS2_SeaHut2F1"]
+position = Vector2( -1082.11, -1.45494 )
+points = PoolVector2Array( 1101.27, -7.65815, 1101.27, 10.5289, 1096.48, 15.315, 1067.75, 15.315, 1062.96, 10.5289, 1062.96, -7.65815, 1067.75, -12.4442, 1096.48, -12.4442, 1101.27, -7.65815 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1903796944
+
+[node name="DS2_SeaHut2F3" type="Node2D" parent="layer2"]
+position = Vector2( 1083.07, -63.5582 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_SeaHut2F3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.7839
+margin_top = -12.1837
+margin_right = 11.7839
+margin_bottom = 12.1837
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_SeaHut2F3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.41162
+margin_top = -6.59632
+margin_right = 1.58838
+margin_bottom = -1.59632
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_SeaHut2F3"]
+position = Vector2( -1083.07, 63.5582 )
+points = PoolVector2Array( 1074.23, -51.3745, 1071.29, -56.7895, 1071.29, -58.4991, 1074.61, -58.4991, 1074.61, -63.6341, 1071.29, -63.6341, 1071.29, -70.3269, 1074.23, -75.742, 1091.91, -75.742, 1094.85, -70.3269, 1094.85, -63.6341, 1091.1, -63.6341, 1091.1, -58.4991, 1094.85, -58.4991, 1094.85, -56.7895, 1091.91, -51.3745, 1074.23, -51.3745 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308637936
+
+[node name="DS2_Ark" type="Node2D" parent="layer2"]
+position = Vector2( 1161.5, 35.884 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_Ark"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.9054
+margin_top = -18.6248
+margin_right = 15.9053
+margin_bottom = 18.6248
+
+[node name="Exit" type="ColorRect" parent="layer2/DS2_Ark"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 5.49084
+margin_top = 0.078434
+margin_right = 9.49084
+margin_bottom = 5.07843
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_Ark"]
+position = Vector2( -1161.5, -35.884 )
+points = PoolVector2Array( 1144.92, 20.7743, 1144.92, 17.1572, 1167.6, 17.1572, 1173.83, 23.3792, 1173.83, 48.2668, 1167.6, 54.4887, 1144.92, 54.4887, 1144.92, 48.4609 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1304691232
+
+[node name="Wall1" type="Line2D" parent="layer2/DS2_Ark"]
+position = Vector2( -1161.5, -35.884 )
+points = PoolVector2Array( 1144.92, 44.8298, 1144.92, 24.4466 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1903796944
+
+[node name="DS2_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 1217.65, -57.5604 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -34.8243
+margin_top = -15.7941
+margin_right = 34.8243
+margin_bottom = 15.7941
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_Floor3"]
+position = Vector2( -1217.65, 57.5604 )
+points = PoolVector2Array( 1182.83, -56.7727, 1182.83, -46.5525, 1191.53, -41.7664, 1217.56, -41.7664, 1217.56, -36.8744 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2042236240
+
+[node name="Wall1" type="Line2D" parent="layer2/DS2_Floor3"]
+position = Vector2( -1217.65, 57.5604 )
+points = PoolVector2Array( 1182.83, -62.1996, 1182.83, -68.5684, 1191.53, -73.3544, 1243.77, -73.3544, 1252.48, -68.5684, 1252.48, -46.5525, 1243.77, -41.7664, 1225.15, -41.7664, 1225.15, -36.9911 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 6357108
+
+[node name="DS3_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 1323.23, -71.4196 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS3_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -29.6875
+margin_top = -31.3442
+margin_right = 29.6875
+margin_bottom = 31.3442
+
+[node name="Exit" type="ColorRect" parent="layer2/DS3_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 4.90796
+margin_top = 1.5555
+margin_right = 8.90796
+margin_bottom = 6.5555
+
+[node name="Wall" type="Line2D" parent="layer2/DS3_Floor3"]
+position = Vector2( -1323.23, 71.4196 )
+points = PoolVector2Array( 1352.92, -47.5129, 1345.5, -40.0945, 1300.97, -40.0945, 1293.55, -47.5129, 1293.55, -95.3634, 1300.97, -102.782, 1345.5, -102.782, 1352.92, -95.3634, 1352.92, -47.5129 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DS3_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 1262.66, 45.3674 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS3_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -70.3879
+margin_top = -74.6628
+margin_right = 70.3881
+margin_bottom = 74.6628
+
+[node name="Exit" type="ColorRect" parent="layer2/DS3_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 39.3842
+margin_top = -53.9631
+margin_right = 43.3842
+margin_bottom = -48.9631
+
+[node name="Wall0" type="Line2D" parent="layer2/DS3_Floor1"]
+position = Vector2( -1262.66, -45.3674 )
+points = PoolVector2Array( 1217.8, -35.1238, 1217.8, -29.2954, 1209.87, -29.2954, 1192.27, -11.7065, 1192.27, 80.2591, 1209.87, 97.8479, 1315.45, 97.8479, 1333.05, 80.2591, 1333.05, -11.7065, 1315.45, -29.2954, 1224.45, -29.2954, 1224.45, -35.1238 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2040595600
+
+[node name="DS3_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1317.96, -19.7036 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS3_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -19.6233
+margin_right = 19.1532
+margin_bottom = 19.6233
+
+[node name="Exit" type="ColorRect" parent="layer2/DS3_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -12.3298
+margin_top = 11.1279
+margin_right = -8.32983
+margin_bottom = 16.1279
+
+[node name="Exit2" type="ColorRect" parent="layer2/DS3_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 10.1752
+margin_top = 5.38439
+margin_right = 14.1752
+margin_bottom = 10.3844
+
+[node name="Exit3" type="ColorRect" parent="layer2/DS3_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -8.25977
+margin_top = -4.48707
+margin_right = -4.25977
+margin_bottom = 0.512932
+
+[node name="Wall" type="Line2D" parent="layer2/DS3_Floor2"]
+position = Vector2( -1317.96, 19.7036 )
+points = PoolVector2Array( 1298.81, -34.5598, 1303.6, -39.346, 1332.33, -39.346, 1337.12, -34.5598, 1337.12, -4.88618, 1332.33, -0.100106, 1303.6, -0.100106, 1298.81, -4.88618, 1298.81, -34.5598 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2040582064
+
+[node name="FC1_PlaygroundEntrance" type="Node2D" parent="layer2"]
+position = Vector2( 1103.68, -510.634 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_PlaygroundEntrance"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -11.3671
+margin_right = 19.1532
+margin_bottom = 11.3672
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_PlaygroundEntrance"]
+position = Vector2( -1103.68, 510.634 )
+points = PoolVector2Array( 1084.53, -511.709, 1087.36, -511.709, 1087.36, -517.217, 1092.15, -522.003, 1110.66, -522.003, 1115.44, -517.217, 1115.44, -504.055, 1110.66, -499.269, 1107.92, -499.269, 1107.92, -502.216, 1102.64, -502.216, 1102.64, -499.269, 1092.15, -499.269, 1087.36, -504.055, 1087.36, -506.427, 1084.65, -506.427 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2040594400
+
+[node name="FC1_Playground" type="Node2D" parent="layer2"]
+position = Vector2( 1033.33, -517.096 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Playground"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -49.3195
+margin_top = -29.6742
+margin_right = 49.3196
+margin_bottom = 29.6742
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Playground"]
+position = Vector2( -1033.33, 517.096 )
+points = PoolVector2Array( 1082.51, -511.626, 1080.02, -511.626, 1080.02, -534.447, 1067.69, -546.771, 996.337, -546.771, 984.007, -534.447, 984.007, -499.748, 996.337, -487.424, 1067.69, -487.424, 1080.02, -499.748, 1080.02, -506.386, 1082.47, -506.386 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578197328
+
+[node name="FC1_Staircase" type="Node2D" parent="layer2"]
+position = Vector2( 1330.26, -698.851 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Staircase"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -20.5897
+margin_top = -32.0673
+margin_right = 20.5896
+margin_bottom = 32.0673
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Staircase"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 4.4292
+margin_top = -21.8967
+margin_right = 8.4292
+margin_bottom = -16.8967
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Staircase"]
+position = Vector2( -1330.26, 698.851 )
+points = PoolVector2Array( 1309.67, -725.77, 1314.82, -730.915, 1345.7, -730.915, 1350.85, -725.77, 1350.85, -671.927, 1345.7, -666.782, 1314.82, -666.782, 1309.67, -671.927, 1309.67, -672.571, 1314.07, -672.571, 1314.07, -677.123, 1309.67, -677.123, 1309.67, -725.77 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307705888
+
+[node name="FC1_House3F2" type="Node2D" parent="layer2"]
+position = Vector2( 1258.42, -555.777 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_House3F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -25.5615
+margin_top = -10.7689
+margin_right = 25.5615
+margin_bottom = 10.7689
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_House3F2"]
+position = Vector2( -1258.42, 555.777 )
+points = PoolVector2Array( 1272.95, -543.378, 1272.95, -545.009, 1246.41, -545.009, 1246.41, -548.394, 1241.33, -548.394, 1241.33, -545.009, 1238.56, -545.009, 1232.87, -550.677, 1232.87, -560.179, 1238.56, -565.73, 1279.46, -565.73, 1279.46, -545.009, 1276.91, -545.009, 1276.91, -543.378 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FC1_House4" type="Node2D" parent="layer2"]
+position = Vector2( 1277.5, -531.805 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_House4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -18.5632
+margin_top = -34.0294
+margin_right = 18.5631
+margin_bottom = 34.0294
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_House4"]
+position = Vector2( -1277.5, 531.805 )
+points = PoolVector2Array( 1296.63, -528.702, 1294.49, -528.702, 1294.49, -514.096, 1291.42, -505.169, 1263.58, -505.169, 1258.93, -512.9, 1258.93, -514.762, 1262.67, -514.762, 1262.67, -520.562, 1258.93, -520.562, 1258.93, -528.528, 1263.58, -541.96, 1272.95, -541.96, 1272.95, -543.669 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/FC1_House4"]
+position = Vector2( -1277.5, 531.805 )
+points = PoolVector2Array( 1296.63, -530.052, 1294.43, -530.052, 1294.43, -534.182, 1291.42, -541.96, 1276.91, -541.96, 1276.91, -543.786 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034263312
+
+[node name="FC1_Tent01" type="Node2D" parent="layer2"]
+position = Vector2( 1188.9, -630.312 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Tent01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.666
+margin_top = -8.23029
+margin_right = 14.6661
+margin_bottom = 8.23035
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Tent01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.74158
+margin_top = 4.11517
+margin_right = 2.25842
+margin_bottom = 9.11517
+
+[node name="Wall" type="Line2D" parent="layer2/FC1_Tent01"]
+position = Vector2( -1188.9, 630.312 )
+points = PoolVector2Array( 1203.55, -625.741, 1199.89, -622.083, 1177.89, -622.083, 1174.22, -625.741, 1174.22, -634.886, 1177.89, -638.544, 1199.89, -638.544, 1203.55, -634.886, 1203.55, -625.741 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 6619248
+
+[node name="FC1_Tent02" type="Node2D" parent="layer2"]
+position = Vector2( 1242.43, -635.823 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Tent02"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.3837
+margin_top = -7.50507
+margin_right = 13.3837
+margin_bottom = 7.50507
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Tent02"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.58923
+margin_top = 3.7525
+margin_right = 2.41077
+margin_bottom = 8.7525
+
+[node name="Wall" type="Line2D" parent="layer2/FC1_Tent02"]
+position = Vector2( -1242.43, 635.823 )
+points = PoolVector2Array( 1255.82, -631.655, 1252.47, -628.32, 1232.4, -628.32, 1229.05, -631.655, 1229.05, -639.995, 1232.4, -643.33, 1252.47, -643.33, 1255.82, -639.995, 1255.82, -631.655 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308651568
+
+[node name="FC1_Tent03" type="Node2D" parent="layer2"]
+position = Vector2( 1196.8, -623.387 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Tent03"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -12.5288
+margin_top = -7.02209
+margin_right = 12.5288
+margin_bottom = 7.02203
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Tent03"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -0.86145
+margin_top = 3.51105
+margin_right = 3.13855
+margin_bottom = 8.51105
+
+[node name="Wall" type="Line2D" parent="layer2/FC1_Tent03"]
+position = Vector2( -1196.8, 623.387 )
+points = PoolVector2Array( 1209.34, -619.485, 1206.2, -616.364, 1187.41, -616.364, 1184.28, -619.485, 1184.28, -627.287, 1187.41, -630.408, 1206.2, -630.408, 1209.34, -627.287, 1209.34, -619.485 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578197328
+
+[node name="FC1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 1187.63, -539.949 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -93.3719
+margin_top = -72.2711
+margin_right = 93.3718
+margin_bottom = 72.2711
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 54.2274
+margin_top = -6.58099
+margin_right = 58.2274
+margin_bottom = -1.58099
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Floor1"]
+position = Vector2( -1187.63, 539.949 )
+points = PoolVector2Array( 1156.66, -464.543, 1156.66, -467.681, 1106.51, -467.681, 1094.26, -479.922, 1094.26, -566.706, 1106.51, -576.571, 1217.79, -576.571, 1217.79, -582.019 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/FC1_Floor1"]
+position = Vector2( -1187.63, 539.949 )
+points = PoolVector2Array( 1162.3, -464.66, 1162.3, -467.681, 1268.75, -467.681, 1281, -479.922, 1281, -566.706, 1268.75, -576.571, 1223.23, -576.571, 1223.23, -581.936 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 70.4728
+margin_top = 20.2535
+margin_right = 74.4728
+margin_bottom = 25.2535
+
+[node name="FC1_Bridge" type="Node2D" parent="layer2"]
+position = Vector2( 1392.77, -702.95 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Bridge"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -98.3129
+margin_top = -45.4578
+margin_right = 98.3129
+margin_bottom = 45.4578
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Bridge"]
+position = Vector2( -1392.77, 702.95 )
+points = PoolVector2Array( 1421.07, -652.614, 1421.07, -657.492, 1407.75, -657.492, 1407.75, -708.274, 1320.33, -708.274, 1320.33, -727.202, 1440.62, -727.202, 1440.62, -657.492, 1428.36, -657.492, 1428.36, -652.498 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036133712
+
+[node name="FC1_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1156.98, -444.171 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -41.6582
+margin_top = -18.9492
+margin_right = 41.6581
+margin_bottom = 18.9492
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Floor2"]
+position = Vector2( -1156.98, 444.171 )
+points = PoolVector2Array( 1138.25, -421.245, 1138.25, -425.222, 1125.74, -425.222, 1115.33, -432.091, 1115.33, -456.251, 1125.74, -463.121, 1156.04, -463.121, 1156.04, -465.943 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2040594112
+
+[node name="Wall1" type="Line2D" parent="layer2/FC1_Floor2"]
+position = Vector2( -1156.98, 444.171 )
+points = PoolVector2Array( 1144.2, -421.245, 1144.2, -425.222, 1188.23, -425.222, 1198.64, -432.091, 1198.64, -456.251, 1188.23, -463.121, 1161.76, -463.121, 1161.76, -465.885 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1304689312
+
+[node name="FC1_Cave" type="Node2D" parent="layer2"]
+position = Vector2( 1429.77, -778.436 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Cave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -17.6104
+margin_top = -18.8149
+margin_right = 17.6104
+margin_bottom = 18.8149
+
+[node name="Exit" type="ColorRect" parent="layer2/FC1_Cave"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.26392
+margin_top = 17.3735
+margin_right = 0.736084
+margin_bottom = 22.3735
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC1_Cave"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -20.9503
+margin_top = -13.6559
+margin_right = -16.9503
+margin_bottom = -8.65594
+
+[node name="Wall" type="Line2D" parent="layer2/FC1_Cave"]
+position = Vector2( -1429.77, 778.436 )
+points = PoolVector2Array( 1442.96, -759.624, 1416.55, -759.624, 1412.14, -764.024, 1412.14, -792.854, 1416.55, -797.255, 1442.96, -797.255, 1447.36, -792.854, 1447.36, -764.024, 1442.96, -759.624 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FC1_Tunnels" type="Node2D" parent="layer2"]
+position = Vector2( 1317.05, -521.807 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC1_Tunnels"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.6321
+margin_top = -19.1447
+margin_right = 19.6321
+margin_bottom = 19.1447
+
+[node name="Wall0" type="Line2D" parent="layer2/FC1_Tunnels"]
+position = Vector2( -1317.05, 521.807 )
+points = PoolVector2Array( 1297.66, -533.041, 1309.16, -533.061, 1335.75, -509.146, 1335.75, -503.629, 1326.82, -503.629, 1300.07, -527.429, 1297.7, -527.429 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578182864
+
+[node name="FC2_House1F1" type="Node2D" parent="layer2"]
+position = Vector2( 1421.32, -571.905 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_House1F1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -18.7181
+margin_top = -10.7686
+margin_right = 18.7183
+margin_bottom = 10.7686
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_House1F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -12.5922
+margin_top = 0.566772
+margin_right = -8.59216
+margin_bottom = 5.56677
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_House1F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.113525
+margin_top = -5.32764
+margin_right = 4.11353
+margin_bottom = -0.327637
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_House1F1"]
+position = Vector2( -1421.32, 571.905 )
+points = PoolVector2Array( 1440.03, -565.808, 1435.35, -561.132, 1407.27, -561.132, 1402.59, -565.808, 1402.59, -577.994, 1407.27, -582.67, 1435.35, -582.67, 1440.03, -577.994, 1440.03, -565.808 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FC2_House1F2" type="Node2D" parent="layer2"]
+position = Vector2( 1421.02, -593.193 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_House1F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -10.7689
+margin_right = 19.1532
+margin_bottom = 10.7689
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_House1F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -6.58386
+margin_top = 0.11969
+margin_right = -2.58386
+margin_bottom = 5.11969
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_House1F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.119751
+margin_top = -5.62372
+margin_right = 4.11975
+margin_bottom = -0.623718
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_House1F2"]
+position = Vector2( -1421.02, 593.193 )
+points = PoolVector2Array( 1440.18, -587.216, 1435.39, -582.43, 1406.66, -582.43, 1401.87, -587.216, 1401.87, -599.182, 1406.66, -603.968, 1435.39, -603.968, 1440.18, -599.182, 1440.18, -587.216 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1587015776
+
+[node name="FC2_House3F1" type="Node2D" parent="layer2"]
+position = Vector2( 1449.31, -550.638 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_House3F1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -16.2013
+margin_top = -9.10138
+margin_right = 16.2013
+margin_bottom = 9.10144
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_House3F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.886108
+margin_top = 6.5733
+margin_right = 4.88611
+margin_bottom = 11.5733
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_House3F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.0760498
+margin_top = -4.75293
+margin_right = 4.07605
+margin_bottom = 0.24707
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_House3F1"]
+position = Vector2( -1449.31, 550.638 )
+points = PoolVector2Array( 1461.46, -541.529, 1437.16, -541.529, 1433.11, -545.574, 1433.11, -555.687, 1437.16, -559.732, 1461.46, -559.732, 1465.51, -555.687, 1465.51, -545.574, 1461.46, -541.529 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308627376
+
+[node name="FC2_House3F2" type="Node2D" parent="layer2"]
+position = Vector2( 1450.09, -568.838 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_House3F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.9117
+margin_top = -9.14465
+margin_right = 15.9117
+margin_bottom = 9.14459
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_House3F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.0963135
+margin_top = -4.52417
+margin_right = 4.09631
+margin_bottom = 0.47583
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_House3F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 8.29333
+margin_top = 0.866333
+margin_right = 12.2933
+margin_bottom = 5.86633
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_House3F2"]
+position = Vector2( -1450.09, 568.838 )
+points = PoolVector2Array( 1462.02, -559.685, 1438.16, -559.685, 1434.18, -563.656, 1434.18, -574.004, 1438.16, -577.975, 1462.02, -577.975, 1466, -574.004, 1466, -563.656, 1462.02, -559.685 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7012451
+
+[node name="FC2_House4F1" type="Node2D" parent="layer2"]
+position = Vector2( 1380.08, -488.017 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_House4F1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -10.7689
+margin_right = 19.1532
+margin_bottom = 10.7689
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_House4F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.66858
+margin_top = 7.65787
+margin_right = -0.668579
+margin_bottom = 12.6579
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_House4F1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.119751
+margin_top = -5.62375
+margin_right = 4.11975
+margin_bottom = -0.623749
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_House4F1"]
+position = Vector2( -1380.08, 488.017 )
+points = PoolVector2Array( 1399.24, -482.043, 1394.45, -477.257, 1365.72, -477.257, 1360.93, -482.043, 1360.93, -494.008, 1365.72, -498.794, 1394.45, -498.794, 1399.24, -494.008, 1399.24, -482.043 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1578182864
+
+[node name="FC2_House4F2" type="Node2D" parent="layer2"]
+position = Vector2( 1379.48, -510.153 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_House4F2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.7517
+margin_top = -11.3671
+margin_right = 19.7518
+margin_bottom = 11.3672
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_House4F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -6.58398
+margin_top = -0.837616
+margin_right = -2.58398
+margin_bottom = 4.16238
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_House4F2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.119629
+margin_top = -5.62378
+margin_right = 4.11963
+margin_bottom = -0.623779
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_House4F2"]
+position = Vector2( -1379.48, 510.153 )
+points = PoolVector2Array( 1399.24, -503.729, 1394.3, -498.794, 1364.67, -498.794, 1359.73, -503.729, 1359.73, -516.592, 1364.67, -521.528, 1394.3, -521.528, 1399.24, -516.592, 1399.24, -503.729 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1587007392
+
+[node name="FC2_Floor02" type="Node2D" parent="layer2"]
+position = Vector2( 1425.95, -477.83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_Floor02"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -42.1371
+margin_top = -43.0755
+margin_right = 42.137
+margin_bottom = 43.0755
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_Floor02"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -8.02051
+margin_top = 10.6492
+margin_right = -4.02051
+margin_bottom = 15.6492
+
+[node name="Wall0" type="Line2D" parent="layer2/FC2_Floor02"]
+position = Vector2( -1425.95, 477.83 )
+points = PoolVector2Array( 1405.44, -453.251, 1394.9, -463.781, 1394.9, -491.901, 1405.44, -502.43, 1409.4, -502.43, 1409.4, -499.396, 1415.59, -499.396, 1415.59, -502.43, 1442.77, -502.43, 1453.3, -491.901, 1453.3, -463.781, 1442.77, -453.251, 1405.44, -453.251 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1322777002
+
+[node name="FC2_Tunnels" type="Node2D" parent="layer2"]
+position = Vector2( 1370.23, -425.994 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FC2_Tunnels"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.0345
+margin_top = -15.5011
+margin_right = 15.0344
+margin_bottom = 15.5011
+
+[node name="Exit" type="ColorRect" parent="layer2/FC2_Tunnels"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 10.1599
+margin_top = 14.3855
+margin_right = 14.1599
+margin_bottom = 19.3855
+
+[node name="Exit2" type="ColorRect" parent="layer2/FC2_Tunnels"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -9.16174
+margin_top = -11.0387
+margin_right = -5.16174
+margin_bottom = -6.0387
+
+[node name="Wall" type="Line2D" parent="layer2/FC2_Tunnels"]
+position = Vector2( -1370.23, 425.994 )
+points = PoolVector2Array( 1358.97, -410.504, 1355.21, -414.261, 1355.21, -437.747, 1358.97, -441.505, 1381.52, -441.505, 1385.28, -437.747, 1385.28, -414.261, 1381.52, -410.504, 1358.97, -410.504 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FS1_ForestFloor01" type="Node2D" parent="layer2"]
+position = Vector2( 365.386, -429.248 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS1_ForestFloor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -72.3034
+margin_top = -55.5195
+margin_right = 72.3034
+margin_bottom = 55.5195
+
+[node name="Exit" type="ColorRect" parent="layer2/FS1_ForestFloor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 38.5563
+margin_top = -31.2153
+margin_right = 42.5563
+margin_bottom = -26.2153
+
+[node name="Exit2" type="ColorRect" parent="layer2/FS1_ForestFloor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -57.7589
+margin_top = -26.1315
+margin_right = -53.7589
+margin_bottom = -21.1315
+
+[node name="Wall0" type="Line2D" parent="layer2/FS1_ForestFloor01"]
+position = Vector2( -365.386, 429.248 )
+points = PoolVector2Array( 353.488, -379.669, 353.488, -384.826, 311.157, -384.826, 293.081, -402.894, 293.081, -466.705, 311.157, -484.772, 419.612, -484.772, 437.688, -466.705, 437.688, -402.894, 419.612, -384.826, 361.74, -384.826, 361.74, -379.552 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2040595600
+
+[node name="FS1_ForestFloor02" type="Node2D" parent="layer2"]
+position = Vector2( 409.438, -480.459 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS1_ForestFloor02"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -28.7298
+margin_top = -20.5805
+margin_right = 28.7298
+margin_bottom = 20.5805
+
+[node name="Wall0" type="Line2D" parent="layer2/FS1_ForestFloor02"]
+position = Vector2( -409.438, 480.459 )
+points = PoolVector2Array( 411.808, -504.981, 411.808, -501.045, 387.889, -501.045, 380.707, -493.866, 380.707, -467.064, 387.889, -459.884, 403.509, -459.884, 403.509, -463.318, 408.701, -463.318, 408.701, -459.884, 430.984, -459.884, 438.167, -467.064, 438.167, -493.866, 430.984, -501.045, 417.996, -501.045, 417.996, -504.981 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586966944
+
+[node name="FS1_ForestFloor03" type="Node2D" parent="layer2"]
+position = Vector2( 299.5, -474.871 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS1_ForestFloor03"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -20.3929
+margin_top = -22.0742
+margin_right = 20.3929
+margin_bottom = 22.0742
+
+[node name="Wall0" type="Line2D" parent="layer2/FS1_ForestFloor03"]
+position = Vector2( -299.5, 474.871 )
+points = PoolVector2Array( 279.211, -488.001, 281.072, -488.001, 281.072, -490.459, 286.171, -496.951, 314.78, -496.951, 319.879, -490.459, 319.879, -459.296, 314.78, -452.804, 312.01, -452.804, 312.01, -454.537, 306.729, -454.537, 306.729, -452.804, 286.171, -452.804, 281.072, -459.296, 281.072, -481.874, 279.129, -481.874 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586963360
+
+[node name="FS2_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 434.65, -565.969 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS2_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -40.9071
+margin_top = -75.1332
+margin_right = 40.9071
+margin_bottom = 75.1332
+
+[node name="Wall0" type="Line2D" parent="layer2/FS2_Floor1"]
+position = Vector2( -434.65, 565.969 )
+points = PoolVector2Array( 411.23, -502.098, 411.23, -505.42, 403.976, -505.42, 393.75, -516.765, 393.75, -539.222, 390.564, -539.222 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586963360
+
+[node name="Wall1" type="Line2D" parent="layer2/FS2_Floor1"]
+position = Vector2( -434.65, 565.969 )
+points = PoolVector2Array( 390.564, -545.806, 393.75, -545.806, 393.75, -629.757, 403.976, -641.102, 459.258, -641.102, 469.485, -629.757, 469.485, -575.582, 475.183, -575.582 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -598721376
+
+[node name="Wall2" type="Line2D" parent="layer2/FS2_Floor1"]
+position = Vector2( -434.65, 565.969 )
+points = PoolVector2Array( 418.116, -502.098, 418.116, -505.42, 459.258, -505.42, 469.485, -516.765, 469.485, -571.002, 475.183, -571.002 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FS2_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 522.686, -563.707 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS2_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -47.9919
+margin_top = -54.2258
+margin_right = 47.9919
+margin_bottom = 54.2258
+
+[node name="Exit" type="ColorRect" parent="layer2/FS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 31.8527
+margin_top = -3.26788
+margin_right = 35.8527
+margin_bottom = 1.73212
+
+[node name="Exit2" type="ColorRect" parent="layer2/FS2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 18.3782
+margin_top = -22.6839
+margin_right = 22.3782
+margin_bottom = -17.6839
+
+[node name="Wall0" type="Line2D" parent="layer2/FS2_Floor2"]
+position = Vector2( -522.686, 563.707 )
+points = PoolVector2Array( 475.335, -575.598, 478.39, -575.598, 478.39, -595.346, 486.692, -615.323, 494.164, -615.323, 494.164, -619.381 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/FS2_Floor2"]
+position = Vector2( -522.686, 563.707 )
+points = PoolVector2Array( 475.335, -570.988, 478.39, -570.988, 478.39, -529.46, 490.388, -509.482, 558.68, -509.482, 570.678, -529.46, 570.678, -595.346, 558.68, -615.323, 499.727, -615.323, 499.727, -619.258 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2035723776
+
+[node name="FS2_Floor4" type="Node2D" parent="layer2"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="g6068-6" type="Node2D" parent="layer2/FS2_Floor4"]
+position = Vector2( 558.589, -482.92 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS2_Floor4/g6068-6"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -90.4585
+margin_right = 19.1532
+margin_bottom = 90.4585
+
+[node name="Wall0" type="Line2D" parent="layer2/FS2_Floor4"]
+points = PoolVector2Array( 553.747, -567.62, 561.413, -567.62, 561.413, -393.052, 553.747, -393.052, 553.747, -567.62 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FS3_Cave" type="Node2D" parent="layer2"]
+position = Vector2( 471.784, -719.899 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS3_Cave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -26.3854
+margin_top = -20.1019
+margin_right = 26.3854
+margin_bottom = 20.1019
+
+[node name="Wall0" type="Line2D" parent="layer2/FS3_Cave"]
+position = Vector2( -471.784, 719.899 )
+points = PoolVector2Array( 491.565, -739.992, 498.162, -733.172, 498.162, -718.553, 494.813, -718.553, 494.813, -713.36, 498.162, -713.36, 498.162, -706.609, 491.565, -699.789, 451.986, -699.789, 445.39, -706.609, 445.39, -713.068, 448.214, -713.068, 448.214, -718.378, 445.39, -718.378, 445.39, -733.172, 451.986, -739.992, 491.565, -739.992 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308600688
+
+[node name="FS3_MushroomCave" type="Node2D" parent="layer2"]
+position = Vector2( 397.866, -688.471 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS3_MushroomCave"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.8604
+margin_top = -16.6149
+margin_right = 11.8604
+margin_bottom = 16.6149
+
+[node name="Exit" type="ColorRect" parent="layer2/FS3_MushroomCave"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.077
+margin_top = 15.2057
+margin_right = -0.0769958
+margin_bottom = 20.2057
+
+[node name="Wall" type="Line2D" parent="layer2/FS3_MushroomCave"]
+position = Vector2( -397.866, 688.471 )
+points = PoolVector2Array( 409.723, -674.828, 406.758, -671.861, 388.967, -671.861, 386.002, -674.828, 386.002, -702.125, 388.967, -705.092, 406.758, -705.092, 409.723, -702.125, 409.723, -674.828 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586949792
+
+[node name="FS3_ForestFloor01" type="Node2D" parent="layer2"]
+position = Vector2( 529.839, -674.112 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS3_ForestFloor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -51.235
+margin_top = -61.6206
+margin_right = 51.235
+margin_bottom = 61.6207
+
+[node name="Exit" type="ColorRect" parent="layer2/FS3_ForestFloor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -34.4365
+margin_top = -44.1976
+margin_right = -30.4365
+margin_bottom = -39.1976
+
+[node name="Wall0" type="Line2D" parent="layer2/FS3_ForestFloor01"]
+position = Vector2( -529.839, 674.112 )
+points = PoolVector2Array( 494.197, -617.822, 494.197, -621.948, 492.988, -621.948, 480.296, -634.751, 480.296, -722.93, 493.105, -735.732, 546.415, -735.732, 559.224, -722.93, 559.224, -634.751, 546.415, -621.948, 499.849, -621.948, 499.849, -617.863 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="FS3_CradleChamber" type="Node2D" parent="layer2"]
+position = Vector2( 383.479, -767.942 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS3_CradleChamber"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -43.0947
+margin_top = -39.7252
+margin_right = 43.0947
+margin_bottom = 39.7252
+
+[node name="Wall0" type="Line2D" parent="layer2/FS3_CradleChamber"]
+position = Vector2( -383.479, 767.942 )
+points = PoolVector2Array( 379.133, -807.638, 379.133, -803.958, 351.156, -803.958, 340.382, -793.19, 340.382, -738.975, 351.156, -728.206, 379.646, -728.206, 379.646, -731.241, 385.013, -731.241, 385.013, -728.206, 415.798, -728.206, 426.572, -738.975, 426.572, -793.19, 415.798, -803.958, 385.652, -803.958, 385.652, -807.555, 379.133, -807.638 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308602800
+
+[node name="FS4_Ladder" type="Node2D" parent="layer2"]
+position = Vector2( 173.849, -633.381 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS4_Ladder"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -8.04665
+margin_top = -10.3483
+margin_right = 8.04666
+margin_bottom = 10.3483
+
+[node name="Exit" type="ColorRect" parent="layer2/FS4_Ladder"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -0.754379
+margin_top = -10.3188
+margin_right = 3.24562
+margin_bottom = -5.31885
+
+[node name="Wall" type="Line2D" parent="layer2/FS4_Ladder"]
+position = Vector2( -173.849, 633.381 )
+points = PoolVector2Array( 167.814, -623.032, 165.802, -624.208, 165.802, -642.553, 167.814, -643.729, 179.883, -643.729, 181.895, -642.553, 181.895, -624.208, 179.883, -623.032, 167.814, -623.032 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586949792
+
+[node name="MM1_Floor4" type="Node2D" parent="layer2"]
+position = Vector2( 203.036, -124.909 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM1_Floor4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -102.755
+margin_top = -48.2094
+margin_right = 102.755
+margin_bottom = 48.2094
+
+[node name="Exit" type="ColorRect" parent="layer2/MM1_Floor4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -33.3954
+margin_top = -29.5112
+margin_right = -29.3954
+margin_bottom = -24.5112
+
+[node name="Wall0" type="Line2D" parent="layer2/MM1_Floor4"]
+position = Vector2( -203.036, 124.909 )
+points = PoolVector2Array( 266.784, -76.9445, 266.784, -80.3874, 125.953, -80.3874, 100.264, -105.91, 100.264, -143.89, 125.953, -169.413, 276.392, -169.413, 298.385, -143.89, 298.385, -105.91, 276.392, -80.3874, 273.35, -80.3874, 273.35, -76.9445 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1308600688
+
+[node name="Exit2" type="ColorRect" parent="layer2/MM1_Floor4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 54.6481
+margin_top = -33.5673
+margin_right = 58.6481
+margin_bottom = -28.5673
+
+[node name="Exit3" type="ColorRect" parent="layer2/MM1_Floor4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -94.4573
+margin_top = 12.2917
+margin_right = -90.4573
+margin_bottom = 17.2917
+
+[node name="MM1_Shaft" type="Node2D" parent="layer2"]
+position = Vector2( 173.437, -169.829 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM1_Shaft"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.4874
+margin_top = -17.0151
+margin_right = 19.4874
+margin_bottom = 17.0151
+
+[node name="Wall0" type="Line2D" parent="layer2/MM1_Shaft"]
+position = Vector2( -173.437, 169.829 )
+points = PoolVector2Array( 158.82, -186.835, 170.772, -186.835, 170.772, -183.286, 176.053, -183.286, 176.053, -186.835, 188.051, -186.835, 192.923, -182.109, 192.923, -157.531, 188.051, -152.805, 174.325, -152.805, 174.325, -155.839, 168.899, -155.839, 168.899, -152.805, 158.82, -152.805, 153.949, -157.531, 153.949, -182.109, 158.82, -186.835 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307813984
+
+[node name="MM1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 184.613, -386.838 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -56.5134
+margin_top = -27.8858
+margin_right = 56.5134
+margin_bottom = 27.8858
+
+[node name="Exit" type="ColorRect" parent="layer2/MM1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -5.51035
+margin_top = -18.0301
+margin_right = -1.51035
+margin_bottom = -13.0301
+
+[node name="Exit2" type="ColorRect" parent="layer2/MM1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -45.1873
+margin_top = 8.91797
+margin_right = -41.1873
+margin_bottom = 13.918
+
+[node name="Wall0" type="Line2D" parent="layer2/MM1_Floor1"]
+position = Vector2( -184.613, 386.838 )
+points = PoolVector2Array( 184.985, -359.458, 184.985, -362.146, 142.227, -362.146, 128.099, -375.853, 128.099, -401.01, 142.227, -414.717, 226.997, -414.717, 241.126, -401.01, 241.126, -375.853, 226.997, -362.146, 190.703, -362.146, 190.703, -359.458 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586936480
+
+[node name="Exit3" type="ColorRect" parent="layer2/MM1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 43.6939
+margin_top = 16.8401
+margin_right = 47.6939
+margin_bottom = 21.8401
+
+[node name="MM1_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 176.859, -318.148 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM1_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -78.0012
+margin_top = -41.5924
+margin_right = 78.0012
+margin_bottom = 41.5924
+
+[node name="Exit" type="ColorRect" parent="layer2/MM1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 17.9731
+margin_top = 33.6368
+margin_right = 21.9731
+margin_bottom = 38.6368
+
+[node name="Wall0" type="Line2D" parent="layer2/MM1_Floor2"]
+position = Vector2( -176.859, 318.148 )
+points = PoolVector2Array( 184.932, -359.681, 184.932, -356.036, 118.362, -356.036, 98.8618, -336.657, 98.8618, -295.926, 118.362, -276.547, 235.364, -276.547, 254.864, -295.926, 254.864, -336.657, 235.364, -356.036, 190.41, -356.036, 190.41, -359.564 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586941984
+
+[node name="Exit2" type="ColorRect" parent="layer2/MM1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -37.5146
+margin_top = 7.63306
+margin_right = -33.5146
+margin_bottom = 12.6331
+
+[node name="Exit3" type="ColorRect" parent="layer2/MM1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -69.0327
+margin_top = 13.1786
+margin_right = -65.0327
+margin_bottom = 18.1786
+
+[node name="Exit4" type="ColorRect" parent="layer2/MM1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 50.9469
+margin_top = -18.1216
+margin_right = 54.9469
+margin_bottom = -13.1216
+
+[node name="MM1_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 204.165, -222.956 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM1_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -64.3083
+margin_top = -52.9358
+margin_right = 64.3083
+margin_bottom = 52.9358
+
+[node name="Exit" type="ColorRect" parent="layer2/MM1_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -9.35706
+margin_top = -11.0959
+margin_right = -5.35706
+margin_bottom = -6.09595
+
+[node name="Exit2" type="ColorRect" parent="layer2/MM1_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -32.6571
+margin_top = 34.524
+margin_right = -28.6571
+margin_bottom = 39.524
+
+[node name="Wall0" type="Line2D" parent="layer2/MM1_Floor3"]
+position = Vector2( -204.165, 222.956 )
+points = PoolVector2Array( 139.855, -189.239, 139.855, -260.286, 155.932, -275.883, 252.395, -275.883, 268.472, -260.286, 268.472, -189.239, 252.395, -173.642, 155.932, -173.642, 139.855, -189.239 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Exit3" type="ColorRect" parent="layer2/MM1_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 52.7158
+margin_top = -17.2875
+margin_right = 56.7158
+margin_bottom = -12.2875
+
+[node name="MM2_BolshieRoom" type="Node2D" parent="layer2"]
+position = Vector2( 391.173, -60.0875 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM2_BolshieRoom"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -45.5367
+margin_top = -24.8881
+margin_right = 45.5368
+margin_bottom = 24.8881
+
+[node name="Exit" type="ColorRect" parent="layer2/MM2_BolshieRoom"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -18.2767
+margin_top = 11.0618
+margin_right = -14.2767
+margin_bottom = 16.0618
+
+[node name="Exit2" type="ColorRect" parent="layer2/MM2_BolshieRoom"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 3.99829
+margin_top = 17.895
+margin_right = 7.99829
+margin_bottom = 22.895
+
+[node name="Wall0" type="Line2D" parent="layer2/MM2_BolshieRoom"]
+position = Vector2( -391.173, 60.0875 )
+points = PoolVector2Array( 375.502, -35.2208, 364.117, -46.5997, 364.117, -73.6171, 375.502, -84.996, 425.324, -84.996, 436.708, -73.6171, 436.708, -46.5997, 425.324, -35.2208, 375.502, -35.2208 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2035709632
+
+[node name="MM2_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 332.639, -5.4003 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM2_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -94.3296
+margin_top = -72.2711
+margin_right = 94.3296
+margin_bottom = 72.2711
+
+[node name="Exit" type="ColorRect" parent="layer2/MM2_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 8.25983
+margin_top = -31.9476
+margin_right = 12.2598
+margin_bottom = -26.9476
+
+[node name="Exit2" type="ColorRect" parent="layer2/MM2_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 40.3414
+margin_top = -43.554
+margin_right = 44.3414
+margin_bottom = -38.554
+
+[node name="Exit3" type="ColorRect" parent="layer2/MM2_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 62.3676
+margin_top = -36.7337
+margin_right = 66.3676
+margin_bottom = -31.7337
+
+[node name="Wall0" type="Line2D" parent="layer2/MM2_Floor1"]
+position = Vector2( -332.639, 5.4003 )
+points = PoolVector2Array( 272.991, -77.6928, 403.384, -77.6928, 426.967, -54.1214, 426.967, 43.2753, 403.384, 66.8467, 261.89, 66.8467, 238.307, 43.2753, 238.307, -54.1214, 261.89, -77.6928, 266.69, -77.6928 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307813984
+
+[node name="MM2_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 332.159, -61.877 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/MM2_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -30.6451
+margin_top = -72.2711
+margin_right = 30.6451
+margin_bottom = 72.2711
+
+[node name="Exit" type="ColorRect" parent="layer2/MM2_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 8.73859
+margin_top = 13.5209
+margin_right = 12.7386
+margin_bottom = 18.5209
+
+[node name="Wall0" type="Line2D" parent="layer2/MM2_Floor2"]
+position = Vector2( -332.159, 61.877 )
+points = PoolVector2Array( 322.365, -135.071, 322.365, -131.297, 309.174, -131.297, 301.513, -123.639, 301.513, -26.8633, 309.174, -19.2055, 355.142, -19.2055, 362.803, -26.8633, 362.803, -123.639, 355.142, -131.297, 328.636, -131.297, 328.636, -134.989 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2032646592
+
+[node name="PP1_CaveFloor" type="Node2D" parent="layer2"]
+position = Vector2( 62.6711, -536.827 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_CaveFloor"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.5983
+margin_top = -21.1797
+margin_right = 13.5983
+margin_bottom = 21.1796
+
+[node name="Wall0" type="Line2D" parent="layer2/PP1_CaveFloor"]
+position = Vector2( -62.6711, 536.827 )
+points = PoolVector2Array( 76.2465, -543.378, 76.2465, -520.424, 72.8468, -515.649, 65.1672, -515.649 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2032646592
+
+[node name="Wall1" type="Line2D" parent="layer2/PP1_CaveFloor"]
+position = Vector2( -62.6711, 536.827 )
+points = PoolVector2Array( 60.4996, -515.649, 52.4488, -515.649, 49.0491, -520.424, 49.0491, -553.234, 52.4488, -558.008, 72.8468, -558.008, 76.2465, -553.234, 76.2465, -548.513 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586936480
+
+[node name="PP1_MonastereyFloor" type="Node2D" parent="layer2"]
+position = Vector2( 135.861, -555.698 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_MonastereyFloor"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.6981
+margin_top = -17.5142
+margin_right = 13.6981
+margin_bottom = 17.5142
+
+[node name="Exit" type="ColorRect" parent="layer2/PP1_MonastereyFloor"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.12665
+margin_top = 13.7165
+margin_right = 2.87335
+margin_bottom = 18.7165
+
+[node name="Exit2" type="ColorRect" parent="layer2/PP1_MonastereyFloor"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -9.47601
+margin_top = 6.12122
+margin_right = -5.47601
+margin_bottom = 11.1212
+
+[node name="Exit3" type="ColorRect" parent="layer2/PP1_MonastereyFloor"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.54138
+margin_top = -8.90802
+margin_right = 1.45862
+margin_bottom = -3.90802
+
+[node name="Wall" type="Line2D" parent="layer2/PP1_MonastereyFloor"]
+position = Vector2( -135.861, 555.698 )
+points = PoolVector2Array( 149.554, -541.791, 146.13, -538.184, 125.582, -538.184, 122.158, -541.791, 122.158, -569.605, 125.582, -573.212, 146.13, -573.212, 149.554, -569.605, 149.554, -541.791 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="PP2_Pocket" type="Node2D" parent="layer2"]
+position = Vector2( 47.9505, -334.641 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP2_Pocket"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.0963
+margin_top = -15.692
+margin_right = 19.0963
+margin_bottom = 15.692
+
+[node name="Wall0" type="Line2D" parent="layer2/PP2_Pocket"]
+position = Vector2( -47.9505, 334.641 )
+points = PoolVector2Array( 56.8067, -346.808, 56.8067, -344.292, 33.6278, -344.292, 28.8537, -339.523, 28.8537, -323.735, 33.6278, -318.966, 62.2722, -318.966, 67.0463, -323.735, 67.0463, -339.523, 62.2722, -344.292, 61.6493, -344.292, 61.6493, -346.808 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586941984
+
+[node name="PP2_Floor01" type="Node2D" parent="layer2"]
+position = Vector2( 63.1724, -401.94 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP2_Floor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -57.9969
+margin_top = -55.4978
+margin_right = 57.9969
+margin_bottom = 55.4978
+
+[node name="Exit" type="ColorRect" parent="layer2/PP2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.77649
+margin_top = -17.9854
+margin_right = 1.22351
+margin_bottom = -12.9854
+
+[node name="Wall0" type="Line2D" parent="layer2/PP2_Floor01"]
+position = Vector2( -63.1724, 401.94 )
+points = PoolVector2Array( 57.1751, -346.643, 57.1751, -348.742, 19.6775, -348.742, 5.17836, -363.234, 5.17836, -442.942, 19.6775, -457.433, 106.673, -457.433, 121.172, -442.942, 121.172, -363.234, 106.673, -348.742, 61.3722, -348.742, 61.3722, -346.719 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="PP2_ShaftFloor" type="Node2D" parent="layer2"]
+position = Vector2( 93.9143, -466.026 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP2_ShaftFloor"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -40.7868
+margin_top = -49.3842
+margin_right = 40.7868
+margin_bottom = 49.3842
+
+[node name="Wall0" type="Line2D" parent="layer2/PP2_ShaftFloor"]
+position = Vector2( -93.9143, 466.026 )
+points = PoolVector2Array( 57.9294, -416.649, 53.1411, -422.671, 53.1411, -477.798, 116.972, -477.798, 116.972, -509.394, 121.761, -515.416, 121.761, -512.44, 128.311, -512.387, 128.311, -515.416, 133.1, -509.394, 133.1, -462.56, 69.2683, -462.362, 69.2683, -422.671, 64.4801, -416.649, 63.6991, -416.649, 63.5889, -421.047, 59.0315, -421.025, 59.0898, -416.649, 57.9294, -416.649 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586956896
+
+[node name="PP3_Floor02" type="Node2D" parent="layer2"]
+position = Vector2( 249.514, -530.125 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP3_Floor02"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -10.0404
+margin_top = -24.6964
+margin_right = 10.0403
+margin_bottom = 24.6965
+
+[node name="Wall0" type="Line2D" parent="layer2/PP3_Floor02"]
+position = Vector2( -249.514, 530.125 )
+points = PoolVector2Array( 245.161, -505.37, 245.161, -508.563, 241.983, -508.563, 239.473, -512.914, 239.473, -550.47, 241.983, -554.821, 257.044, -554.821, 259.554, -550.47, 259.554, -512.914, 257.044, -508.563, 249.416, -508.563, 249.416, -505.37 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1586956896
+
+[node name="PP3_Floor03" type="Node2D" parent="layer2"]
+position = Vector2( 241.708, -463.372 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP3_Floor03"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.0694
+margin_top = -15.7894
+margin_right = 13.0694
+margin_bottom = 15.7894
+
+[node name="Wall0" type="Line2D" parent="layer2/PP3_Floor03"]
+position = Vector2( -241.708, 463.372 )
+points = PoolVector2Array( 238.853, -467.752, 238.853, -464.373, 231.906, -464.373, 228.639, -458.684, 228.639, -453.271, 231.906, -447.582, 251.51, -447.582, 254.777, -453.271, 254.777, -458.684, 251.51, -464.373, 242.756, -464.373, 242.756, -467.694 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="P1_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 149.738, -909.341 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/P1_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -40.4915
+margin_top = -54.2614
+margin_right = 40.4915
+margin_bottom = 54.2614
+
+[node name="Exit" type="ColorRect" parent="layer2/P1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 7.50671
+margin_top = 37.0636
+margin_right = 11.5067
+margin_bottom = 42.0636
+
+[node name="Exit2" type="ColorRect" parent="layer2/P1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 5.20203
+margin_top = -41.0216
+margin_right = 9.20203
+margin_bottom = -36.0216
+
+[node name="Wall" type="Line2D" parent="layer2/P1_Floor2"]
+position = Vector2( -149.738, 909.341 )
+points = PoolVector2Array( 190.223, -865.874, 180.1, -855.081, 119.362, -855.081, 109.239, -865.874, 109.239, -952.812, 119.362, -963.604, 180.1, -963.604, 190.223, -952.812, 190.223, -865.874 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="S1_RightHall" type="Node2D" parent="layer2"]
+position = Vector2( 1326.83, -773.604 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_RightHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -39.367
+margin_right = 19.1532
+margin_bottom = 39.367
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_RightHall"]
+position = Vector2( -1326.83, 773.604 )
+points = PoolVector2Array( 1306.93, -769.563, 1310.71, -769.563, 1310.71, -805.308, 1315.5, -810.42, 1319.57, -810.42, 1319.57, -813.628 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1900715072
+
+[node name="Wall1" type="Line2D" parent="layer2/S1_RightHall"]
+position = Vector2( -1326.83, 773.604 )
+points = PoolVector2Array( 1307.17, -763.778, 1310.71, -763.778, 1310.71, -740.081, 1315.5, -734.968, 1340.53, -734.968, 1345.32, -740.081, 1345.32, -805.308, 1340.53, -810.42, 1324.65, -810.42, 1324.65, -813.628 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307780448
+
+[node name="S1_LeftHall" type="Node2D" parent="layer2"]
+position = Vector2( 1167.42, -768.957 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_LeftHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -22.505
+margin_top = -59.3484
+margin_right = 22.505
+margin_bottom = 59.3484
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_LeftHall"]
+position = Vector2( -1167.42, 768.957 )
+points = PoolVector2Array( 1189.73, -778.613, 1186.22, -778.613, 1186.22, -716.156, 1189.9, -716.156 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307781168
+
+[node name="Wall1" type="Line2D" parent="layer2/S1_LeftHall"]
+position = Vector2( -1167.42, 768.957 )
+points = PoolVector2Array( 1189.73, -784.059, 1186.22, -784.059, 1186.22, -822.676, 1180.6, -828.299, 1150.54, -828.299, 1144.91, -822.676, 1144.91, -715.228, 1150.54, -709.605, 1186.22, -709.605, 1186.22, -711.622, 1189.9, -711.622 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1585933712
+
+[node name="S1_Floor01" type="Node2D" parent="layer2"]
+position = Vector2( 1248.43, -779.956 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_Floor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -55.5443
+margin_top = -69.3994
+margin_right = 55.5443
+margin_bottom = 69.3994
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_Floor01"]
+position = Vector2( -1248.43, 779.956 )
+points = PoolVector2Array( 1189.94, -784.679, 1192.89, -784.679, 1192.89, -824.609, 1206.78, -837.828, 1290.09, -837.828, 1303.98, -824.609, 1303.98, -769.595, 1307.21, -769.595 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307781888
+
+[node name="Wall1" type="Line2D" parent="layer2/S1_Floor01"]
+position = Vector2( -1248.43, 779.956 )
+points = PoolVector2Array( 1189.82, -779.661, 1192.89, -779.661, 1192.89, -724.432, 1206.78, -710.552, 1290.09, -710.552, 1303.98, -724.432, 1303.98, -763.653, 1307.1, -763.653 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="S1_EntranceHall" type="Node2D" parent="layer2"]
+position = Vector2( 1218.91, -714.442 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_EntranceHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -28.251
+margin_top = -17.2302
+margin_right = 28.251
+margin_bottom = 17.2302
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_EntranceHall"]
+position = Vector2( -1218.91, 714.442 )
+points = PoolVector2Array( 1190.19, -716.202, 1193.7, -716.202, 1193.7, -724.61, 1200.76, -731.669, 1237.75, -731.669, 1244.81, -724.61, 1244.81, -717.151, 1246.97, -717.151 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307781408
+
+[node name="Wall1" type="Line2D" parent="layer2/S1_EntranceHall"]
+position = Vector2( -1218.91, 714.442 )
+points = PoolVector2Array( 1190.27, -711.581, 1193.7, -711.581, 1193.7, -705.796, 1200.76, -698.736, 1216.07, -698.736, 1216.07, -697.263 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall2" type="Line2D" parent="layer2/S1_EntranceHall"]
+position = Vector2( -1218.91, 714.442 )
+points = PoolVector2Array( 1246.91, -712.282, 1244.81, -712.282, 1244.81, -705.796, 1237.75, -698.736, 1222.59, -698.736, 1222.59, -697.263 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307781264
+
+[node name="S1_EntranceHallRight" type="Node2D" parent="layer2"]
+position = Vector2( 1257.36, -721.26 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_EntranceHallRight"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -11.0082
+margin_right = 19.1532
+margin_bottom = 11.0082
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_EntranceHallRight"]
+position = Vector2( -1257.36, 721.26 )
+points = PoolVector2Array( 1247.23, -717.188, 1249.59, -717.188, 1249.59, -727.595, 1254.38, -732.381, 1272.02, -732.381, 1276.8, -727.595, 1276.8, -715.151, 1272.02, -710.365, 1249.59, -710.365, 1249.59, -712.282, 1247.35, -712.282 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1585918288
+
+[node name="S1_RightHallTop" type="Node2D" parent="layer2"]
+position = Vector2( 1325.36, -824.853 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_RightHallTop"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -17.5459
+margin_top = -10.7408
+margin_right = 17.5458
+margin_bottom = 10.7408
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_RightHallTop"]
+position = Vector2( -1325.36, 824.853 )
+points = PoolVector2Array( 1319.52, -812.325, 1319.52, -814.112, 1312.2, -814.112, 1307.81, -817.815, 1307.81, -831.89, 1312.2, -835.593, 1319.53, -835.593, 1319.53, -839.114 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/S1_RightHallTop"]
+position = Vector2( -1325.36, 824.853 )
+points = PoolVector2Array( 1324.71, -812.175, 1324.71, -814.112, 1338.51, -814.112, 1342.9, -817.815, 1342.9, -831.89, 1338.51, -835.593, 1326.05, -835.593, 1326.05, -839.114 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034362768
+
+[node name="S2_Tunnels" type="Node2D" parent="layer2"]
+position = Vector2( 1158.88, -1004.67 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_Tunnels"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.8943
+margin_top = -10.7689
+margin_right = 14.8942
+margin_bottom = 10.7689
+
+[node name="Exit" type="ColorRect" parent="layer2/S2_Tunnels"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 10.3329
+margin_top = 7.77753
+margin_right = 14.3329
+margin_bottom = 12.7775
+
+[node name="Exit2" type="ColorRect" parent="layer2/S2_Tunnels"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -11.6361
+margin_top = 7.77753
+margin_right = -7.63611
+margin_bottom = 12.7775
+
+[node name="Wall" type="Line2D" parent="layer2/S2_Tunnels"]
+position = Vector2( -1158.88, 1004.67 )
+points = PoolVector2Array( 1170.06, -1015.43, 1173.78, -1010.64, 1173.78, -998.675, 1170.06, -993.889, 1147.72, -993.889, 1144, -998.675, 1144, -1010.64, 1147.72, -1015.43, 1170.06, -1015.43 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1306368688
+
+[node name="S2_LeftHall" type="Node2D" parent="layer2"]
+position = Vector2( 1203, -926.888 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_LeftHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -35.8962
+margin_right = 19.1532
+margin_bottom = 35.8962
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_LeftHall"]
+position = Vector2( -1203, 926.888 )
+points = PoolVector2Array( 1202.34, -912.985, 1200.21, -912.985, 1200.21, -941.478, 1211.46, -951.784, 1211.46, -959.077, 1188.64, -959.077, 1183.85, -954.291, 1183.85, -894.68, 1186.09, -894.68, 1186.09, -891.54 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall1" type="Line2D" parent="layer2/S2_LeftHall"]
+position = Vector2( -1203, 926.888 )
+points = PoolVector2Array( 1202.46, -907.383, 1200.21, -907.383, 1200.21, -899.466, 1195.19, -894.68, 1191.28, -894.68, 1191.28, -891.57 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="S2_LeftHallBottom" type="Node2D" parent="layer2"]
+position = Vector2( 1187.47, -885.895 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_LeftHallBottom"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.8802
+margin_top = -10.7687
+margin_right = 11.8802
+margin_bottom = 10.7687
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_LeftHallBottom"]
+position = Vector2( -1187.47, 885.895 )
+points = PoolVector2Array( 1186.06, -891.745, 1186.06, -889.269, 1178.56, -889.269, 1175.59, -884.483, 1175.59, -879.912, 1178.56, -875.126, 1196.38, -875.126, 1199.35, -879.912, 1199.35, -884.483, 1196.38, -889.269, 1191.27, -889.269, 1191.27, -891.686 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="S2_RightHall" type="Node2D" parent="layer2"]
+position = Vector2( 1320.46, -926.586 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_RightHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -23.4522
+margin_right = 19.1532
+margin_bottom = 23.4522
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_RightHall"]
+position = Vector2( -1320.46, 926.586 )
+points = PoolVector2Array( 1312.31, -907.911, 1315.03, -907.911, 1315.03, -937.848, 1319.82, -942.634, 1323.66, -942.634, 1323.66, -946.493 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 1
+
+[node name="Wall1" type="Line2D" parent="layer2/S2_RightHall"]
+position = Vector2( -1320.46, 926.586 )
+points = PoolVector2Array( 1312.31, -903.125, 1334.82, -903.125, 1339.61, -907.911, 1339.61, -937.848, 1334.82, -942.634, 1328.94, -942.634, 1328.94, -946.493 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036718656
+
+[node name="S2_LeftRoom" type="Node2D" parent="layer2"]
+position = Vector2( 1203.31, -860.564 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_LeftRoom"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -11.4868
+margin_right = 19.1532
+margin_bottom = 11.4868
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_LeftRoom"]
+position = Vector2( -1203.31, 860.564 )
+points = PoolVector2Array( 1215.07, -867.257, 1215.07, -863.298, 1212.3, -863.298, 1212.3, -858.017, 1215.07, -858.017, 1215.07, -853.856, 1210.29, -849.07, 1188.95, -849.07, 1184.16, -853.856, 1184.16, -867.257, 1188.95, -872.043, 1210.29, -872.043, 1215.07, -867.257 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 589833
+
+[node name="S2_RightHallTop" type="Node2D" parent="layer2"]
+position = Vector2( 1319.82, -958.363 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_RightHallTop"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -24.9467
+margin_top = -12.5896
+margin_right = 24.9468
+margin_bottom = 12.5895
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_RightHallTop"]
+position = Vector2( -1319.82, 958.363 )
+points = PoolVector2Array( 1323.64, -945.955, 1323.64, -948.015, 1312.2, -948.015, 1312.2, -962.111, 1302.26, -962.111, 1297.78, -962.111 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036090640
+
+[node name="Wall1" type="Line2D" parent="layer2/S2_RightHallTop"]
+position = Vector2( -1319.82, 958.363 )
+points = PoolVector2Array( 1328.97, -946.018, 1328.97, -948.015, 1341.4, -948.015, 1344.76, -951.512, 1344.76, -967.455, 1341.4, -970.952, 1302.26, -970.952, 1302.26, -968.739, 1302.26, -967.987, 1297.74, -967.987 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1306393584
+
+[node name="S2_EntranceHall" type="Node2D" parent="layer2"]
+position = Vector2( 1320.39, -857.798 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_EntranceHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -24.4342
+margin_top = -17.7086
+margin_right = 24.4342
+margin_bottom = 17.7086
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_EntranceHall"]
+position = Vector2( -1320.39, 857.798 )
+points = PoolVector2Array( 1319.44, -840.394, 1319.44, -843.009, 1314.44, -843.009, 1314.44, -850.037, 1311.9, -850.037 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Wall1" type="Line2D" parent="layer2/S2_EntranceHall"]
+position = Vector2( -1320.39, 857.798 )
+points = PoolVector2Array( 1325.98, -840.435, 1325.98, -843.009, 1338.71, -843.009, 1344.82, -847.756, 1344.82, -870.721, 1338.71, -875.507, 1320.54, -875.507, 1314.44, -870.721, 1314.44, -855.58, 1312.03, -855.58 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="S2_Floor01" type="Node2D" parent="layer2"]
+position = Vector2( 1257.76, -902.479 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_Floor01"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -55.2184
+margin_top = -62.2201
+margin_right = 55.2184
+margin_bottom = 62.2202
+
+[node name="Exit" type="ColorRect" parent="layer2/S2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -43.9659
+margin_top = 40.3235
+margin_right = -39.9659
+margin_bottom = 45.3235
+
+[node name="Exit2" type="ColorRect" parent="layer2/S2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 12.0646
+margin_top = -46.4258
+margin_right = 16.0646
+margin_bottom = -41.4258
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_Floor01"]
+position = Vector2( -1257.76, 902.479 )
+points = PoolVector2Array( 1312.7, -902.659, 1309.98, -902.659, 1309.98, -855.562, 1312.75, -855.562 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Wall1" type="Line2D" parent="layer2/S2_Floor01"]
+position = Vector2( -1257.76, 902.479 )
+points = PoolVector2Array( 1312.75, -908.023, 1309.98, -908.023, 1309.98, -950.45, 1296.18, -964.689, 1219.22, -964.689, 1205.42, -950.45, 1205.42, -912.81, 1202.6, -912.81 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Wall2" type="Line2D" parent="layer2/S2_Floor01"]
+position = Vector2( -1257.76, 902.479 )
+points = PoolVector2Array( 1312.7, -850.016, 1309.98, -850.016, 1309.98, -841.076, 1219.22, -841.076, 1205.42, -854.489, 1205.42, -907.442, 1202.48, -907.442 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1306368688
+
+[node name="Exit3" type="ColorRect" parent="layer2/S2_Floor01"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -26.3379
+margin_top = -45.5199
+margin_right = -22.3379
+margin_bottom = -40.5199
+
+[node name="S3_Hole1Room" type="Node2D" parent="layer2"]
+position = Vector2( 1324.15, -1025.09 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S3_Hole1Room"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -27.2933
+margin_top = -18.666
+margin_right = 27.2933
+margin_bottom = 18.6661
+
+[node name="Exit" type="ColorRect" parent="layer2/S3_Hole1Room"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 21.704
+margin_top = 7.42596
+margin_right = 25.704
+margin_bottom = 12.426
+
+[node name="Wall" type="Line2D" parent="layer2/S3_Hole1Room"]
+position = Vector2( -1324.15, 1025.09 )
+points = PoolVector2Array( 1351.44, -1036.92, 1351.44, -1013.23, 1344.62, -1006.41, 1303.68, -1006.41, 1296.86, -1013.23, 1296.86, -1036.92, 1303.68, -1043.74, 1344.62, -1043.74, 1351.44, -1036.92 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036097232
+
+[node name="S3_Hole4Room" type="Node2D" parent="layer2"]
+position = Vector2( 1456.14, -1004.66 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S3_Hole4Room"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.1532
+margin_top = -14.8371
+margin_right = 19.1532
+margin_bottom = 14.8372
+
+[node name="Exit" type="ColorRect" parent="layer2/S3_Hole4Room"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -13.7664
+margin_top = -9.93134
+margin_right = -9.76636
+margin_bottom = -4.93134
+
+[node name="Wall" type="Line2D" parent="layer2/S3_Hole4Room"]
+position = Vector2( -1456.14, 1004.66 )
+points = PoolVector2Array( 1475.29, -1014.7, 1475.29, -994.6, 1470.51, -989.814, 1441.78, -989.814, 1436.99, -994.6, 1436.99, -1014.7, 1441.78, -1019.49, 1470.51, -1019.49, 1475.29, -1014.7 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1585900048
+
+[node name="S3_Hole5Room" type="Node2D" parent="layer2"]
+position = Vector2( 1473.64, -945.512 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S3_Hole5Room"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -21.0685
+margin_top = -15.7943
+margin_right = 21.0686
+margin_bottom = 15.7944
+
+[node name="Exit" type="ColorRect" parent="layer2/S3_Hole5Room"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -8.02026
+margin_top = -15.196
+margin_right = -4.02026
+margin_bottom = -10.196
+
+[node name="Wall" type="Line2D" parent="layer2/S3_Hole5Room"]
+position = Vector2( -1473.64, 945.512 )
+points = PoolVector2Array( 1494.71, -956.029, 1494.71, -934.971, 1489.44, -929.706, 1457.84, -929.706, 1452.57, -934.971, 1452.57, -956.029, 1457.84, -961.294, 1489.44, -961.294, 1494.71, -956.029 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036210192
+
+[node name="S3_Chambers" type="Node2D" parent="layer2"]
+position = Vector2( 1383.26, -997.168 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S3_Chambers"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.6321
+margin_top = -15.7943
+margin_right = 19.632
+margin_bottom = 15.7944
+
+[node name="Wall0" type="Line2D" parent="layer2/S3_Chambers"]
+position = Vector2( -1383.26, 997.168 )
+points = PoolVector2Array( 1397.98, -981.359, 1375, -981.359, 1375, -984.949, 1369.47, -984.949, 1369.47, -981.359, 1368.54, -981.359, 1363.63, -986.265, 1363.63, -1008.04, 1368.54, -1012.95, 1397.98, -1012.95, 1402.89, -1008.04, 1402.89, -986.265, 1397.98, -981.359 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034345168
+
+[node name="S3_ThroneRoom" type="Node2D" parent="layer2"]
+position = Vector2( 1390.79, -968.404 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S3_ThroneRoom"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -33.0393
+margin_top = -33.0245
+margin_right = 33.0393
+margin_bottom = 33.0245
+
+[node name="Exit" type="ColorRect" parent="layer2/S3_ThroneRoom"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -20.47
+margin_top = -14.7175
+margin_right = -16.47
+margin_bottom = -9.71747
+
+[node name="Exit2" type="ColorRect" parent="layer2/S3_ThroneRoom"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -33.0393
+margin_top = 19.1447
+margin_right = -29.0393
+margin_bottom = 24.1447
+
+[node name="Wall0" type="Line2D" parent="layer2/S3_ThroneRoom"]
+position = Vector2( -1390.79, 968.404 )
+points = PoolVector2Array( 1415.57, -935.367, 1366.01, -935.367, 1357.75, -943.623, 1357.75, -949.864, 1357.75, -982.067, 1366.01, -990.323, 1415.57, -990.323, 1423.83, -982.067, 1423.83, -943.623, 1415.57, -935.367 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036194896
+
+[node name="S2_TopHall" type="Node2D" parent="layer2"]
+position = Vector2( 1261.19, -966.101 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S2_TopHall"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -37.2146
+margin_top = -20.2969
+margin_right = 37.2145
+margin_bottom = 20.2968
+
+[node name="Wall0" type="Line2D" parent="layer2/S2_TopHall"]
+position = Vector2( -1261.19, 966.101 )
+points = PoolVector2Array( 1230.78, -946.013, 1230.78, -951.453, 1224.07, -951.453, 1224.07, -978.195, 1229.6, -986.404, 1289.12, -986.404, 1294.73, -978.195, 1294.73, -968.067, 1297.99, -968.067 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="Wall1" type="Line2D" parent="layer2/S2_TopHall"]
+position = Vector2( -1261.19, 966.101 )
+points = PoolVector2Array( 1235.8, -946.071, 1235.8, -951.453, 1289.12, -951.453, 1294.73, -957.715, 1294.73, -961.891, 1297.82, -961.891 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="SC1_Floor2" type="Node2D" parent="layer2"]
+position = Vector2( 1212.68, 130.06 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC1_Floor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -18.3439
+margin_top = -16.3145
+margin_right = 18.344
+margin_bottom = 16.3145
+
+[node name="Exit" type="ColorRect" parent="layer2/SC1_Floor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -17.0565
+margin_top = 5.31271
+margin_right = -13.0565
+margin_bottom = 10.3127
+
+[node name="Wall" type="Line2D" parent="layer2/SC1_Floor2"]
+position = Vector2( -1212.68, -130.06 )
+points = PoolVector2Array( 1194.34, 141.8, 1194.34, 118.334, 1198.93, 113.752, 1226.44, 113.752, 1231.03, 118.334, 1231.03, 141.8, 1226.44, 146.382, 1198.93, 146.382, 1194.34, 141.8 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="SC1_Tank" type="Node2D" parent="layer2"]
+position = Vector2( 1242.66, 109.903 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC1_Tank"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.8802
+margin_top = -8.07328
+margin_right = 11.8802
+margin_bottom = 8.07328
+
+[node name="Wall0" type="Line2D" parent="layer2/SC1_Tank"]
+position = Vector2( -1242.66, -109.903 )
+points = PoolVector2Array( 1230.78, 115.264, 1230.78, 104.586, 1233.75, 101.851, 1238.04, 101.851, 1238.04, 105.586, 1243.12, 105.586, 1243.12, 101.851, 1251.57, 101.851, 1254.54, 104.586, 1254.54, 115.264, 1251.57, 117.998, 1245.69, 117.998, 1245.69, 114.614, 1240.38, 114.614, 1240.38, 117.998, 1233.75, 117.998, 1230.78, 115.264 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1585889488
+
+[node name="SC1_Floor4" type="Node2D" parent="layer2"]
+position = Vector2( 1259.23, 190.751 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC1_Floor4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.6124
+margin_top = -22.495
+margin_right = 13.6123
+margin_bottom = 22.495
+
+[node name="Exit" type="ColorRect" parent="layer2/SC1_Floor4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -7.40173
+margin_top = -21.8967
+margin_right = -3.40173
+margin_bottom = -16.8967
+
+[node name="Wall0" type="Line2D" parent="layer2/SC1_Floor4"]
+position = Vector2( -1259.23, -190.751 )
+points = PoolVector2Array( 1248.95, 215.435, 1248.95, 213.218, 1245.63, 208.432, 1245.63, 173.015, 1249.03, 168.229, 1269.45, 168.229, 1272.86, 173.015, 1272.86, 208.432, 1269.45, 213.218, 1254.44, 213.218, 1254.5, 215.435 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034323536
+
+[node name="SC2_House2" type="Node2D" parent="layer2"]
+position = Vector2( 1213.16, 256.962 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC2_House2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -20.1108
+margin_top = -24.8881
+margin_right = 20.111
+margin_bottom = 24.888
+
+[node name="Wall0" type="Line2D" parent="layer2/SC2_House2"]
+position = Vector2( -1213.16, -256.962 )
+points = PoolVector2Array( 1198.07, 281.82, 1193.05, 276.795, 1193.05, 237.071, 1198.07, 232.045, 1228.24, 232.045, 1233.27, 237.071, 1233.27, 276.795, 1228.24, 281.82, 1212.86, 281.82, 1212.86, 278.354, 1207.66, 278.354, 1207.66, 281.82, 1198.07, 281.82 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="SC2_House3" type="Node2D" parent="layer2"]
+position = Vector2( 1268.3, 293.757 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC2_House3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.0865
+margin_top = -10.5373
+margin_right = 11.0864
+margin_bottom = 10.5373
+
+[node name="Wall0" type="Line2D" parent="layer2/SC2_House3"]
+position = Vector2( -1268.3, -293.757 )
+points = PoolVector2Array( 1259.98, 304.337, 1257.21, 301.249, 1257.21, 300.409, 1261.34, 300.409, 1261.34, 296.474, 1257.21, 296.474, 1257.21, 286.349, 1259.98, 283.261, 1266.17, 283.261, 1266.28, 287.082, 1271.33, 287.082, 1271.36, 283.261, 1276.61, 283.261, 1279.38, 286.349, 1279.38, 296.474, 1276.33, 296.474, 1276.33, 300.409, 1279.38, 300.409, 1279.38, 301.249, 1276.61, 304.337, 1259.98, 304.337 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1585872656
+
+[node name="SC2_House1" type="Node2D" parent="layer2"]
+position = Vector2( 1254.82, 228.244 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC2_House1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -19.632
+margin_top = -11.9654
+margin_right = 19.6321
+margin_bottom = 11.9654
+
+[node name="Wall0" type="Line2D" parent="layer2/SC2_House1"]
+position = Vector2( -1254.82, -228.244 )
+points = PoolVector2Array( 1253.86, 216.251, 1269.54, 216.251, 1274.45, 221.157, 1274.45, 235.276, 1269.54, 240.181, 1256.4, 240.181, 1256.4, 237.036, 1250.53, 237.036, 1250.53, 240.181, 1240.09, 240.181, 1235.18, 235.276, 1235.18, 221.157, 1240.09, 216.251, 1249.65, 216.251 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 512
+
+[node name="SC2_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 1140.38, 170.811 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/SC2_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -31.1239
+margin_top = -45.9472
+margin_right = 31.124
+margin_bottom = 45.9472
+
+[node name="Exit" type="ColorRect" parent="layer2/SC2_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 5.86572
+margin_top = 39.8447
+margin_right = 9.86572
+margin_bottom = 44.8447
+
+[node name="Exit2" type="ColorRect" parent="layer2/SC2_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -13.4072
+margin_top = -50.2548
+margin_right = -9.40723
+margin_bottom = -45.2548
+
+[node name="Wall" type="Line2D" parent="layer2/SC2_Floor3"]
+position = Vector2( -1140.38, -170.811 )
+points = PoolVector2Array( 1117.03, 216.73, 1109.25, 208.952, 1109.25, 132.614, 1117.03, 124.837, 1163.72, 124.837, 1171.5, 132.614, 1171.5, 208.952, 1163.72, 216.73, 1117.03, 216.73 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="DG1_Hut1inside" type="Node2D" parent="layer2"]
+position = Vector2( 847.177, -286.222 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_Hut1inside"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.2603
+margin_top = -7.43579
+margin_right = 13.2603
+margin_bottom = 7.43576
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_Hut1inside"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.90619
+margin_top = 3.51132
+margin_right = 2.09381
+margin_bottom = 8.51132
+
+[node name="Wall" type="Line2D" parent="layer2/DG1_Hut1inside"]
+position = Vector2( -847.177, 286.222 )
+points = PoolVector2Array( 860.438, -282.104, 857.123, -278.799, 837.232, -278.799, 833.917, -282.104, 833.917, -290.365, 837.232, -293.67, 857.123, -293.67, 860.438, -290.365, 860.438, -282.104 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="DG1_Hut2inside" type="Node2D" parent="layer2"]
+position = Vector2( 901.529, -297.937 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_Hut2inside"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.3009
+margin_top = -8.35474
+margin_right = 11.3008
+margin_bottom = 8.35474
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_Hut2inside"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -1.05945
+margin_top = 6.94464
+margin_right = 2.94055
+margin_bottom = 11.9446
+
+[node name="Wall" type="Line2D" parent="layer2/DG1_Hut2inside"]
+position = Vector2( -901.529, 297.937 )
+points = PoolVector2Array( 912.827, -292.391, 910.002, -289.57, 893.051, -289.57, 890.226, -292.391, 890.226, -303.46, 893.051, -306.281, 910.002, -306.281, 912.827, -303.46, 912.827, -292.391 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307852448
+
+[node name="DG1_LibraryF1" type="Node2D" parent="layer2"]
+position = Vector2( 869.531, -318.976 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_LibraryF1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -60.3328
+margin_top = -22.9731
+margin_right = 60.3328
+margin_bottom = 22.9731
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_LibraryF1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -52.5518
+margin_top = -9.45239
+margin_right = -48.5518
+margin_bottom = -4.45239
+
+[node name="Exit2" type="ColorRect" parent="layer2/DG1_LibraryF1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -53.0306
+margin_top = 18.1274
+margin_right = -49.0306
+margin_bottom = 23.1274
+
+[node name="Wall0" type="Line2D" parent="layer2/DG1_LibraryF1"]
+position = Vector2( -869.531, 318.976 )
+points = PoolVector2Array( 809.197, -311.079, 809.197, -326.873, 820.584, -341.949, 918.476, -341.949, 929.863, -326.873, 929.863, -311.079, 929.863, -296.003, 871.886, -296.003, 871.886, -298.662, 866.834, -298.662, 866.834, -296.003, 809.197, -296.003, 809.197, -311.079 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 512
+
+[node name="DG1_LibraryF0" type="Node2D" parent="layer2"]
+position = Vector2( 823.579, -305.709 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_LibraryF0"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -11.0303
+margin_top = -14.0743
+margin_right = 11.0303
+margin_bottom = 14.0743
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_LibraryF0"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -5.99768
+margin_top = 5.31238
+margin_right = -1.99768
+margin_bottom = 10.3124
+
+[node name="Wall" type="Line2D" parent="layer2/DG1_LibraryF0"]
+position = Vector2( -823.579, 305.709 )
+points = PoolVector2Array( 834.61, -317.025, 834.61, -294.395, 831.852, -291.636, 815.307, -291.636, 812.549, -294.395, 812.549, -317.025, 815.307, -319.784, 831.852, -319.784, 834.61, -317.025 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034345168
+
+[node name="FS2_Floor3" type="Node2D" parent="layer2"]
+position = Vector2( 421.417, -643.108 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS2_Floor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -16.8168
+margin_top = -21.4344
+margin_right = 16.8168
+margin_bottom = 21.4344
+
+[node name="Exit" type="ColorRect" parent="layer2/FS2_Floor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -0.566406
+margin_top = 19.3593
+margin_right = 3.43359
+margin_bottom = 24.3593
+
+[node name="Wall0" type="Line2D" parent="layer2/FS2_Floor3"]
+position = Vector2( -421.417, 643.108 )
+points = PoolVector2Array( 434.031, -664.543, 438.235, -660.336, 438.235, -625.881, 434.031, -621.674, 424.221, -621.674, 420.662, -621.674, 408.806, -621.674, 404.602, -625.881, 404.602, -660.336, 408.806, -664.543, 434.031, -664.543 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034370192
+
+[node name="CC2_TowerFloor3" type="Node2D" parent="layer2"]
+position = Vector2( 768.943, -777.813 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_TowerFloor3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -32.4586
+margin_top = -20.0846
+margin_right = 32.4587
+margin_bottom = 20.0847
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_TowerFloor3"]
+position = Vector2( -768.943, 777.813 )
+points = PoolVector2Array( 733.974, -781.417, 736.479, -781.417, 736.479, -789.787, 744.594, -797.898, 793.284, -797.898, 801.399, -789.787, 801.399, -777.31, 803.406, -777.31, 803.364, -774.312, 801.399, -774.312, 801.399, -765.841, 793.284, -757.73, 744.594, -757.73, 736.479, -765.841, 736.479, -778.165, 734.032, -778.165 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307842976
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_TowerFloor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -17.6362
+margin_top = -5.41943
+margin_right = -13.6362
+margin_bottom = -0.419434
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC2_TowerFloor3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 12.9813
+margin_top = -6.09448
+margin_right = 16.9813
+margin_bottom = -1.09448
+
+[node name="CC2_TowerBridge" type="Node2D" parent="layer2"]
+position = Vector2( 813.668, -788.366 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_TowerBridge"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -21.6396
+margin_top = -80.6691
+margin_right = 21.6396
+margin_bottom = 80.6691
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_TowerBridge"]
+position = Vector2( -813.668, 788.366 )
+points = PoolVector2Array( 824.689, -754.662, 804.131, -754.662, 804.131, -816.117, 824.689, -816.117, 824.689, -754.662 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1304663264
+
+[node name="CC2_Quarters1" type="Node2D" parent="layer2"]
+position = Vector2( 842.937, -815.278 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_Quarters1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.4565
+margin_top = -8.69043
+margin_right = 15.4565
+margin_bottom = 8.69049
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_Quarters1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.94635
+margin_top = -4.53833
+margin_right = 1.05365
+margin_bottom = 0.46167
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_Quarters1"]
+position = Vector2( -842.937, 815.278 )
+points = PoolVector2Array( 825.459, -815.477, 827.482, -815.477, 827.482, -820.107, 831.346, -823.97, 854.532, -823.97, 858.396, -820.107, 858.396, -810.451, 854.532, -806.589, 831.346, -806.589, 827.482, -810.451, 827.482, -811.685, 825.517, -811.685, 825.459, -815.477 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036115536
+
+[node name="CC2_Prison" type="Node2D" parent="layer2"]
+position = Vector2( 717.657, -764.874 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_Prison"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.4565
+margin_top = -8.69049
+margin_right = 15.4565
+margin_bottom = 8.69043
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_Prison"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.19171
+margin_top = -4.53839
+margin_right = -0.191711
+margin_bottom = 0.461609
+
+[node name="Wall" type="Line2D" parent="layer2/CC2_Prison"]
+position = Vector2( -717.657, 764.874 )
+points = PoolVector2Array( 729.245, -773.565, 733.109, -769.703, 733.109, -760.047, 729.245, -756.185, 706.059, -756.185, 702.195, -760.047, 702.195, -769.703, 706.059, -773.565, 729.245, -773.565 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 7
+
+[node name="CC2_Quarters4" type="Node2D" parent="layer2"]
+position = Vector2( 842.938, -758.114 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_Quarters4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.4565
+margin_top = -8.69043
+margin_right = 15.4565
+margin_bottom = 8.69049
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_Quarters4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.99469
+margin_top = -4.53827
+margin_right = 1.00531
+margin_bottom = 0.461731
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_Quarters4"]
+position = Vector2( -842.938, 758.114 )
+points = PoolVector2Array( 827.482, -762.944, 831.346, -766.806, 854.532, -766.806, 858.396, -762.944, 858.396, -753.288, 854.532, -749.425, 831.346, -749.425, 827.482, -753.288, 827.482, -754.731, 825.772, -754.731, 825.772, -757.587, 827.482, -757.587, 827.482, -762.944 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307876320
+
+[node name="CC2_Quarters2" type="Node2D" parent="layer2"]
+position = Vector2( 842.938, -797.897 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_Quarters2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.4565
+margin_top = -8.69049
+margin_right = 15.4565
+margin_bottom = 8.69043
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_Quarters2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.99469
+margin_top = -4.53839
+margin_right = 1.00531
+margin_bottom = 0.461609
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC2_Quarters2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.869446
+margin_top = -4.56885
+margin_right = 4.86945
+margin_bottom = 0.431152
+
+[node name="Wall" type="Line2D" parent="layer2/CC2_Quarters2"]
+position = Vector2( -842.938, 797.897 )
+points = PoolVector2Array( 858.396, -793.07, 854.532, -789.208, 831.346, -789.208, 827.482, -793.07, 827.482, -802.726, 831.346, -806.589, 854.532, -806.589, 858.396, -802.726, 858.396, -793.07 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="CC2_Quarters3" type="Node2D" parent="layer2"]
+position = Vector2( 861.972, -778.006 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_Quarters3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -34.4899
+margin_top = -11.201
+margin_right = 34.4899
+margin_bottom = 11.201
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_Quarters3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -20.1191
+margin_top = -7.27283
+margin_right = -16.1191
+margin_bottom = -2.27283
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC2_Quarters3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -22.9232
+margin_top = -7.24207
+margin_right = -18.9232
+margin_bottom = -2.24207
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_Quarters3"]
+position = Vector2( -861.972, 778.006 )
+points = PoolVector2Array( 827.482, -785.707, 831.316, -789.208, 892.628, -789.208, 896.463, -785.707, 896.463, -770.307, 892.628, -766.806, 831.316, -766.806, 827.482, -770.307, 827.482, -785.707 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036090640
+
+[node name="CC2_Security" type="Node2D" parent="layer2"]
+position = Vector2( 717.657, -784.379 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_Security"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -15.4565
+margin_top = -10.8148
+margin_right = 15.4565
+margin_bottom = 10.8148
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_Security"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -4.18127
+margin_top = -2.22083
+margin_right = -0.181274
+margin_bottom = 2.77917
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_Security"]
+position = Vector2( -717.657, 784.379 )
+points = PoolVector2Array( 735.019, -778.149, 733.109, -778.149, 733.109, -777.428, 729.244, -773.565, 706.059, -773.565, 702.195, -777.428, 702.195, -791.332, 706.059, -795.195, 729.244, -795.195, 733.109, -791.332, 733.109, -781.436, 735.019, -781.436 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307876320
+
+[node name="CC2_TowerFloor4" type="Node2D" parent="layer2"]
+position = Vector2( 768.943, -737.644 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_TowerFloor4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -32.4586
+margin_top = -20.0846
+margin_right = 32.4587
+margin_bottom = 20.0847
+
+[node name="Wall" type="Line2D" parent="layer2/CC2_TowerFloor4"]
+position = Vector2( -768.943, 737.644 )
+points = PoolVector2Array( 801.399, -725.672, 793.284, -717.561, 744.594, -717.561, 736.479, -725.672, 736.479, -749.618, 744.594, -757.73, 793.284, -757.73, 801.399, -749.618, 801.399, -725.672 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1304654368
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_TowerFloor4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -17.6362
+margin_top = -4.94952
+margin_right = -13.6362
+margin_bottom = 0.0504761
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC2_TowerFloor4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 12.9357
+margin_top = -5.41638
+margin_right = 16.9357
+margin_bottom = -0.416382
+
+[node name="CC2_TowerFloor2" type="Node2D" parent="layer2"]
+position = Vector2( 768.943, -817.958 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_TowerFloor2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -32.4586
+margin_top = -20.1088
+margin_right = 32.4587
+margin_bottom = 20.1088
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_TowerFloor2"]
+position = Vector2( -768.943, 817.958 )
+points = PoolVector2Array( 736.479, -829.956, 744.594, -838.068, 793.284, -838.068, 801.399, -829.956, 801.399, -814.938, 803.389, -814.938, 803.389, -812.712, 801.399, -812.712, 801.399, -805.961, 793.284, -797.85, 744.594, -797.85, 736.479, -805.961, 736.479, -829.956 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_TowerFloor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 13.169
+margin_top = -5.74634
+margin_right = 17.169
+margin_bottom = -0.746338
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC2_TowerFloor2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -17.4028
+margin_top = -5.51288
+margin_right = -13.4028
+margin_bottom = -0.512878
+
+[node name="CC2_TowerFloor1" type="Node2D" parent="layer2"]
+position = Vector2( 768.943, -858.127 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_TowerFloor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -32.4586
+margin_top = -20.1088
+margin_right = 32.4587
+margin_bottom = 20.1088
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_TowerFloor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 13.5521
+margin_top = -3.35004
+margin_right = 17.5521
+margin_bottom = 1.64996
+
+[node name="Wall" type="Line2D" parent="layer2/CC2_TowerFloor1"]
+position = Vector2( -768.943, 858.127 )
+points = PoolVector2Array( 744.594, -838.019, 736.479, -846.13, 736.479, -870.125, 744.594, -878.237, 793.284, -878.237, 801.399, -870.125, 801.399, -846.13, 793.284, -838.019, 744.594, -838.019 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+
+[node name="Exit2" type="ColorRect" parent="layer2/CC2_TowerFloor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -17.4221
+margin_top = -3.35004
+margin_right = -13.4221
+margin_bottom = 1.64996
+
+[node name="CC2_TowerFloor5" type="Node2D" parent="layer2"]
+position = Vector2( 768.943, -697.474 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/CC2_TowerFloor5"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -32.4586
+margin_top = -20.0846
+margin_right = 32.4587
+margin_bottom = 20.0847
+
+[node name="Wall0" type="Line2D" parent="layer2/CC2_TowerFloor5"]
+position = Vector2( -768.943, 697.474 )
+points = PoolVector2Array( 764.118, -677.54, 764.118, -680.098, 744.594, -680.098, 736.479, -688.209, 736.479, -709.449, 744.594, -717.561, 793.284, -717.561, 801.399, -709.449, 801.399, -688.209, 793.284, -680.098, 768.619, -680.098, 768.619, -677.54 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1304659360
+
+[node name="Exit" type="ColorRect" parent="layer2/CC2_TowerFloor5"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 13.2147
+margin_top = -4.90784
+margin_right = 17.2147
+margin_bottom = 0.0921631
+
+[node name="RV1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 558.603, -395.193 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/RV1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -92.4792
+margin_top = -49.8429
+margin_right = 92.4792
+margin_bottom = 49.8429
+
+[node name="Exit" type="ColorRect" parent="layer2/RV1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.71295
+margin_top = -2.01074
+margin_right = 1.28705
+margin_bottom = 2.98926
+
+[node name="Wall" type="Line2D" parent="layer2/RV1_Floor1"]
+position = Vector2( -558.603, 395.193 )
+points = PoolVector2Array( 489.243, -345.355, 466.123, -368.452, 466.123, -421.939, 489.243, -445.036, 627.959, -445.036, 651.078, -421.939, 651.078, -368.452, 627.959, -345.355, 489.243, -345.355 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036115536
+
+[node name="PP1_Hut1" type="Node2D" parent="layer2"]
+position = Vector2( 147.226, -598.319 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_Hut1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.3915
+margin_top = -8.09454
+margin_right = 14.3915
+margin_bottom = 8.0946
+
+[node name="Exit" type="ColorRect" parent="layer2/PP1_Hut1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.06879
+margin_top = 2.60834
+margin_right = 1.93121
+margin_bottom = 7.60834
+
+[node name="Wall" type="Line2D" parent="layer2/PP1_Hut1"]
+position = Vector2( -147.226, 598.319 )
+points = PoolVector2Array( 158.023, -590.224, 136.436, -590.224, 132.838, -593.822, 132.838, -602.816, 136.436, -606.413, 158.023, -606.413, 161.621, -602.816, 161.621, -593.822, 158.023, -590.224 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2036217936
+
+[node name="PP1_Hut2" type="Node2D" parent="layer2"]
+position = Vector2( 154.461, -572.732 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_Hut2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.3915
+margin_top = -8.09454
+margin_right = 14.3915
+margin_bottom = 8.0946
+
+[node name="Exit" type="ColorRect" parent="layer2/PP1_Hut2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -2.06879
+margin_top = 2.60828
+margin_right = 1.93121
+margin_bottom = 7.60828
+
+[node name="Wall" type="Line2D" parent="layer2/PP1_Hut2"]
+position = Vector2( -154.461, 572.732 )
+points = PoolVector2Array( 168.856, -568.234, 165.258, -564.636, 143.671, -564.636, 140.073, -568.234, 140.073, -577.228, 143.671, -580.825, 165.258, -580.825, 168.856, -577.228, 168.856, -568.234 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2031932288
+
+[node name="PP1_Hut3" type="Node2D" parent="layer2"]
+position = Vector2( 105.741, -493.406 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_Hut3"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.3915
+margin_top = -8.09457
+margin_right = 14.3915
+margin_bottom = 8.0946
+
+[node name="Exit" type="ColorRect" parent="layer2/PP1_Hut3"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.14819
+margin_top = 3.68753
+margin_right = 0.851807
+margin_bottom = 8.68753
+
+[node name="Wall" type="Line2D" parent="layer2/PP1_Hut3"]
+position = Vector2( -105.741, 493.406 )
+points = PoolVector2Array( 120.137, -488.907, 116.539, -485.31, 94.9519, -485.31, 91.354, -488.907, 91.354, -497.901, 94.9519, -501.499, 116.539, -501.499, 120.137, -497.901, 120.137, -488.907 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034282192
+
+[node name="PP1_Hut4" type="Node2D" parent="layer2"]
+position = Vector2( 136.387, -488.619 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/PP1_Hut4"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.3915
+margin_top = -8.09457
+margin_right = 14.3915
+margin_bottom = 8.0946
+
+[node name="Exit" type="ColorRect" parent="layer2/PP1_Hut4"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -3.14813
+margin_top = 3.68753
+margin_right = 0.851868
+margin_bottom = 8.68753
+
+[node name="Wall" type="Line2D" parent="layer2/PP1_Hut4"]
+position = Vector2( -136.387, 488.619 )
+points = PoolVector2Array( 150.782, -484.121, 147.184, -480.523, 125.597, -480.523, 121.999, -484.121, 121.999, -493.115, 125.597, -496.712, 147.184, -496.712, 150.782, -493.115, 150.782, -484.121 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2034282192
+
+[node name="P1_Floor1" type="Node2D" parent="layer2"]
+position = Vector2( 155.188, -846.128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/P1_Floor1"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -56.9809
+margin_top = -36.3741
+margin_right = 56.9809
+margin_bottom = 36.3741
+
+[node name="Exit" type="ColorRect" parent="layer2/P1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 1.55617
+margin_top = -21.4177
+margin_right = 5.55617
+margin_bottom = -16.4177
+
+[node name="Exit2" type="ColorRect" parent="layer2/P1_Floor1"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 0.957657
+margin_top = 36.8528
+margin_right = 4.95766
+margin_bottom = 41.8528
+
+[node name="Wall" type="Line2D" parent="layer2/P1_Floor1"]
+position = Vector2( -155.188, 846.128 )
+points = PoolVector2Array( 197.923, -882.502, 212.168, -868.263, 212.168, -823.992, 197.923, -809.753, 112.452, -809.753, 98.2065, -823.992, 98.2065, -868.263, 112.452, -882.502, 197.923, -882.502 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307842976
+
+[node name="FS4_ForestFloor03" type="Node2D" parent="layer2"]
+position = Vector2( 367.54, -599.496 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/FS4_ForestFloor03"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -22.9831
+margin_top = -102.186
+margin_right = 22.9831
+margin_bottom = 102.186
+
+[node name="FS4_ForestFloo34" type="Node2D" parent="layer2/FS4_ForestFloor03"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Wall0" type="Line2D" parent="layer2/FS4_ForestFloor03/FS4_ForestFloo34"]
+points = PoolVector2Array( 345.833, -636.961, 347.464, -636.961, 347.464, -641.676, 352.7, -649.922, 383.185, -649.922, 388.421, -641.676, 388.421, -545.855, 391.339, -545.855 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2031921664
+
+[node name="Wall1" type="Line2D" parent="layer2/FS4_ForestFloor03/FS4_ForestFloo34"]
+points = PoolVector2Array( 391.339, -539.181, 388.421, -539.181, 388.421, -532.353, 383.185, -524.106, 352.7, -524.106, 347.464, -532.353, 347.464, -631.872, 345.833, -631.872 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -2031921664
+
+[node name="S1_Hallway" type="Node2D" parent="layer2"]
+position = Vector2( 1217.89, -674.526 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/S1_Hallway"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -13.9187
+margin_top = -23.557
+margin_right = 13.9188
+margin_bottom = 23.5571
+
+[node name="Wall0" type="Line2D" parent="layer2/S1_Hallway"]
+position = Vector2( -1217.89, 674.526 )
+points = PoolVector2Array( 1216.06, -698.001, 1216.06, -694.386, 1208.95, -694.386, 1205.47, -684.734, 1205.47, -665.143, 1208.95, -655.491, 1216.36, -655.491, 1216.36, -658.816, 1221.63, -658.761, 1221.63, -655.494, 1228.01, -655.494, 1231.49, -665.146, 1231.49, -684.737, 1228.01, -694.388, 1222.59, -694.388, 1222.59, -697.945 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307536080
+
+[node name="DG1_LibraryF2" type="Node2D" parent="layer2"]
+position = Vector2( 869.531, -367.038 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DG1_LibraryF2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -60.3328
+margin_top = -22.9731
+margin_right = 60.3328
+margin_bottom = 22.9731
+
+[node name="Exit" type="ColorRect" parent="layer2/DG1_LibraryF2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -52.5518
+margin_top = -9.45239
+margin_right = -48.5518
+margin_bottom = -4.45239
+
+[node name="Wall0" type="Line2D" parent="layer2/DG1_LibraryF2"]
+position = Vector2( -869.531, 367.038 )
+points = PoolVector2Array( 879.627, -390.011, 918.476, -390.011, 929.863, -378.631, 929.863, -355.443, 918.476, -344.064, 820.584, -344.064, 809.197, -355.443, 809.197, -378.631, 820.584, -390.011, 867.333, -390.011 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307536080
+
+[node name="Exit2" type="ColorRect" parent="layer2/DG1_LibraryF2"]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 47.6179
+margin_top = -9.45239
+margin_right = 51.6179
+margin_bottom = -4.45239
+
+[node name="DS2_Ark2" type="Node2D" parent="layer2"]
+position = Vector2( 1128.66, 35.9666 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Limiter" type="ColorRect" parent="layer2/DS2_Ark2"]
+modulate = Color( 1, 1, 1, 0.05 )
+margin_left = -14.9152
+margin_top = -18.7898
+margin_right = 14.9153
+margin_bottom = 18.7898
+
+[node name="Wall0" type="Line2D" parent="layer2/DS2_Ark2"]
+position = Vector2( -1128.66, -35.9666 )
+points = PoolVector2Array( 1142.65, 24.4466, 1142.65, 44.7886 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307570448
+
+[node name="Wall1" type="Line2D" parent="layer2/DS2_Ark2"]
+position = Vector2( -1128.66, -35.9666 )
+points = PoolVector2Array( 1142.65, 48.5434, 1142.65, 54.4887, 1119.97, 54.4887, 1113.74, 48.2668, 1113.74, 23.3792, 1119.97, 17.1572, 1142.65, 17.1572, 1142.65, 20.8981 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = -1307570448

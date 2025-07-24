@@ -1,0 +1,510 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scenes/StartMenu/InitScreen.gd" type="Script" id=1]
+[ext_resource path="res://global/Themes/ThemeM.theme" type="Theme" id=2]
+[ext_resource path="res://scenes/StartMenu/InitScreen_background.png" type="Texture" id=3]
+[ext_resource path="res://global/Themes/logo-mom.png" type="Texture" id=4]
+[ext_resource path="res://global/Themes/logo-deck13.png" type="Texture" id=5]
+[ext_resource path="res://global/Themes/keys/key_f.png" type="Texture" id=6]
+[ext_resource path="res://global/Themes/keys/key_1.png" type="Texture" id=7]
+[ext_resource path="res://global/Themes/keys/key_unknown.png" type="Texture" id=8]
+[ext_resource path="res://global/Themes/xbox_buttons/button_a.png" type="Texture" id=9]
+[ext_resource path="res://global/Themes/xbox_buttons/button_b.png" type="Texture" id=10]
+[ext_resource path="res://global/Themes/xbox_buttons/button_x.png" type="Texture" id=11]
+[ext_resource path="res://global/Themes/xbox_buttons/button_y.png" type="Texture" id=12]
+[ext_resource path="res://global/Themes/ThemeS.theme" type="Theme" id=13]
+
+[node name="InitScreen" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Backgroud" type="TextureRect" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 0
+theme = ExtResource( 2 )
+texture = ExtResource( 3 )
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 472, 303 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Logo2" type="Sprite" parent="."]
+position = Vector2( 571, 294 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Joy" type="Label" parent="."]
+margin_left = 51.393
+margin_top = 92.422
+margin_right = 93.393
+margin_bottom = 124.422
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "GAMEPAD"
+valign = 1
+
+[node name="JoyMove" type="Label" parent="."]
+margin_left = 138.393
+margin_top = 139.422
+margin_right = 170.393
+margin_bottom = 171.422
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Move"
+valign = 1
+
+[node name="Keys" type="Label" parent="."]
+margin_left = 52.393
+margin_top = 223.422
+margin_right = 100.393
+margin_bottom = 255.422
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "KEYBOARD"
+valign = 1
+
+[node name="KeysMove" type="Label" parent="."]
+margin_left = 138.393
+margin_top = 270.422
+margin_right = 170.393
+margin_bottom = 302.422
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Move"
+valign = 1
+
+[node name="Fullscreen" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 384.0
+margin_right = 632.0
+margin_bottom = 416.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Fullscreen"
+valign = 1
+
+[node name="Fullscreen_key" type="Sprite" parent="Fullscreen"]
+position = Vector2( -35, 16 )
+texture = ExtResource( 6 )
+
+[node name="Fullscreen_key1" type="Sprite" parent="Fullscreen"]
+position = Vector2( -11, 16 )
+texture = ExtResource( 7 )
+
+[node name="Fullscreen_key2" type="Sprite" parent="Fullscreen"]
+position = Vector2( -23, 16 )
+texture = ExtResource( 7 )
+
+[node name="HBoxContainer" type="Control" parent="."]
+margin_left = -1.0
+margin_top = 384.0
+margin_right = 927.0
+margin_bottom = 592.0
+mouse_filter = 2
+theme = ExtResource( 2 )
+
+[node name="action1" type="Control" parent="HBoxContainer"]
+margin_top = 8.0
+margin_right = 96.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../action2")
+
+[node name="label" type="Label" parent="HBoxContainer/action1"]
+margin_left = 226.0
+margin_top = -300.0
+margin_right = 290.0
+margin_bottom = -268.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/action1"]
+margin_left = 226.0
+margin_top = -169.0
+margin_right = 290.0
+margin_bottom = -137.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/action1"]
+position = Vector2( 206, -153 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/action1"]
+position = Vector2( 206, -284 )
+texture = ExtResource( 9 )
+
+[node name="action2" type="Control" parent="HBoxContainer"]
+margin_left = 104.0
+margin_right = 200.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../action1")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../action3")
+
+[node name="label" type="Label" parent="HBoxContainer/action2"]
+margin_left = 122.0
+margin_top = -268.0
+margin_right = 186.0
+margin_bottom = -236.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/action2"]
+margin_left = 122.0
+margin_top = -137.0
+margin_right = 186.0
+margin_bottom = -105.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/action2"]
+position = Vector2( 102, -121 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/action2"]
+position = Vector2( 102, -252 )
+texture = ExtResource( 10 )
+
+[node name="action3" type="Control" parent="HBoxContainer"]
+margin_left = 209.0
+margin_top = -8.0
+margin_right = 305.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../action2")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../action4")
+
+[node name="label" type="Label" parent="HBoxContainer/action3"]
+margin_left = 17.0
+margin_top = -211.0
+margin_right = 82.0
+margin_bottom = -179.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/action3"]
+margin_left = 17.0
+margin_top = -80.0
+margin_right = 82.0
+margin_bottom = -48.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/action3"]
+position = Vector2( -3, -64 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/action3"]
+position = Vector2( -3, -195 )
+texture = ExtResource( 11 )
+
+[node name="action4" type="Control" parent="HBoxContainer"]
+margin_left = 231.186
+margin_top = -16.0
+margin_right = 327.186
+margin_bottom = 192.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../action3")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../ui_up")
+
+[node name="label" type="Label" parent="HBoxContainer/action4"]
+margin_left = -6.0
+margin_top = -228.0
+margin_right = 58.0
+margin_bottom = -196.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/action4"]
+margin_left = -6.0
+margin_top = -97.0
+margin_right = 58.0
+margin_bottom = -65.0
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/action4"]
+position = Vector2( -33, -89 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/action4"]
+position = Vector2( -26, -212 )
+texture = ExtResource( 12 )
+
+[node name="ui_up" type="Control" parent="HBoxContainer"]
+margin_left = 416.0
+margin_right = 512.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../action4")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../ui_down")
+
+[node name="label" type="Label" parent="HBoxContainer/ui_up"]
+margin_left = 48.0
+margin_top = 128.0
+margin_right = 112.0
+margin_bottom = 145.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/ui_up"]
+margin_left = 48.0
+margin_top = 160.0
+margin_right = 112.0
+margin_bottom = 177.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/ui_up"]
+position = Vector2( -312, -116 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/ui_up"]
+position = Vector2( -314, -248 )
+texture = ExtResource( 10 )
+
+[node name="ui_down" type="Control" parent="HBoxContainer"]
+margin_left = 521.0
+margin_right = 617.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../ui_up")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../ui_right")
+
+[node name="label" type="Label" parent="HBoxContainer/ui_down"]
+margin_left = 48.0
+margin_top = 128.0
+margin_right = 112.0
+margin_bottom = 145.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/ui_down"]
+margin_left = 48.0
+margin_top = 160.0
+margin_right = 112.0
+margin_bottom = 177.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/ui_down"]
+position = Vector2( -417, -78 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/ui_down"]
+position = Vector2( -419, -210 )
+texture = ExtResource( 10 )
+
+[node name="ui_right" type="Control" parent="HBoxContainer"]
+margin_left = 624.0
+margin_right = 720.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../ui_down")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../ui_left")
+
+[node name="label" type="Label" parent="HBoxContainer/ui_right"]
+margin_left = 48.0
+margin_top = 128.0
+margin_right = 112.0
+margin_bottom = 145.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/ui_right"]
+margin_left = 48.0
+margin_top = 160.0
+margin_right = 112.0
+margin_bottom = 177.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/ui_right"]
+position = Vector2( -501, -97 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/ui_right"]
+position = Vector2( -503, -229 )
+texture = ExtResource( 10 )
+
+[node name="ui_left" type="Control" parent="HBoxContainer"]
+margin_left = 728.0
+margin_right = 824.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../ui_right")
+focus_neighbour_top = NodePath("../../../../SetInput")
+focus_neighbour_right = NodePath("../ui_cancel")
+
+[node name="label" type="Label" parent="HBoxContainer/ui_left"]
+margin_left = 48.0
+margin_top = 128.0
+margin_right = 112.0
+margin_bottom = 145.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/ui_left"]
+margin_left = 48.0
+margin_top = 160.0
+margin_right = 112.0
+margin_bottom = 177.0
+size_flags_vertical = 0
+theme = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/ui_left"]
+position = Vector2( -643, -97 )
+texture = ExtResource( 8 )
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/ui_left"]
+position = Vector2( -645, -229 )
+texture = ExtResource( 10 )
+
+[node name="ui_cancel" type="Control" parent="HBoxContainer"]
+margin_left = 889.0
+margin_top = 16.0
+margin_right = 985.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../ui_left")
+focus_neighbour_top = NodePath("../../../../SetInput")
+
+[node name="label" type="Label" parent="HBoxContainer/ui_cancel"]
+margin_left = -550.111
+margin_top = -308.049
+margin_right = -511.111
+margin_bottom = -276.049
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/ui_cancel"]
+margin_left = -550.019
+margin_top = -177.207
+margin_right = -510.019
+margin_bottom = -145.207
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/ui_cancel"]
+position = Vector2( -577.019, -169.207 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/ui_cancel"]
+position = Vector2( -570.111, -292.049 )
+texture = ExtResource( 10 )
+
+[node name="ui_select" type="Control" parent="HBoxContainer"]
+margin_left = 825.0
+margin_top = -16.0
+margin_right = 921.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 96, 208 )
+focus_neighbour_left = NodePath("../ui_left")
+focus_neighbour_top = NodePath("../../../../SetInput")
+
+[node name="label" type="Label" parent="HBoxContainer/ui_select"]
+margin_left = -485.721
+margin_top = -251.362
+margin_right = -446.721
+margin_bottom = -219.362
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="label1" type="Label" parent="HBoxContainer/ui_select"]
+margin_left = -485.869
+margin_top = -120.755
+margin_right = -445.869
+margin_bottom = -88.755
+size_flags_vertical = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "key"
+valign = 1
+
+[node name="keyicon" type="Sprite" parent="HBoxContainer/ui_select"]
+position = Vector2( -512.869, -112.755 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="joyicon" type="Sprite" parent="HBoxContainer/ui_select"]
+position = Vector2( -506.721, -235.362 )
+texture = ExtResource( 10 )

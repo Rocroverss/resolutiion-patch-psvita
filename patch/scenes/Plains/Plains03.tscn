@@ -1,0 +1,694 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://scenes/Plains/Plains03.gd" type="Script" id=1]
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Navigation.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Plains/ThePlains03_Background03.png" type="Texture" id=4]
+[ext_resource path="res://scenes/Plains/ThePlains03_Background04.png" type="Texture" id=5]
+[ext_resource path="res://scenes/Plains/ThePlains03_Background02.png" type="Texture" id=6]
+[ext_resource path="res://scenes/Plains/ThePlains03_Background01.png" type="Texture" id=7]
+[ext_resource path="res://objects/CradleChamber.scn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Plains/ThePlains03_Floor01_chamber.png" type="Texture" id=9]
+[ext_resource path="res://objects/TriggerArea.scn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/Plains/ThePlains03_Floor01.png" type="Texture" id=11]
+[ext_resource path="res://scenes/Plains/ThePlains03_Floor01_ceiling.png" type="Texture" id=12]
+[ext_resource path="res://scenes/Plains/ThePlains03_Floor01_background01.png" type="Texture" id=13]
+[ext_resource path="res://scenes/Plains/ThePlains03_Moss.png" type="Texture" id=14]
+[ext_resource path="res://objects/PixelFlash.scn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/Plains/Blue_fade_trees_single.wav" type="AudioStream" id=16]
+[ext_resource path="res://global/Shapes/octagon-normal-XS.png" type="Texture" id=17]
+[ext_resource path="res://objects/LimiterEvent.gd" type="Script" id=18]
+[ext_resource path="res://objects/SaveStation.scn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/Plains/ThePlains03_SaveOverlay.png" type="Texture" id=20]
+[ext_resource path="res://objects/Memcloud.scn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/Plains/ThePlains03_Floor01_barrier02.png" type="Texture" id=22]
+[ext_resource path="res://global/Shapes/rectangle.png" type="Texture" id=23]
+[ext_resource path="res://player/Alibii_hack.wav" type="AudioStream" id=24]
+[ext_resource path="res://player/PlayerDummy.scn" type="PackedScene" id=25]
+[ext_resource path="res://player/Alibii.scn" type="PackedScene" id=26]
+[ext_resource path="res://npcs/Blue.scn" type="PackedScene" id=27]
+[ext_resource path="res://npcs/CyanArchon.scn" type="PackedScene" id=28]
+[ext_resource path="res://npcs/Green.scn" type="PackedScene" id=29]
+[ext_resource path="res://npcs/Red.scn" type="PackedScene" id=30]
+[ext_resource path="res://npcs/CyanArchon_stake.scn" type="PackedScene" id=31]
+[ext_resource path="res://scenes/Plains/ThePlains03_Floor01_foreground01.png" type="Texture" id=32]
+[ext_resource path="res://global/Shapes/octagon-blurred-L.png" type="Texture" id=33]
+[ext_resource path="res://global/Shapes/octagon-blurred-S.png" type="Texture" id=34]
+[ext_resource path="res://objects/AreaEvent.gd" type="Script" id=35]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 336, 688, 448, 576, 800, 576, 912, 688, 912, 816, 800, 928, 448, 928, 336, 816 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7 ) ]
+outlines = [ PoolVector2Array( 336, 688, 448, 576, 800, 576, 912, 688, 912, 816, 800, 928, 448, 928, 336, 816 ) ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "fade_in"
+length = 2.0
+tracks/0/type = "method"
+tracks/0/path = NodePath("PixelFlash")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.4, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "activate"
+}, {
+"args": [  ],
+"method": "activate"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SamplePlayer2D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6, 1.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4, 1, 1.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 356, 376, 356, 376, 356, 376, 356, 376, 356, 376, 356, 376, 356, 376, 356, 384, 356, 384, 356, 384, 356, 384, 356, 384, 356, 384, 364, 384, 364, 384, 364, 384, 364, 384, 364, 384, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 356, 376 ), PoolVector2Array( 348, 344, 348, 360, 332, 344, 324, 352, 324, 360, 324, 368, 324, 376, 324, 384, 324, 400, 348, 384, 340, 400, 348, 400, 356, 400, 364, 400, 372, 400, 364, 384, 388, 400, 396, 400, 404, 392, 404, 384, 404, 376, 404, 368, 372, 368, 404, 352, 396, 344, 388, 344, 380, 344, 356, 360, 364, 344, 356, 344 ), PoolVector2Array( 228, 296, 196, 272, 164, 280, 132, 248, 116, 272, 100, 296, 100, 320, 68, 352, 76, 384, 132, 424, 116, 456, 172, 520, 260, 512, 308, 488, 364, 488, 428, 544, 428, 488, 556, 512, 612, 440, 596, 368, 532, 344, 524, 208, 452, 216, 412, 232, 364, 224, 340, 224, 316, 224, 292, 264, 268, 256, 236, 264 ), PoolVector2Array( 312, 0, 312, 0, 208, 8, 48, 136, 48, 248, -8, 280, 40, 328, 40, 448, 40, 536, 80, 536, 168, 688, 280, 688, 280, 568, 424, 568, 424, 680, 496, 680, 600, 624, 616, 560, 664, 536, 664, 448, 664, 328, 704, 232, 664, 104, 592, 104, 496, 0, 432, 0, 384, 88, 384, 192, 328, 192, 312, 160 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.266355, 0.719626, 1 )
+colors = PoolColorArray( 0.435294, 0.907353, 1, 0, 0.895493, 0.25, 1, 0.998021, 0.304688, 0.961083, 1, 0.998412, 0.94902, 1, 0.745098, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 400, 300, 0 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 10.0
+initial_velocity_random = 1.0
+angular_velocity = -6.31391e-33
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+color_ramp = SubResource( 5 )
+hue_variation_random = 1.0
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 608, 896 )
+
+[sub_resource type="PhysicsMaterial" id=8]
+
+[sub_resource type="Animation" id=9]
+resource_name = "blend_in"
+length = 5.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 24 )
+} ],
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="PhysicsMaterial" id=10]
+
+[sub_resource type="Gradient" id=11]
+offsets = PoolRealArray( 0.0045045, 0.495495, 0.986486 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=12]
+gradient = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=13]
+emission_shape = 2
+emission_box_extents = Vector3( 3000, 3500, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 5.0
+initial_velocity_random = 1.0
+angular_velocity = 6.86636e-44
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 12 )
+hue_variation_random = 1.0
+
+[sub_resource type="Gradient" id=14]
+offsets = PoolRealArray( 0, 0.00900901, 0.608108, 0.990991 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.0962963, 1, 1, 1, 1, 1, 1, 1, 0.00231373 )
+
+[sub_resource type="GradientTexture" id=15]
+gradient = SubResource( 14 )
+
+[sub_resource type="ParticlesMaterial" id=16]
+emission_shape = 2
+emission_box_extents = Vector3( 2000, 2000, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 20.0
+initial_velocity_random = 1.0
+angular_velocity = 2.52234e-44
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 15 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 56, 24 )
+
+[node name="P3" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D",
+"_edit_lock_": true
+}
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+position = Vector2( -136, 272 )
+z_index = 1
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+visible = false
+z_index = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+show_awareness = false
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+visible = false
+navpoly = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Collisions" type="Node2D" parent="Navigation2D"]
+position = Vector2( 19, 25 )
+z_index = 20
+
+[node name="Highwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 641, 1791, 649, 1783, 897, 1783, 897, 1799, 657, 1799, 657, 1911, 561, 1911, 561, 1799, 321, 1799, 321, 1783, 569, 1783, 577, 1791, 577, 1895, 641, 1895 )
+
+[node name="Lowwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 1024
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 497, 535, 705, 535, 705, 551, 497, 551 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 553, 1703, 513, 1703, 513, 1687, 529, 1687, 529, 903, 553, 903, 561, 911, 561, 1695 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 657, 1695, 657, 911, 665, 903, 689, 903, 689, 1687, 705, 1687, 705, 1703, 665, 1703 )
+
+[node name="Air" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 529, 919, 433, 919, 305, 791, 305, 663, 433, 535, 497, 535, 497, 551, 433, 551, 321, 663, 321, 791, 433, 903, 529, 903 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 689, 903, 785, 903, 897, 791, 897, 663, 785, 551, 705, 551, 705, 535, 785, 535, 913, 663, 913, 791, 785, 919, 689, 919 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 513, 1687, 513, 1703, 497, 1719, 497, 1783, 481, 1783, 481, 1719 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 705, 1703, 705, 1687, 737, 1719, 737, 1783, 721, 1783, 721, 1719 )
+
+[node name="Wall" type="TileMap" parent="Navigation2D"]
+modulate = Color( 1, 1, 1, 0.4 )
+z_index = 5
+z_as_relative = false
+cell_size = Vector2( 16, 16 )
+collision_use_kinematic = true
+bake_navigation = true
+format = 1
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -2
+
+[node name="ParallaxLayerDark2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Dark Clouds" type="Sprite" parent="ParallaxBackground/ParallaxLayerDark2"]
+position = Vector2( 538.225, 776.565 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayerDark0" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.7, 0.7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Dark Sun" type="Sprite" parent="ParallaxBackground/ParallaxLayerDark0"]
+position = Vector2( 444.592, 306.376 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayerBright" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+motion_scale = Vector2( 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sun" type="Sprite" parent="ParallaxBackground/ParallaxLayerBright"]
+position = Vector2( -16, 48 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayerBright2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clouds" type="Sprite" parent="ParallaxBackground/ParallaxLayerBright2"]
+position = Vector2( 544, 928 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CradleChamber" parent="Background" instance=ExtResource( 8 )]
+show_behind_parent = true
+position = Vector2( 632, 515.12 )
+texture = ExtResource( 9 )
+
+[node name="Hint" parent="Background/CradleChamber" instance=ExtResource( 10 )]
+position = Vector2( -6.023, 64.572 )
+z_index = 1
+speaker_name = "ALIBII"
+dialog = "P3_ALIBII1_PG"
+
+[node name="Floor1" type="Sprite" parent="Background"]
+position = Vector2( 4, 0 )
+centered = false
+region_rect = Rect2( 350, 300, 0, 0 )
+
+[node name="Ceiling" type="Sprite" parent="Background/Floor1"]
+position = Vector2( 608, 1496 )
+z_index = 2
+
+[node name="Cables" type="Sprite" parent="Background/Floor1"]
+position = Vector2( 620, 304 )
+z_index = -1
+
+[node name="Moss" type="Polygon2D" parent="Background/Floor1"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 272, 368 )
+texture = ExtResource( 14 )
+polygon = PoolVector2Array( 356, 376, 356, 376, 356, 376, 356, 376, 356, 376, 356, 376, 356, 376, 356, 384, 356, 384, 356, 384, 356, 384, 356, 384, 356, 384, 364, 384, 364, 384, 364, 384, 364, 384, 364, 384, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 364, 376, 356, 376 )
+uv = PoolVector2Array( 312, 0, 312, 0, 208, 8, 48, 136, 48, 248, -8, 280, 40, 328, 40, 448, 40, 536, 80, 536, 168, 688, 280, 688, 280, 568, 424, 568, 424, 680, 496, 680, 600, 624, 616, 560, 664, 536, 664, 448, 664, 328, 704, 232, 664, 104, 592, 104, 496, 0, 432, 0, 384, 88, 384, 192, 328, 192, 312, 160 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background/Floor1/Moss"]
+anims/fade_in = SubResource( 2 )
+anims/fade_out = SubResource( 3 )
+
+[node name="PixelFlash" parent="Background/Floor1/Moss" instance=ExtResource( 15 )]
+position = Vector2( 360, 376 )
+z_index = 2
+
+[node name="SamplePlayer2D" type="AudioStreamPlayer2D" parent="Background/Floor1/Moss"]
+position = Vector2( 0, -56 )
+stream = ExtResource( 16 )
+max_distance = 800.0
+bus = "FXBus"
+
+[node name="AmbientParticles" type="Particles2D" parent="Background/Floor1"]
+modulate = Color( 1, 1, 1, 0.752941 )
+position = Vector2( 630.078, 742.903 )
+z_index = 20
+amount = 80
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -935.915, -322.189, 1852.56, 668.736 )
+process_material = SubResource( 6 )
+texture = ExtResource( 17 )
+
+[node name="Limiter" type="Area2D" parent="Background/Floor1"]
+visible = false
+position = Vector2( 608, 1040 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 18 )
+player_vignette = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor1/Limiter"]
+position = Vector2( -4, 0 )
+shape = SubResource( 7 )
+
+[node name="Floor_spr" type="Sprite" parent="Background"]
+position = Vector2( 4, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+centered = false
+region_rect = Rect2( 350, 300, 0, 0 )
+
+[node name="Ceiling" type="Sprite" parent="Background/Floor_spr"]
+position = Vector2( 608, 1496 )
+z_index = 2
+texture = ExtResource( 12 )
+
+[node name="Cables" type="Sprite" parent="Background/Floor_spr"]
+position = Vector2( 310.5, 150 )
+z_index = -1
+texture = ExtResource( 13 )
+
+[node name="SaveStation" parent="Background" instance=ExtResource( 19 )]
+position = Vector2( 624, 1248 )
+
+[node name="SaveOverlay" parent="Background/SaveStation" index="4"]
+position = Vector2( 2, -10 )
+texture = ExtResource( 20 )
+
+[node name="Memcloud" parent="Background" instance=ExtResource( 21 )]
+position = Vector2( 628, 1016 )
+rotation = 0.0
+collision_layer = 4096
+physics_material_override = SubResource( 8 )
+state = "shrunk"
+
+[node name="Sprite" parent="Background/Memcloud" index="0"]
+texture = ExtResource( 22 )
+
+[node name="CollisionPolygon2D" parent="Background/Memcloud" index="1"]
+polygon = PoolVector2Array( -56, -88, 56, -88, 56, -40, -56, -40 )
+
+[node name="PixelFlash" parent="Background" instance=ExtResource( 15 )]
+position = Vector2( -616, 400 )
+
+[node name="WhiteBackground" type="Sprite" parent="Background"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 724, 760 )
+scale = Vector2( 22.625, 14.75 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background/WhiteBackground"]
+anims/blend_in = SubResource( 9 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background/WhiteBackground"]
+stream = ExtResource( 24 )
+bus = "FXBus"
+
+[node name="Foreground" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerDummy" parent="Foreground" instance=ExtResource( 25 )]
+position = Vector2( 640, 1192 )
+
+[node name="Alibii" parent="Foreground" instance=ExtResource( 26 )]
+position = Vector2( -616, 1048 )
+
+[node name="Blue" parent="Foreground" instance=ExtResource( 27 )]
+position = Vector2( -616, 800 )
+wake_up_dist = 600
+
+[node name="BlueTeleportPoints" type="Node2D" parent="Foreground"]
+position = Vector2( 597, 683 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Position2D0" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( -16, -32 )
+
+[node name="Position2D1" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( 128, -48 )
+
+[node name="Position2D2" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( 200, 24 )
+
+[node name="Position2D3" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( 200, 136 )
+
+[node name="Position2D4" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( 96, 176 )
+
+[node name="Position2D5" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( -40, 184 )
+
+[node name="Position2D6" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( -128, 104 )
+
+[node name="Position2D7" type="Position2D" parent="Foreground/BlueTeleportPoints"]
+position = Vector2( -72, 24 )
+
+[node name="CyanArchon" parent="Foreground" instance=ExtResource( 28 )]
+position = Vector2( -608, 624 )
+wake_up_dist = 800
+stakes = [ NodePath("../Stake0"), NodePath("../Stake1"), NodePath("../Stake2"), NodePath("../Stake3") ]
+attack_position_0 = Vector2( 288, 560 )
+attack_position_1 = Vector2( 930, 560 )
+
+[node name="Green" parent="Foreground" instance=ExtResource( 29 )]
+position = Vector2( -616, 920 )
+physics_material_override = SubResource( 10 )
+
+[node name="Red" parent="Foreground" instance=ExtResource( 30 )]
+position = Vector2( 536, 1776 )
+
+[node name="Hint" parent="Foreground/Red" instance=ExtResource( 10 )]
+speaker_name = "RED"
+dialog = "P3_RED_PACIFIST"
+
+[node name="Stake0" parent="Foreground" instance=ExtResource( 31 )]
+position = Vector2( 464, 720 )
+
+[node name="Stake1" parent="Foreground" instance=ExtResource( 31 )]
+position = Vector2( 520, 848 )
+
+[node name="Stake2" parent="Foreground" instance=ExtResource( 31 )]
+position = Vector2( 776, 704 )
+
+[node name="Stake3" parent="Foreground" instance=ExtResource( 31 )]
+position = Vector2( 712, 824 )
+
+[node name="ParallaxForeground" type="ParallaxBackground" parent="."]
+layer = 1
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxForeground"]
+motion_scale = Vector2( 1.2, 1.2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="ParallaxForeground/ParallaxLayer2"]
+position = Vector2( 770, 1557 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="ParticleLayerL" type="ParallaxLayer" parent="ParallaxForeground"]
+modulate = Color( 0.290196, 0, 1, 1 )
+z_as_relative = false
+motion_scale = Vector2( 1.5, 1.5 )
+
+[node name="Particles2D" type="Particles2D" parent="ParallaxForeground/ParticleLayerL"]
+modulate = Color( 1, 1, 1, 0.180392 )
+position = Vector2( 832, -752 )
+amount = 1500
+lifetime = 5.0
+visibility_rect = Rect2( -3015.05, -3506.94, 6026.7, 7010.44 )
+process_material = SubResource( 13 )
+texture = ExtResource( 33 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParticleLayerS" type="ParallaxLayer" parent="ParallaxForeground"]
+modulate = Color( 0, 0.905882, 1, 1 )
+z_as_relative = false
+motion_scale = Vector2( 1.1, 1.1 )
+
+[node name="Particles2D" type="Particles2D" parent="ParallaxForeground/ParticleLayerS"]
+modulate = Color( 1, 1, 1, 0.313726 )
+position = Vector2( 800, 38 )
+amount = 1500
+lifetime = 5.0
+visibility_rect = Rect2( -2077.08, -2047.57, 4132.88, 4121.03 )
+process_material = SubResource( 16 )
+texture = ExtResource( 34 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Events" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ExitA" type="Area2D" parent="Events"]
+position = Vector2( 624, 1920 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ExitA"]
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PreloadP1" type="Area2D" parent="Events"]
+position = Vector2( 624, 1352 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/PreloadP1"]
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SetupFinale" type="Area2D" parent="Events"]
+position = Vector2( 624, 1144 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/SetupFinale"]
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ReachCradle" type="Area2D" parent="Events"]
+position = Vector2( 620, 592 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Events/ReachCradle"]
+polygon = PoolVector2Array( -68, 96, 76, 96, 132, 32, 132, -16, -124, -16, -124, 32 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ActivateBoss" type="Area2D" parent="Events"]
+position = Vector2( 620, 832 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Events/ActivateBoss"]
+polygon = PoolVector2Array( -84, 96, -76, 72, 84, 72, 92, 96, 108, 96, 92, 56, -84, 56, -100, 96 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1381.57, 347.319 )
+scale = Vector2( 6.40001, 6.4 )
+z_index = 50
+
+[editable path="Background/SaveStation"]
+[editable path="Background/Memcloud"]

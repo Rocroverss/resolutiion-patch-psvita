@@ -1,0 +1,566 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-background.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-background_frame.png" type="Texture" id=3]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-head.png" type="Texture" id=4]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-eye.png" type="Texture" id=5]
+[ext_resource path="res://global/Shapes/octagon-blurred-L.png" type="Texture" id=6]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-body.png" type="Texture" id=7]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-fist.png" type="Texture" id=8]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-alibii.png" type="Texture" id=9]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-debris-02.png" type="Texture" id=10]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-debris-01.png" type="Texture" id=11]
+[ext_resource path="res://scenes/Cinematics/alibiis_destruction-foreground.png" type="Texture" id=12]
+[ext_resource path="res://global/Shapes/octagon-blurred-M.png" type="Texture" id=13]
+[ext_resource path="res://objects/Object_break_03.wav" type="AudioStream" id=14]
+[ext_resource path="res://player/Bullet_hit.wav" type="AudioStream" id=15]
+[ext_resource path="res://player/Player_hitwall.wav" type="AudioStream" id=16]
+[ext_resource path="res://npcs/Naught_walk.wav" type="AudioStream" id=17]
+[ext_resource path="res://npcs/FreeMenHunter_shoot.wav" type="AudioStream" id=18]
+[ext_resource path="res://objects/Object_explosion_01.wav" type="AudioStream" id=19]
+[ext_resource path="res://scenes/ForestOfSelf/Alibii_hacking_2.wav" type="AudioStream" id=20]
+[ext_resource path="res://scenes/ForestOfSelf/Heart_heartbeat.wav" type="AudioStream" id=21]
+[ext_resource path="res://scenes/Plains/Alibii_hacking_die.wav" type="AudioStream" id=22]
+
+[sub_resource type="ParticlesMaterial" id=1]
+flag_disable_z = true
+spread = 20.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 400.0
+initial_velocity_random = 0.4
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 10.0
+scale_random = 1.0
+color = Color( 0.239216, 0.152941, 0.568627, 1 )
+
+[sub_resource type="ParticlesMaterial" id=2]
+flag_disable_z = true
+spread = 10.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 300.0
+initial_velocity_random = 0.3
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 10.0
+scale_random = 1.0
+color = Color( 0.32549, 0.929412, 1, 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0.000961162, 0.104 ), 0.0, 0.0, 0, 0, Vector2( 0.496219, 0.9752 ), 0.0369473, 0.0369473, 0, 0, Vector2( 0.995258, 0.0863999 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 2
+emission_box_extents = Vector3( 30, 60, 1 )
+flag_disable_z = true
+spread = 30.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 70.0
+initial_velocity_random = 1.0
+angular_velocity = 9.89636e+33
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_random = 1.0
+scale_curve = SubResource( 4 )
+color = Color( 0.356863, 0.141176, 0.490196, 1 )
+
+[sub_resource type="Animation" id=6]
+length = 20.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Head/Debris02:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 9, 13.55 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 204, 88 ), Vector2( 204, 88 ), Vector2( -244, 88 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Head/Debris01:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 9, 12.65 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 196, 128 ), Vector2( 196, 128 ), Vector2( -556, 144 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head/Particles2D0:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 9, 9.45 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Head/Particles2D1:emitting")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 9, 9.45 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Head/Arm:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2, 4, 4.05, 4.9, 5, 5.5, 5.6, 6, 6.4, 6.5, 6.8, 7.2, 8, 9, 9.05, 9.45, 12, 15.5, 19.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -16, 248 ), Vector2( -39, 248 ), Vector2( -39, 248 ), Vector2( 17, 248 ), Vector2( 17, 248 ), Vector2( 25, 256 ), Vector2( 25, 256 ), Vector2( 17, 256 ), Vector2( 25, 256 ), Vector2( 25, 256 ), Vector2( 17, 256 ), Vector2( 25, 256 ), Vector2( 25, 256 ), Vector2( 28, 256 ), Vector2( 28, 256 ), Vector2( 4, 240 ), Vector2( -20.5161, 244.903 ), Vector2( -36, 248 ), Vector2( -36, 248 ), Vector2( -28, 264 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Head/Arm/Hand:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3.6, 4, 4.05, 4.9, 5, 7.2, 8, 9, 9.05, 9.45, 12, 15.5, 19.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -152, -256 ), Vector2( -176, -256 ), Vector2( -176, -256 ), Vector2( -144, -272 ), Vector2( -144, -272 ), Vector2( -157, -264 ), Vector2( -157, -264 ), Vector2( -159, -252 ), Vector2( -159, -252 ), Vector2( -175, -268 ), Vector2( -238.742, -263.097 ), Vector2( -279, -260 ), Vector2( -279, -260 ), Vector2( -287, -252 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Head/Arm/Hand:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 5.05 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Head/Arm/Hand/Alibii:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 8.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Head/Arm/Hand/Alibii:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 13.05, 13.1, 13.15, 13.3, 13.35, 13.4, 14, 15.05 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.172549 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.172549 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.172549 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Head/Arm/Hand/Alibii/Light2D:energy")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 9.05, 9.45, 13.05, 13.1, 13.15, 13.3, 13.35, 13.4, 14, 15.05 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.01, 0.01, 1.0, 1.0, 0.01, 1.0, 1.0, 0.01, 1.0, 2.0, 0.01 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Head/Eye:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 2, 10, 12, 16, 16.1, 16.2, 16.45, 19.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.435294 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.635294 ), Color( 1, 1, 1, 0.635294 ), Color( 1, 1, 1, 0.854902 ), Color( 1, 1, 1, 0.635294 ), Color( 1, 1, 1, 0.854902 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Head/Eye/Light2D:energy")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 2.35, 10, 12.5, 16, 18.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.01, 1.0, 1.0, 0.6, 0.6, 0.01 ]
+}
+tracks/12/type = "method"
+tracks/12/path = NodePath("Camera")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 4.05, 5.6, 6.5, 9.05 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [ 1.0, 2.0, null ],
+"method": "shake"
+}, {
+"args": [ 1.0, 1.0, null ],
+"method": "shake"
+}, {
+"args": [ 1.0, 1.0, null ],
+"method": "shake"
+}, {
+"args": [ 2.0, 3.0, null ],
+"method": "shake"
+} ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Camera:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 5, 8, 13.35, 19.85 ),
+"transitions": PoolRealArray( 1, -2, -2, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 208, 180 ), Vector2( 168, 180 ), Vector2( 216, 180 ), Vector2( 168.56, 180 ), Vector2( 247.645, 180 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Bubbles:emitting")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Background_frame:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 1.05, 4, 9.05, 17.05 ),
+"transitions": PoolRealArray( 1, -2, -2, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -288, -16 ), Vector2( -272, -16 ), Vector2( -272, -16 ), Vector2( -312, -16 ), Vector2( -288, -16 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Background:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 5.4, 13.35, 19.9 ),
+"transitions": PoolRealArray( 1, -2, -2, 2 ),
+"update": 0,
+"values": [ Vector2( -128, -16 ), Vector2( -112, -16 ), Vector2( -208, -16 ), Vector2( -136, -16 ) ]
+}
+tracks/17/type = "audio"
+tracks/17/path = NodePath("AudioStreamPlayer")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 14 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 15 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 16 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 16 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 17 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 18 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 19 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 20 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 20 )
+} ],
+"times": PoolRealArray( 4.05, 4.9, 5.5, 6.4, 7.2, 9, 9.1, 13.05, 13.3 )
+}
+tracks/18/type = "audio"
+tracks/18/path = NodePath("AudioStreamHeart")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 21 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 22 )
+} ],
+"times": PoolRealArray( 0, 1, 2, 3, 4, 4.4, 4.8, 5.25, 6, 7, 8, 9, 10, 10.2, 10.4, 10.6, 10.8, 11, 11.2, 11.4, 12, 13, 15, 16.65 )
+}
+
+[node name="AlibiisDeath" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera" parent="." instance=ExtResource( 1 )]
+position = Vector2( 216.011, 180 )
+z_index = 5
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( -160.799, -17.2277 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Background_frame" type="Sprite" parent="."]
+position = Vector2( -288, -16 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Head" type="Sprite" parent="."]
+position = Vector2( 120, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Eye" type="Sprite" parent="Head"]
+modulate = Color( 1, 1, 1, 0.623064 )
+position = Vector2( 97, 97.5 )
+texture = ExtResource( 5 )
+
+[node name="Light2D" type="Light2D" parent="Head/Eye"]
+position = Vector2( 21, -4 )
+texture = ExtResource( 6 )
+texture_scale = 4.0
+color = Color( 1, 0.0588235, 0.345098, 1 )
+energy = 0.305
+
+[node name="Particles2D0" type="Particles2D" parent="Head"]
+show_behind_parent = true
+position = Vector2( 128, 144 )
+rotation = -3.14159
+emitting = false
+amount = 100
+lifetime = 3.0
+explosiveness = 0.6
+process_material = SubResource( 1 )
+
+[node name="Arm" type="Sprite" parent="Head"]
+show_behind_parent = true
+position = Vector2( -19.5, 124.5 )
+texture = ExtResource( 7 )
+
+[node name="Hand" type="Sprite" parent="Head/Arm"]
+position = Vector2( -148, -131.5 )
+texture = ExtResource( 8 )
+centered = false
+vframes = 2
+frame = 1
+
+[node name="Alibii" type="Sprite" parent="Head/Arm/Hand"]
+modulate = Color( 1, 1, 1, 0.172549 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Light2D" type="Light2D" parent="Head/Arm/Hand/Alibii"]
+position = Vector2( 344, 112 )
+texture = ExtResource( 6 )
+texture_scale = 4.0
+color = Color( 0.4, 1, 1, 1 )
+energy = 0.01
+
+[node name="Debris02" type="Sprite" parent="Head"]
+show_behind_parent = true
+position = Vector2( -244, 88 )
+texture = ExtResource( 10 )
+
+[node name="Debris01" type="Sprite" parent="Head"]
+show_behind_parent = true
+position = Vector2( -556, 144 )
+texture = ExtResource( 11 )
+
+[node name="Particles2D1" type="Particles2D" parent="Head"]
+show_behind_parent = true
+position = Vector2( 128, 132 )
+rotation = 3.63203
+emitting = false
+amount = 100
+lifetime = 3.0
+process_material = SubResource( 2 )
+
+[node name="Foreground" type="Sprite" parent="."]
+position = Vector2( 432, 184 )
+z_index = 2
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bubbles" type="Particles2D" parent="."]
+modulate = Color( 1, 1, 1, 0.32549 )
+position = Vector2( 153, 792 )
+rotation = -1.5708
+amount = 40
+lifetime = 80.0
+preprocess = 5.0
+visibility_rect = Rect2( -29.7172, -856.104, 2045.31, 1824.06 )
+process_material = SubResource( 5 )
+texture = ExtResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/die = SubResource( 6 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
+bus = "FXBus"
+
+[node name="AudioStreamHeart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+volume_db = 0.8
+bus = "FXBus"

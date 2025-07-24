@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Penetrator_attac.wav-80fd66ef615dde2f99d013d6e56cc470.sample"
+
+[deps]
+
+source_file="res://npcs/Penetrator_attac.wav"
+dest_files=[ "res://.import/Penetrator_attac.wav-80fd66ef615dde2f99d013d6e56cc470.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

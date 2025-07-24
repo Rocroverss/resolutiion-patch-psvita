@@ -1,0 +1,206 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/Cinematics/CreditsSlides.gd" type="Script" id=1]
+[ext_resource path="res://player/Vignette5.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Cinematics/screenshots/screen01.png" type="Texture" id=3]
+[ext_resource path="res://global/Themes/ThemeM.theme" type="Theme" id=4]
+[ext_resource path="res://global/Themes/logo-deck13.png" type="Texture" id=5]
+[ext_resource path="res://scenes/Cinematics/logo-steam.png" type="Texture" id=6]
+[ext_resource path="res://global/Themes/logo-mom.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "pan0"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -60, 0 ), Vector2( 60, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Overlay:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -200, 0 ), Vector2( 120, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Overlay:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "loop"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Shot:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2.6, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Shot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 340, 144 ), Vector2( 320, 144 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "cycle_screenshot"
+} ]
+}
+
+[node name="CreditsSlides" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D",
+"_edit_lock_": true
+}
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2( 320, 184 )
+z_index = 2
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
+anims/pan0 = SubResource( 1 )
+
+[node name="Overlay" type="Sprite" parent="Camera"]
+position = Vector2( 1, 0 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+
+[node name="Screenshots" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_right = 640.0
+margin_bottom = 272.0
+rect_clip_content = true
+
+[node name="Shot" type="Sprite" parent="Screenshots"]
+position = Vector2( 333.333, 144 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Screenshots"]
+autoplay = "loop"
+anims/loop = SubResource( 2 )
+
+[node name="Controls" type="Control" parent="."]
+
+[node name="RichTextLabel" type="Label" parent="Controls"]
+margin_left = 16.0
+margin_top = 296.0
+margin_right = 160.0
+margin_bottom = 344.0
+theme = ExtResource( 4 )
+text = "Thank you for being played. Visit us at"
+align = 2
+valign = 1
+autowrap = true
+
+[node name="RichTextLabel2" type="Label" parent="Controls"]
+margin_left = 328.0
+margin_top = 311.0
+margin_right = 408.0
+margin_bottom = 343.0
+theme = ExtResource( 4 )
+text = "and wishlist at"
+valign = 1
+autowrap = true
+
+[node name="Button_deck13" type="Button" parent="Controls"]
+margin_left = 264.0
+margin_top = 296.0
+margin_right = 315.0
+margin_bottom = 344.0
+theme = ExtResource( 4 )
+toggle_mode = true
+icon = ExtResource( 5 )
+
+[node name="Button_steam" type="Button" parent="Controls"]
+margin_left = 416.0
+margin_top = 296.0
+margin_right = 465.0
+margin_bottom = 344.0
+theme = ExtResource( 4 )
+toggle_mode = true
+icon = ExtResource( 6 )
+
+[node name="Button_mom" type="Button" parent="Controls"]
+margin_left = 168.0
+margin_top = 296.0
+margin_right = 248.0
+margin_bottom = 344.0
+theme = ExtResource( 4 )
+toggle_mode = true
+icon = ExtResource( 7 )
+
+[node name="ReturnButton" type="Button" parent="Controls"]
+margin_left = 480.0
+margin_top = 296.0
+margin_right = 616.0
+margin_bottom = 344.0
+theme = ExtResource( 4 )
+text = "CONTINUE"
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -416, -176 )
+scale = Vector2( 6.40001, 6.4 )
+z_index = 11
+[connection signal="pressed" from="Controls/Button_deck13" to="." method="_on_Button_deck13_pressed"]
+[connection signal="pressed" from="Controls/Button_steam" to="." method="_on_Button_steam_pressed"]
+[connection signal="pressed" from="Controls/Button_mom" to="." method="_on_Button_mom_pressed"]
+[connection signal="pressed" from="Controls/ReturnButton" to="." method="_on_ReturnButton_pressed"]

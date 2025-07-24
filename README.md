@@ -1,5 +1,5 @@
 
-# The Legend of Lumina — PSVita Patch
+# RESOLUTIION — PSVita Patch
 
 **A patch for _RESOLUTIION_ to run on the PlayStation Vita.**  
 An old killer escorts a curious AI into a fractured future of chaotic combat, puzzling secrets, and unsettling calm.
@@ -24,23 +24,25 @@ More info on their [Website](https://www.monolithofminds.com/resolutiion.html).
 
 ### 2. Prepare the Game Files
 - Locate `Resolutiion.pck` in the downloaded game folder.
-- Rename it to `game.pck` and place it inside the patch repository folder.
+- Place it inside the patch repository folder.
 
 ![Step 2](img/IMG1.png)
 
 ### 3. Run the Patch Script
 
-Using **Python 3**, execute the following command:
+Using **Python 3**, execute the following command or double click it to execute it:
 
 ```bash
-python patch.py --pck game.pck --all --output game_patched.pck --build-vpk
+python pck_patch_gui.py
 ```
 
-![Running Script](img/IMG3.png)
+Set up the following paths and press **Apply Patch**
+
+![Running Script](img/IMG2.png)
 
 Once completed, you'll see:
 
-![Output](img/IMG4.png)
+![Output](img/IMG3.png)
 
 ### 4. Install on Your PSVita
 
@@ -51,22 +53,31 @@ You now have two options:
 
 - **Manual Install:**  
   - Download the game from **VitaDB**.  
-  - Replace the `.pck` file in `ux0:data/game_data/` with your `game_patched.pck`, renamed to `game.pck`.
+  - Replace the `.pck` file in `ux0:data/game_data/` with your `game_merged.pck`, renamed to `game.pck`.
 
-![Final Step](img/IMG5.png)
+![Final Step](img/IMG4.png)
 
 ---
 ## Known issues:
-- low fps on some levels (16 fps).
-- fps drops on undo actions.
-- sound is not working as intended on some levels.
+
+Critical (Must Be Fixed)
+- Map functionality is currently broken.
+- Memory crash during a specific cinematic (If a map or scene fails to load, please restart the game).
+
+In Progress (Actively Being Worked On)
+- Low FPS on certain levels, bosses, and enemies.
+- Minor FPS stutters in specific areas.
+
+Nearly Resolved
+- Texture and collision mismatches may allow players to access unintended areas.
 
 ---
 ## 📸 Screenshots
 
-Explore the game's charming forest world:
+Explore the interesting Alibii’s journey :
 
-![Screenshot 1](img/IMG6.jpg)  
-![Screenshot 2](img/IMG7.jpg)  
-![Screenshot 3](img/IMG8.jpg)
-![Screenshot 3](img/IMG9.jpg)
+![Screenshot 1](img/IMG5.jpg)  
+![Screenshot 2](img/IMG6.jpg)  
+![Screenshot 3](img/IMG7.jpg)  
+![Screenshot 4](img/IMG8.jpg)
+![Screenshot 5](img/IMG9.jpg)

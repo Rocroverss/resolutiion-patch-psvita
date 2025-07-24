@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Lut_walk.wav-3aad13a2d1b0a2bac4e65a05dba5155d.sample"
+
+[deps]
+
+source_file="res://npcs/Lut_walk.wav"
+dest_files=[ "res://.import/Lut_walk.wav-3aad13a2d1b0a2bac4e65a05dba5155d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

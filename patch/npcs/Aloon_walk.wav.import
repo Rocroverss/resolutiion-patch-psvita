@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Aloon_walk.wav-e67a4a4186a29acb9bab4e3a6ec8feaa.sample"
+
+[deps]
+
+source_file="res://npcs/Aloon_walk.wav"
+dest_files=[ "res://.import/Aloon_walk.wav-e67a4a4186a29acb9bab4e3a6ec8feaa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

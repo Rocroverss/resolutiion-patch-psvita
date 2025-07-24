@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MutantKingWomb_grow.wav-63564e6958cf2f21061f6e9fcd6c297b.sample"
+
+[deps]
+
+source_file="res://npcs/MutantKingWomb_grow.wav"
+dest_files=[ "res://.import/MutantKingWomb_grow.wav-63564e6958cf2f21061f6e9fcd6c297b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,134 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/dock/dock.gd" type="Script" id=1]
+
+[node name="Dock" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="wall2air" type="CheckButton" parent="."]
+margin_top = 50.0
+margin_right = 191.0
+margin_bottom = 90.0
+text = "wall 2 air tiles"
+flat = true
+
+[node name="SortForeground" type="Button" parent="."]
+margin_top = 96.0
+margin_right = 112.0
+margin_bottom = 120.0
+text = "SortForeground"
+clip_text = true
+
+[node name="test" type="Button" parent="."]
+margin_left = 120.0
+margin_top = 192.0
+margin_right = 232.0
+margin_bottom = 216.0
+text = "test"
+clip_text = true
+
+[node name="Limiter" type="Button" parent="."]
+margin_left = 120.0
+margin_top = 96.0
+margin_right = 232.0
+margin_bottom = 120.0
+text = "Add Limiter"
+clip_text = true
+
+[node name="Transition" type="Button" parent="."]
+margin_left = 120.0
+margin_top = 128.0
+margin_right = 232.0
+margin_bottom = 152.0
+text = "Add Transition"
+clip_text = true
+
+[node name="CreateMap" type="Button" parent="."]
+margin_left = 120.0
+margin_top = 160.0
+margin_right = 232.0
+margin_bottom = 184.0
+text = "Create Map"
+clip_text = true
+
+[node name="DecreaseLight" type="Button" parent="."]
+margin_top = 160.0
+margin_right = 112.0
+margin_bottom = 184.0
+text = "Light Down"
+clip_text = true
+
+[node name="ShowMousepos" type="CheckButton" parent="."]
+margin_top = 8.0
+margin_right = 191.0
+margin_bottom = 48.0
+text = "Mouse"
+flat = true
+
+[node name="SnapMouse" type="CheckBox" parent="."]
+margin_left = 200.0
+margin_top = 8.0
+margin_right = 258.0
+margin_bottom = 48.0
+text = "snap"
+
+[node name="Output" type="LineEdit" parent="."]
+margin_top = 224.0
+margin_right = 232.0
+margin_bottom = 248.0
+mouse_filter = 1
+size_flags_vertical = 0
+text = "OUTPUT"
+align = 1
+
+[node name="Output2" type="RichTextLabel" parent="."]
+margin_top = 256.0
+margin_right = 232.0
+margin_bottom = 448.0
+mouse_filter = 1
+size_flags_vertical = 0
+text = "Dock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock startedDock started"
+scroll_following = true
+
+[node name="NavPolyLabel" type="LineEdit" parent="."]
+margin_top = 465.0
+margin_right = 232.0
+margin_bottom = 489.0
+mouse_filter = 1
+size_flags_vertical = 0
+text = "NavPoly Cutter"
+align = 1
+editable = false
+context_menu_enabled = false
+
+[node name="NavPolyCut" type="Button" parent="."]
+margin_left = 8.0
+margin_top = 504.0
+margin_right = 88.0
+margin_bottom = 528.0
+text = "CutNavPoly"
+clip_text = true
+
+[node name="NavPolyID" type="SpinBox" parent="."]
+margin_left = 96.0
+margin_top = 504.0
+margin_right = 170.0
+margin_bottom = 528.0
+allow_greater = true
+
+[node name="NavPolyStart" type="SpinBox" parent="."]
+margin_left = 8.0
+margin_top = 536.0
+margin_right = 82.0
+margin_bottom = 560.0
+max_value = 10.0
+allow_greater = true
+
+[node name="NavPolyEnd" type="SpinBox" parent="."]
+margin_left = 96.0
+margin_top = 536.0
+margin_right = 170.0
+margin_bottom = 560.0
+allow_greater = true

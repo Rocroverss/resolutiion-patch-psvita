@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ForestDreamer_slide.wav-e9b6c1ba2773929170be38636fdfb8dc.sample"
+
+[deps]
+
+source_file="res://npcs/ForestDreamer_slide.wav"
+dest_files=[ "res://.import/ForestDreamer_slide.wav-e9b6c1ba2773929170be38636fdfb8dc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,37 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float speed = 0.30;
+
+float rng2(vec2 seed, float mytime) {
+	return fract(sin( dot(seed * floor(mytime * speed * 12.0), vec2(127.1,311.7))) * 48654.5453123);
+}
+
+float rng(float seed, float mytime) {
+    return rng2(vec2(seed, 1.0), mytime);
+}
+
+void fragment() {
+	vec2 uv = SCREEN_UV;
+	vec2 blockS = floor(uv * vec2(24.0, 9.0));
+	vec2 blockL = floor(uv * vec2(8.0, 4.0));
+	 
+	float r = rng2(uv, TIME);
+	    
+	float lineNoise = pow(rng2(blockS, TIME), 8.0) * pow(rng2(blockL, TIME), 3.0) - pow(rng(7.2341, TIME), 17.0) * 2.0;
+	    
+	//vec3 col1 = texscreen(SCREEN_UV);
+	vec3 col1 = textureLod(SCREEN_TEXTURE,SCREEN_UV,0.0).rgb;
+	//vec3 col2 = texscreen(SCREEN_UV + vec2(lineNoise * 0.05 * rng(5.0), 0.0));
+	vec3 col2 = textureLod( SCREEN_TEXTURE, SCREEN_UV + vec2(lineNoise * 0.05 * rng(5.0, TIME)), 0.0).rgb;
+	//vec3 col3 = texscreen(SCREEN_UV - vec2(lineNoise * 0.05 * rng(31.0), 0.0));
+	vec3 col3 = textureLod(SCREEN_TEXTURE, SCREEN_UV - vec2(lineNoise * 0.05 * rng(31.0, TIME)), 0.0).rgb;
+	    
+	COLOR.rgb = vec3(col1.x, col2.y, col3.z);
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/speed = 0.3

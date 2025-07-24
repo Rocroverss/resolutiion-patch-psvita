@@ -1,0 +1,3689 @@
+[gd_scene load_steps=282 format=2]
+
+[ext_resource path="res://scenes/Stadium/Stadium02.gd" type="Script" id=1]
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Navigation.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor01.png" type="Texture" id=4]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor01_ceiling.png" type="Texture" id=5]
+[ext_resource path="res://objects/LimiterEvent.gd" type="Script" id=6]
+[ext_resource path="res://objects/TransitionEvent.gd" type="Script" id=7]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor02.png" type="Texture" id=8]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor02_ceiling.png" type="Texture" id=9]
+[ext_resource path="res://global/Shapes/octagon-blurred-S.png" type="Texture" id=10]
+[ext_resource path="res://scenes/Stadium/Stadium02_tunnels.png" type="Texture" id=11]
+[ext_resource path="res://scenes/Stadium/Stadium02_tunnels_ceiling.png" type="Texture" id=12]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway04.png" type="Texture" id=13]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway04_ceiling.png" type="Texture" id=14]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway01.png" type="Texture" id=15]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway01_ceiling.png" type="Texture" id=16]
+[ext_resource path="res://global/Shapes/octagon-blurred-XS.png" type="Texture" id=17]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor04.png" type="Texture" id=18]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor04_ceiling.png" type="Texture" id=19]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway02.png" type="Texture" id=20]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway02_ceiling.png" type="Texture" id=21]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway03.png" type="Texture" id=22]
+[ext_resource path="res://scenes/Stadium/Stadium02_hallway03_ceiling.png" type="Texture" id=23]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor03.png" type="Texture" id=24]
+[ext_resource path="res://scenes/Stadium/Stadium02_floor03_ceiling.png" type="Texture" id=25]
+[ext_resource path="res://player/WormholeL.scn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/Stadium/GoreWall_A1.png" type="Texture" id=27]
+[ext_resource path="res://scenes/Stadium/GoreWallDetails.scn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/Stadium/GoreWall_A2.png" type="Texture" id=29]
+[ext_resource path="res://scenes/Stadium/GoreWall_B1.png" type="Texture" id=30]
+[ext_resource path="res://scenes/Stadium/GoreWall_B2.png" type="Texture" id=31]
+[ext_resource path="res://scenes/Stadium/GoreWall_B3.png" type="Texture" id=32]
+[ext_resource path="res://scenes/Stadium/GoreWall_C1.png" type="Texture" id=33]
+[ext_resource path="res://scenes/Stadium/GoreWall_C2.png" type="Texture" id=34]
+[ext_resource path="res://objects/TriggerArea.scn" type="PackedScene" id=35]
+[ext_resource path="res://npcs/FleshGiant_moan1.wav" type="AudioStream" id=36]
+[ext_resource path="res://npcs/FleshGiant_drag.wav" type="AudioStream" id=37]
+[ext_resource path="res://scenes/Stadium/GoreSwitch.scn" type="PackedScene" id=38]
+[ext_resource path="res://npcs/AttackTimer.scn" type="PackedScene" id=39]
+[ext_resource path="res://npcs/Gascloud.scn" type="PackedScene" id=40]
+[ext_resource path="res://player/PlayerDummy.scn" type="PackedScene" id=46]
+[ext_resource path="res://objects/AcidBubble.scn" type="PackedScene" id=47]
+[ext_resource path="res://objects/Barrel.scn" type="PackedScene" id=48]
+[ext_resource path="res://objects/CrateL.scn" type="PackedScene" id=49]
+[ext_resource path="res://objects/CrateM.scn" type="PackedScene" id=50]
+[ext_resource path="res://objects/CrateS.scn" type="PackedScene" id=51]
+[ext_resource path="res://scenes/Stadium/Stadium_doors.png" type="Texture" id=52]
+[ext_resource path="res://npcs/FallenKing.scn" type="PackedScene" id=53]
+[ext_resource path="res://objects/Flag_pole.png" type="Texture" id=54]
+[ext_resource path="res://objects/Flag_M.png" type="Texture" id=55]
+[ext_resource path="res://scenes/FallenCity/Furniture.png" type="Texture" id=56]
+[ext_resource path="res://objects/Grass.scn" type="PackedScene" id=57]
+[ext_resource path="res://npcs/Kiepchen.scn" type="PackedScene" id=58]
+[ext_resource path="res://objects/Leaf.scn" type="PackedScene" id=59]
+[ext_resource path="res://npcs/Pod.scn" type="PackedScene" id=60]
+[ext_resource path="res://objects/Poles.png" type="Texture" id=61]
+[ext_resource path="res://objects/Sack.scn" type="PackedScene" id=62]
+[ext_resource path="res://npcs/SirThomasVanScrap.scn" type="PackedScene" id=63]
+[ext_resource path="res://scenes/FallenCity/Stalls.png" type="Texture" id=64]
+[ext_resource path="res://scenes/FallenCity/Tents.png" type="Texture" id=65]
+[ext_resource path="res://objects/Trash.scn" type="PackedScene" id=66]
+[ext_resource path="res://npcs/Unfuni.scn" type="PackedScene" id=67]
+[ext_resource path="res://objects/BarricadeL.scn" type="PackedScene" id=68]
+[ext_resource path="res://scenes/Stadium/Stadium01_background03.png" type="Texture" id=69]
+[ext_resource path="res://scenes/FallenCity/FallenCity02_floor01_shadow01.png" type="Texture" id=70]
+[ext_resource path="res://global/Shapes/octagon-blurred-L.png" type="Texture" id=71]
+[ext_resource path="res://objects/AreaEvent.gd" type="Script" id=72]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 688, 1104, 544, 1248, 384, 1248, 384, 832, 544, 832, 544, 752, 576, 752, 800, 1056, 768, 1104, 576, 640, 720, 640, 768, 688, 912, 688, 912, 752, 1072, 752, 1072, 688, 1216, 688, 1264, 848, 1216, 896, 1376, 704, 1392, 704, 1392, 768, 1464, 840, 1448, 856, 1440, 848, 1280, 624, 1296, 624, 1184, 1056, 1216, 1024, 2384, -416, 2288, -416, 2288, -480, 2432, -480, 2560, -240, 2672, -240, 2672, -192, 2560, -192, 1776, 896, 1776, 656, 1840, 640, 1840, 1232, 1744, 640, 1872, 1424, 1744, 1552, 1744, 1504, 1648, 1600, 1648, 1744, 1616, 1712, 1616, 1456, 1712, 1456, 1648, 784, 1616, 736, 1616, 1344, 1648, 1024, 800, 1648, 624, 1776, 384, 1776, 384, 1504, 496, 1392, 576, 1392, 800, 1616, 1056, 1472, 944, 1472, 832, 1232, 832, 1184, 1136, 1184, 1088, 1440, 1488, 1376, 1536, 1376, 1536, 1424, 1136, 1440, 1600, 1439.95, 1568, 1424, 1568, 1392, 1632, 1392, 1712, 1440, 1648, 1104, 1648, 1344, 1776, 976, 1776, 1264, 1824, 1328, 1600, 1744, 1440, 1744, 1520, 1808, 1600, 1808, 1600, 2032, 1440, 1904, 1296, 1904, 1264, 2032, 1168, 1936, 1088, 1920, 1248, 1856, 1088, 1936, 880, 1728, 832, 1856, 672, 1856, 672, 1824, 1872, 1264, 1472, 1360, 1248, 1360, 1168, 1696, 1248, 1776, 1056, 1888, 1104, 1696, 912, 1728, 960, 1680, 1088, 1680, 864, 1888, 736, 1232, 1248, 1296 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ), PoolIntArray( 4, 5, 6, 7, 8, 0 ), PoolIntArray( 6, 9, 10, 11, 7 ), PoolIntArray( 11, 12, 13, 7 ), PoolIntArray( 14, 15, 16, 17, 18 ), PoolIntArray( 19, 20, 21, 17 ), PoolIntArray( 21, 22, 23, 24 ), PoolIntArray( 21, 24, 17 ), PoolIntArray( 25, 26, 19, 17, 16 ), PoolIntArray( 27, 7, 13, 14, 18, 28 ), PoolIntArray( 29, 30, 31, 32 ), PoolIntArray( 33, 29, 32, 34, 35 ), PoolIntArray( 33, 35, 36 ), PoolIntArray( 37, 38, 39, 40 ), PoolIntArray( 41, 39, 38 ), PoolIntArray( 42, 43, 44 ), PoolIntArray( 45, 46, 47, 48 ), PoolIntArray( 44, 45, 48, 49 ), PoolIntArray( 41, 38, 50, 51 ), PoolIntArray( 52, 51, 50, 53 ), PoolIntArray( 54, 55, 56, 57, 58, 59, 60 ), PoolIntArray( 61, 62, 63, 64, 65, 66 ), PoolIntArray( 67, 68, 69, 70 ), PoolIntArray( 71, 72, 73, 74, 75 ), PoolIntArray( 76, 77, 52 ), PoolIntArray( 76, 52, 53 ), PoolIntArray( 78, 76, 53, 37 ), PoolIntArray( 78, 37, 40 ), PoolIntArray( 79, 78, 40, 80 ), PoolIntArray( 72, 71, 81, 82, 70, 69 ), PoolIntArray( 83, 84, 85, 86 ), PoolIntArray( 87, 86, 85, 88, 89 ), PoolIntArray( 90, 91, 87, 89, 92 ), PoolIntArray( 93, 94, 95, 96, 54 ), PoolIntArray( 42, 44, 49, 80 ), PoolIntArray( 97, 42, 80, 40 ), PoolIntArray( 74, 79, 80, 75 ), PoolIntArray( 98, 67, 70, 99 ), PoolIntArray( 100, 101, 91, 90, 102, 103 ), PoolIntArray( 104, 105, 106, 103, 102, 107, 94 ), PoolIntArray( 93, 104, 94 ), PoolIntArray( 54, 96, 55 ), PoolIntArray( 62, 60, 59, 108, 63 ), PoolIntArray( 70, 66, 65, 109, 99 ) ]
+outlines = [ PoolVector2Array( 384, 1776, 384, 1504, 496, 1392, 576, 1392, 736, 1232, 832, 1232, 832, 1184, 1136, 1184, 1248, 1296, 1248, 1360, 1472, 1360, 1488, 1376, 1536, 1376, 1536, 1424, 1568, 1424, 1568, 1392, 1632, 1392, 1776, 1264, 1776, 976, 1648, 1104, 1648, 1344, 1616, 1344, 1616, 736, 1744, 640, 1840, 640, 1840, 1232, 1872, 1264, 1872, 1424, 1744, 1552, 1744, 1504, 1648, 1600, 1648, 1744, 1616, 1712, 1616, 1456, 1712, 1456, 1824, 1328, 1712, 1440, 1600, 1439.95, 1600, 1744, 1440, 1744, 1136, 1440, 1088, 1440, 1056, 1472, 944, 1472, 800, 1616, 800, 1648, 880, 1728, 912, 1728, 960, 1680, 1088, 1680, 1104, 1696, 1168, 1696, 1248, 1776, 1248, 1856, 1296, 1904, 1440, 1904, 1520, 1808, 1600, 1808, 1600, 2032, 1264, 2032, 1168, 1936, 1088, 1936, 1088, 1920, 1056, 1888, 864, 1888, 832, 1856, 672, 1856, 672, 1824, 624, 1776 ), PoolVector2Array( 384, 1248, 384, 832, 544, 832, 544, 752, 576, 752, 576, 640, 720, 640, 768, 688, 912, 688, 912, 752, 1072, 752, 1072, 688, 1216, 688, 1280, 624, 1296, 624, 1376, 704, 1392, 704, 1392, 768, 1464, 840, 1448, 856, 1440, 848, 1264, 848, 1216, 896, 1216, 1024, 1184, 1056, 800, 1056, 768, 1104, 688, 1104, 544, 1248 ), PoolVector2Array( 1648, 784, 1776, 656, 1776, 896, 1648, 1024 ), PoolVector2Array( 2288, -416, 2288, -480, 2432, -480, 2672, -240, 2672, -192, 2560, -192, 2560, -240, 2384, -416 ) ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 952, 1040 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[sub_resource type="RectangleShape2D" id=5]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 10, 24 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 10, 24 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 32, 10 )
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0, 0.294393, 0.705607, 1 )
+colors = PoolColorArray( 1, 0.914062, 0, 0, 1, 0.854736, 0.46875, 1, 1, 0.0976562, 0.35144, 1, 1, 0, 0.9375, 0 )
+
+[sub_resource type="GradientTexture" id=10]
+gradient = SubResource( 9 )
+
+[sub_resource type="ParticlesMaterial" id=11]
+emission_shape = 2
+emission_box_extents = Vector3( 200, 200, 0 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 10.0
+initial_velocity_random = 1.0
+angular_velocity = 1.68993e-29
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+color_ramp = SubResource( 10 )
+hue_variation_random = 1.0
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 440, 272 )
+
+[sub_resource type="RectangleShape2D" id=13]
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 10, 24 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 320, 180 )
+
+[sub_resource type="RectangleShape2D" id=16]
+
+[sub_resource type="RectangleShape2D" id=17]
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 320, 296 )
+
+[sub_resource type="RectangleShape2D" id=19]
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 320, 600 )
+
+[sub_resource type="RectangleShape2D" id=21]
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 10, 24 )
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 16, 10 )
+
+[sub_resource type="Gradient" id=24]
+offsets = PoolRealArray( 0, 0.278571, 0.514286, 0.721429, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 0.0392157, 0, 0.0196078, 1, 0, 0, 0, 1, 0.5, 0.179688, 0.340195, 1, 0.803922, 0.352941, 0.580392, 0 )
+
+[sub_resource type="GradientTexture" id=25]
+gradient = SubResource( 24 )
+
+[sub_resource type="ParticlesMaterial" id=26]
+emission_shape = 2
+emission_box_extents = Vector3( 400, 300, 0 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 10.0
+initial_velocity_random = 1.0
+angular_velocity = 1.68993e-29
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+color_ramp = SubResource( 25 )
+hue_variation_random = 1.0
+
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 320, 180 )
+
+[sub_resource type="RectangleShape2D" id=28]
+
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 320, 392 )
+
+[sub_resource type="RectangleShape2D" id=30]
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 10, 24 )
+
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 320, 288 )
+
+[sub_resource type="RectangleShape2D" id=33]
+
+[sub_resource type="RectangleShape2D" id=34]
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 320, 192 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 32, 10 )
+
+[sub_resource type="PhysicsMaterial" id=37]
+
+[sub_resource type="PhysicsMaterial" id=38]
+
+[sub_resource type="PhysicsMaterial" id=39]
+
+[sub_resource type="PhysicsMaterial" id=40]
+
+[sub_resource type="PhysicsMaterial" id=41]
+
+[sub_resource type="PhysicsMaterial" id=42]
+
+[sub_resource type="PhysicsMaterial" id=43]
+
+[sub_resource type="PhysicsMaterial" id=47]
+
+[sub_resource type="PhysicsMaterial" id=48]
+
+[sub_resource type="PhysicsMaterial" id=49]
+
+[sub_resource type="PhysicsMaterial" id=50]
+
+[sub_resource type="PhysicsMaterial" id=51]
+
+[sub_resource type="PhysicsMaterial" id=52]
+
+[sub_resource type="PhysicsMaterial" id=53]
+
+[sub_resource type="PhysicsMaterial" id=54]
+
+[sub_resource type="PhysicsMaterial" id=55]
+
+[sub_resource type="PhysicsMaterial" id=56]
+
+[sub_resource type="PhysicsMaterial" id=57]
+
+[sub_resource type="PhysicsMaterial" id=58]
+
+[sub_resource type="PhysicsMaterial" id=59]
+
+[sub_resource type="PhysicsMaterial" id=60]
+
+[sub_resource type="PhysicsMaterial" id=61]
+
+[sub_resource type="PhysicsMaterial" id=62]
+
+[sub_resource type="PhysicsMaterial" id=63]
+
+[sub_resource type="PhysicsMaterial" id=64]
+
+[sub_resource type="PhysicsMaterial" id=65]
+
+[sub_resource type="PhysicsMaterial" id=66]
+
+[sub_resource type="PhysicsMaterial" id=67]
+
+[sub_resource type="PhysicsMaterial" id=68]
+
+[sub_resource type="PhysicsMaterial" id=69]
+
+[sub_resource type="PhysicsMaterial" id=70]
+
+[sub_resource type="PhysicsMaterial" id=71]
+
+[sub_resource type="PhysicsMaterial" id=72]
+
+[sub_resource type="PhysicsMaterial" id=73]
+
+[sub_resource type="PhysicsMaterial" id=74]
+
+[sub_resource type="PhysicsMaterial" id=75]
+
+[sub_resource type="PhysicsMaterial" id=76]
+
+[sub_resource type="PhysicsMaterial" id=77]
+
+[sub_resource type="PhysicsMaterial" id=78]
+
+[sub_resource type="PhysicsMaterial" id=79]
+
+[sub_resource type="PhysicsMaterial" id=80]
+
+[sub_resource type="PhysicsMaterial" id=81]
+
+[sub_resource type="PhysicsMaterial" id=82]
+
+[sub_resource type="PhysicsMaterial" id=83]
+
+[sub_resource type="PhysicsMaterial" id=84]
+
+[sub_resource type="PhysicsMaterial" id=85]
+
+[sub_resource type="PhysicsMaterial" id=86]
+
+[sub_resource type="PhysicsMaterial" id=87]
+
+[sub_resource type="PhysicsMaterial" id=88]
+
+[sub_resource type="PhysicsMaterial" id=89]
+
+[sub_resource type="PhysicsMaterial" id=90]
+
+[sub_resource type="PhysicsMaterial" id=91]
+
+[sub_resource type="PhysicsMaterial" id=92]
+
+[sub_resource type="PhysicsMaterial" id=93]
+
+[sub_resource type="Animation" id=94]
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flag:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 3 ]
+}
+
+[sub_resource type="PhysicsMaterial" id=95]
+
+[sub_resource type="PhysicsMaterial" id=96]
+
+[sub_resource type="PhysicsMaterial" id=97]
+
+[sub_resource type="PhysicsMaterial" id=98]
+
+[sub_resource type="PhysicsMaterial" id=99]
+
+[sub_resource type="PhysicsMaterial" id=100]
+
+[sub_resource type="PhysicsMaterial" id=101]
+
+[sub_resource type="PhysicsMaterial" id=102]
+
+[sub_resource type="PhysicsMaterial" id=103]
+
+[sub_resource type="PhysicsMaterial" id=104]
+
+[sub_resource type="PhysicsMaterial" id=105]
+
+[sub_resource type="PhysicsMaterial" id=106]
+
+[sub_resource type="PhysicsMaterial" id=107]
+
+[sub_resource type="PhysicsMaterial" id=108]
+
+[sub_resource type="PhysicsMaterial" id=109]
+
+[sub_resource type="PhysicsMaterial" id=110]
+
+[sub_resource type="PhysicsMaterial" id=111]
+
+[sub_resource type="PhysicsMaterial" id=112]
+
+[sub_resource type="PhysicsMaterial" id=113]
+
+[sub_resource type="PhysicsMaterial" id=114]
+
+[sub_resource type="PhysicsMaterial" id=115]
+
+[sub_resource type="PhysicsMaterial" id=116]
+
+[sub_resource type="PhysicsMaterial" id=117]
+
+[sub_resource type="PhysicsMaterial" id=118]
+
+[sub_resource type="PhysicsMaterial" id=119]
+
+[sub_resource type="PhysicsMaterial" id=120]
+
+[sub_resource type="PhysicsMaterial" id=121]
+
+[sub_resource type="PhysicsMaterial" id=122]
+
+[sub_resource type="PhysicsMaterial" id=123]
+
+[sub_resource type="PhysicsMaterial" id=124]
+
+[sub_resource type="PhysicsMaterial" id=125]
+
+[sub_resource type="PhysicsMaterial" id=126]
+
+[sub_resource type="PhysicsMaterial" id=127]
+
+[sub_resource type="PhysicsMaterial" id=128]
+
+[sub_resource type="PhysicsMaterial" id=129]
+
+[sub_resource type="PhysicsMaterial" id=130]
+
+[sub_resource type="PhysicsMaterial" id=131]
+
+[sub_resource type="PhysicsMaterial" id=132]
+
+[sub_resource type="PhysicsMaterial" id=133]
+
+[sub_resource type="PhysicsMaterial" id=134]
+
+[sub_resource type="PhysicsMaterial" id=135]
+
+[sub_resource type="PhysicsMaterial" id=136]
+
+[sub_resource type="PhysicsMaterial" id=137]
+
+[sub_resource type="PhysicsMaterial" id=138]
+
+[sub_resource type="PhysicsMaterial" id=139]
+
+[sub_resource type="PhysicsMaterial" id=140]
+
+[sub_resource type="PhysicsMaterial" id=141]
+
+[sub_resource type="PhysicsMaterial" id=142]
+
+[sub_resource type="PhysicsMaterial" id=143]
+
+[sub_resource type="PhysicsMaterial" id=144]
+
+[sub_resource type="PhysicsMaterial" id=145]
+
+[sub_resource type="PhysicsMaterial" id=146]
+
+[sub_resource type="PhysicsMaterial" id=147]
+
+[sub_resource type="PhysicsMaterial" id=148]
+
+[sub_resource type="PhysicsMaterial" id=149]
+
+[sub_resource type="PhysicsMaterial" id=150]
+
+[sub_resource type="PhysicsMaterial" id=151]
+
+[sub_resource type="PhysicsMaterial" id=152]
+
+[sub_resource type="PhysicsMaterial" id=153]
+
+[sub_resource type="PhysicsMaterial" id=154]
+
+[sub_resource type="PhysicsMaterial" id=155]
+
+[sub_resource type="PhysicsMaterial" id=156]
+
+[sub_resource type="PhysicsMaterial" id=157]
+
+[sub_resource type="PhysicsMaterial" id=158]
+
+[sub_resource type="PhysicsMaterial" id=159]
+
+[sub_resource type="PhysicsMaterial" id=160]
+
+[sub_resource type="PhysicsMaterial" id=161]
+
+[sub_resource type="PhysicsMaterial" id=162]
+
+[sub_resource type="PhysicsMaterial" id=163]
+
+[sub_resource type="PhysicsMaterial" id=164]
+
+[sub_resource type="PhysicsMaterial" id=165]
+
+[sub_resource type="PhysicsMaterial" id=166]
+
+[sub_resource type="PhysicsMaterial" id=167]
+
+[sub_resource type="PhysicsMaterial" id=168]
+
+[sub_resource type="PhysicsMaterial" id=169]
+
+[sub_resource type="PhysicsMaterial" id=170]
+
+[sub_resource type="PhysicsMaterial" id=171]
+
+[sub_resource type="PhysicsMaterial" id=172]
+
+[sub_resource type="PhysicsMaterial" id=173]
+
+[sub_resource type="PhysicsMaterial" id=174]
+
+[sub_resource type="PhysicsMaterial" id=175]
+
+[sub_resource type="PhysicsMaterial" id=176]
+
+[sub_resource type="PhysicsMaterial" id=177]
+
+[sub_resource type="PhysicsMaterial" id=178]
+
+[sub_resource type="PhysicsMaterial" id=179]
+
+[sub_resource type="PhysicsMaterial" id=180]
+
+[sub_resource type="PhysicsMaterial" id=181]
+
+[sub_resource type="PhysicsMaterial" id=182]
+
+[sub_resource type="PhysicsMaterial" id=183]
+
+[sub_resource type="PhysicsMaterial" id=184]
+
+[sub_resource type="PhysicsMaterial" id=185]
+
+[sub_resource type="PhysicsMaterial" id=186]
+
+[sub_resource type="PhysicsMaterial" id=187]
+
+[sub_resource type="PhysicsMaterial" id=188]
+
+[sub_resource type="PhysicsMaterial" id=189]
+
+[sub_resource type="PhysicsMaterial" id=190]
+
+[sub_resource type="PhysicsMaterial" id=191]
+
+[sub_resource type="PhysicsMaterial" id=192]
+
+[sub_resource type="PhysicsMaterial" id=193]
+
+[sub_resource type="PhysicsMaterial" id=194]
+
+[sub_resource type="PhysicsMaterial" id=195]
+
+[sub_resource type="PhysicsMaterial" id=196]
+
+[sub_resource type="PhysicsMaterial" id=197]
+
+[sub_resource type="PhysicsMaterial" id=198]
+
+[sub_resource type="PhysicsMaterial" id=199]
+
+[sub_resource type="PhysicsMaterial" id=200]
+
+[sub_resource type="PhysicsMaterial" id=201]
+
+[sub_resource type="PhysicsMaterial" id=202]
+
+[sub_resource type="PhysicsMaterial" id=203]
+
+[sub_resource type="PhysicsMaterial" id=204]
+
+[sub_resource type="Gradient" id=205]
+offsets = PoolRealArray( 0.0045045, 0.495495, 0.986486 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=206]
+gradient = SubResource( 205 )
+
+[sub_resource type="ParticlesMaterial" id=207]
+emission_shape = 2
+emission_box_extents = Vector3( 1500, 2000, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 5.0
+initial_velocity_random = 1.0
+angular_velocity = 9.20149e-40
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 206 )
+hue_variation_random = 1.0
+
+[sub_resource type="Gradient" id=208]
+offsets = PoolRealArray( 0, 0.00900901, 0.608108, 0.990991 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.0962963, 1, 1, 1, 1, 1, 1, 1, 0.00231373 )
+
+[sub_resource type="GradientTexture" id=209]
+gradient = SubResource( 208 )
+
+[sub_resource type="ParticlesMaterial" id=210]
+emission_shape = 2
+emission_box_extents = Vector3( 1200, 1600, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 20.0
+initial_velocity_random = 1.0
+angular_velocity = 30.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 209 )
+
+[sub_resource type="RectangleShape2D" id=211]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=212]
+extents = Vector2( 16, 40 )
+
+[sub_resource type="RectangleShape2D" id=213]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=214]
+extents = Vector2( 56, 16 )
+
+[sub_resource type="RectangleShape2D" id=215]
+extents = Vector2( 56, 16 )
+
+[sub_resource type="RectangleShape2D" id=216]
+extents = Vector2( 16, 64 )
+
+[sub_resource type="RectangleShape2D" id=217]
+extents = Vector2( 80, 16 )
+
+[node name="S2" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D",
+"_edit_lock_": true
+}
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+visible = false
+z_index = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+show_awareness = false
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+visible = false
+navpoly = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Wall" type="TileMap" parent="Navigation2D"]
+modulate = Color( 1, 1, 1, 0.4 )
+z_index = 5
+z_as_relative = false
+cell_size = Vector2( 16, 16 )
+collision_use_kinematic = true
+bake_navigation = true
+format = 1
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Collisions" type="Node2D" parent="Navigation2D"]
+position = Vector2( -70, -48 )
+z_index = 20
+
+[node name="Highwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 726, -128, 678, -128, 678, -208, 646, -208, 614, -240, 614, -528, 1158, -528, 1158, -560, 1446, -560, 1446, -448, 1542, -448, 1542, -352, 1446, -352, 1446, -224, 1222, -224, 1222, -272, 838, -272, 774, -208, 742, -208, 742, -128, 726, -128, 726, -216, 734, -224, 774, -224, 838, -288, 1222, -288, 1270, -240, 1382, -240, 1430, -288, 1430, -360, 1438, -368, 1526, -368, 1526, -432, 1430, -432, 1430, -512, 1398, -512, 1398, -544, 1174, -544, 1174, -512, 870, -512, 870, -480, 838, -480, 838, -512, 646, -512, 630, -496, 630, -240, 646, -224, 686, -224, 694, -216, 694, -144, 726, -144 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 2710, 80, 2662, 80, 2662, -16, 2614, -16, 2614, -192, 2454, -352, 2262, -352, 2262, -464, 2390, -464, 2406, -480, 2486, -480, 2758, -208, 2758, -16, 2726, -16, 2726, 80, 2710, 80, 2710, -24, 2718, -32, 2742, -32, 2742, -208, 2486, -464, 2406, -464, 2406, -448, 2278, -448, 2278, -400, 2326, -400, 2326, -368, 2454, -368, 2630, -192, 2630, -32, 2670, -32, 2678, -24, 2678, 64, 2710, 64 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( -250, -176, -250, -272, -282, -272, -282, -336, -634, -336, -634, -176, -730, -176, -730, -464, -618, -464, -618, -456, -634, -448, -634, -440, -642, -432, -642, -416, -650, -408, -650, -384, -682, -352, -682, -320, -698, -304, -698, -192, -682, -192, -682, -256, -666, -272, -666, -288, -650, -304, -650, -352, -634, -368, -634, -400, -618, -416, -610, -416, -602, -408, -602, -392, -586, -376, -586, -368, -578, -360, -522, -360, -498, -384, -482, -384, -466, -400, -442, -400, -426, -416, -314, -416, -298, -400, -290, -400, -266, -376, -266, -312, -258, -304, -250, -304, -234, -288, -234, -192, -218, -192, -218, -344, -234, -360, -234, -376, -250, -392, -250, -408, -258, -416, -266, -416, -282, -432, -434, -432, -450, -416, -482, -416, -498, -400, -514, -400, -530, -384, -538, -384, -546, -376, -562, -376, -570, -384, -570, -392, -586, -408, -586, -424, -602, -440, -602, -448, -618, -456, -618, -464, -186, -464, -186, -176 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( -746, 1296, -778, 1296, -778, 528, -522, 272, -474, 272, -474, 288, -522, 288, -762, 528, -762, 1280, -738, 1280, -730, 1288, -730, 1360, -698, 1360, -698, 1288, -690, 1280, -650, 1280, -650, 936, -642, 928, -634, 928, -538, 1024, -426, 1024, -426, 960, -474, 960, -570, 864, -586, 864, -586, 816, -634, 768, -650, 768, -650, 544, -474, 368, -282, 368, -282, 320, -362, 320, -362, 288, -394, 288, -394, 272, -426, 272, -426, 168, -410, 152, -410, 144, -394, 128, -394, 80, -410, 80, -410, 112, -458, 112, -458, 64, -266, 64, -266, 304, -266, 384, -474, 384, -634, 544, -634, 752, -570, 816, -570, 848, -474, 944, -410, 944, -410, 1040, -538, 1040, -634, 944, -634, 1296, -682, 1296, -682, 1376, -746, 1376 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( -474, 256, -458, 256, -458, 112, -410, 112, -410, 120, -442, 152, -442, 272, -474, 272 )
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 486, 768, 374, 768, 246, 640, 246, 608, 310, 544, 422, 544, 662, 304, 678, 304, 678, 256, 742, 256, 742, 304, 790, 304, 790, 320, 1302, 320, 1366, 384, 1350, 384, 1302, 336, 774, 336, 774, 320, 726, 320, 726, 272, 694, 272, 694, 320, 662, 320, 422, 560, 310, 560, 262, 608, 262, 640, 374, 752, 502, 752 )
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 2518, 1120, 2390, 1120, 2390, 1024, 2454, 1024, 2550, 928, 2550, 896, 2614, 832, 2614, 736, 2566, 736, 2566, 560, 2614, 560, 2614, 416, 2758, 416, 2758, 880, 2518, 1120, 2518, 1104, 2614, 1008, 2614, 976, 2630, 960, 2662, 960, 2678, 944, 2678, 912, 2710, 880, 2742, 880, 2742, 464, 2710, 464, 2710, 432, 2678, 432, 2678, 464, 2630, 464, 2630, 576, 2582, 576, 2582, 720, 2630, 720, 2630, 848, 2614, 848, 2566, 896, 2566, 944, 2550, 944, 2454, 1040, 2406, 1040, 2406, 1104, 2518, 1104 )
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 790, 880, 790, 656, 726, 656, 726, 592, 774, 592, 774, 608, 790, 608, 806, 592, 934, 592, 950, 608, 950, 672, 982, 672, 982, 648, 990, 640, 1006, 640, 1014, 648, 1014, 784, 998, 784, 998, 816, 966, 848, 966, 912, 838, 912, 806, 880 )
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 646, 656, 646, 608, 662, 608, 662, 672, 646, 672, 646, 768, 630, 768, 630, 656 )
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1110, 784, 1110, 648, 1118, 640, 1134, 640, 1142, 648, 1142, 784 )
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 2086, 1968, 2086, 1936, 2006, 1936, 2006, 1920, 1814, 1920, 1814, 1600, 1942, 1472, 1942, 1280, 1910, 1280, 1910, 1112, 1918, 1104, 2054, 1104, 2054, 1040, 1910, 1040, 1910, 672, 1750, 672, 1670, 784, 1670, 752, 1750, 656, 1926, 656, 1926, 1024, 2070, 1024, 2070, 1120, 1926, 1120, 1926, 1264, 1958, 1264, 1958, 1472, 1830, 1600, 1830, 1904, 2102, 1904, 2102, 1984, 1846, 1984, 1814, 2016, 1814, 2000, 1846, 1968 )
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1590, 912, 1590, 896, 1542, 896, 1462, 816, 1462, 784, 1494, 752, 1670, 752, 1670, 880, 1622, 880, 1622, 912 )
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1766, 2048, 1814, 2000, 1814, 2128, 214, 2128, 214, 1424, 214, 1200, 182, 1168, 182, 1040, 38, 1040, 38, 848, 598, 848, 598, 768, 630, 768, 630, 784, 614, 784, 614, 864, 214, 864, 214, 912, 182, 912, 166, 928, 166, 960, 54, 960, 54, 1024, 190, 1024, 198, 1032, 198, 1168, 230, 1200, 230, 1424, 262, 1456, 262, 1680, 326, 1744, 326, 1792, 262, 1856, 262, 1888, 278, 1904, 310, 1904, 342, 1872, 718, 1872, 726, 1880, 726, 1888, 758, 1920, 870, 1920, 886, 1936, 1078, 1936, 1094, 1952, 1110, 1952, 1142, 1984, 1142, 2016, 1158, 2032, 1190, 2032, 1206, 2016, 1238, 2016, 1302, 2080, 1350, 2080, 1382, 2112, 1766, 2112 )
+
+[node name="CollisionPolygon2D17" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1318, 1376, 1318, 1312, 1286, 1312, 1286, 960, 1318, 928, 1430, 928, 1462, 960, 1462, 1136, 1366, 1136, 1366, 1248, 1398, 1248, 1398, 1376 )
+
+[node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 838, 1216, 838, 1144, 846, 1136, 1222, 1136, 1254, 1104, 1270, 1104, 1270, 1216 )
+
+[node name="CollisionPolygon2D20" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 454, 1296, 614, 1296, 630, 1280, 630, 1296, 614, 1312, 454, 1312 )
+
+[node name="CollisionPolygon2D21" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1606, 1456, 1606, 1416, 1614, 1408, 1622, 1408, 1622, 1368, 1630, 1360, 1670, 1360, 1670, 1328, 1686, 1328, 1686, 1424, 1638, 1424, 1638, 1456 )
+
+[node name="CollisionPolygon2D22" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 1350, 1840, 1238, 1728, 1174, 1728, 1110, 1680, 1078, 1680, 1078, 1712, 902, 1712, 886, 1696, 870, 1696, 1046, 1520, 1206, 1520, 1494, 1808, 1510, 1808, 1510, 1840 )
+
+[node name="CollisionPolygon2D23" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( -666, 1872, -810, 1872, -858, 1824, -858, 1712, -794, 1648, -746, 1648, -746, 1600, -682, 1600, -682, 1648, -618, 1696, -618, 1824, -666, 1872, -666, 1856, -634, 1824, -634, 1696, -650, 1696, -682, 1664, -698, 1664, -698, 1616, -730, 1616, -730, 1664, -794, 1664, -842, 1712, -842, 1824, -810, 1856, -666, 1856 )
+
+[node name="CollisionPolygon2D24" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( 2550, 2160, 2502, 2160, 2502, 1984, 2374, 1984, 2374, 1920, 2422, 1920, 2422, 1936, 2390, 1936, 2390, 1968, 2510, 1968, 2518, 1976, 2518, 2144, 2558, 2144, 2566, 2152, 2566, 2224, 2598, 2224, 2598, 2152, 2606, 2144, 2630, 2144, 2630, 1728, 2518, 1728, 2518, 1920, 2422, 1920, 2422, 1904, 2502, 1904, 2502, 1712, 2646, 1712, 2646, 2160, 2614, 2160, 2614, 2240, 2550, 2240 )
+
+[node name="CollisionPolygon2D27" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Highwall"]
+polygon = PoolVector2Array( -666, 2480, -906, 2480, -970, 2416, -970, 2272, -922, 2224, -650, 2224, -538, 2160, -506, 2160, -506, 2192, -458, 2240, -618, 2400, -650, 2400, -650, 2480, -666, 2480, -666, 2392, -658, 2384, -618, 2384, -474, 2240, -522, 2192, -522, 2176, -650, 2304, -650, 2320, -666, 2320, -666, 2240, -906, 2240, -906, 2288, -954, 2288, -954, 2416, -906, 2464, -666, 2464 )
+
+[node name="Lowwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 1024
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1366, -448, 1286, -448, 1254, -480, 1254, -528, 1174, -528, 1174, -544, 1398, -544, 1398, -480, 1366, -448 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 662, -512, 630, -480, 630, -496, 646, -512 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 726, -496, 710, -512, 774, -512, 758, -496 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 806, -504, 806, -512, 838, -512, 838, -496, 814, -496 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 918, -384, 886, -416, 886, -464, 918, -496, 870, -496, 870, -512, 1174, -512, 1174, -496, 1174, -488, 1166, -480, 1134, -480, 1126, -488, 1126, -496, 1014, -496, 1046, -464, 1046, -416, 1014, -384 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1398, -512, 1430, -480, 1430, -512 )
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 838, -472, 838, -480, 870, -480, 870, -472, 862, -464, 846, -464 )
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2422, -440, 2422, -448, 2406, -448, 2406, -464, 2486, -464, 2742, -208, 2742, -192, 2486, -448, 2470, -448, 2470, -440, 2462, -432, 2430, -432 )
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2278, -400, 2278, -448, 2406, -448, 2399, -440, 2294, -440, 2294, -416, 2342, -416, 2358, -400, 2326, -368, 2326, -400 )
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1430, -424, 1430, -432, 1526, -432, 1526, -416, 1438, -416 )
+
+[node name="CollisionPolygon2D23" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1350, -288, 1366, -304, 1398, -304, 1414, -288, 1398, -272, 1366, -272 )
+
+[node name="CollisionPolygon2D31" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2630, -144, 2662, -144, 2662, -136, 2654, -128, 2630, -128 )
+
+[node name="CollisionPolygon2D32" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2726, -136, 2734, -128, 2742, -128, 2742, -144, 2726, -144 )
+
+[node name="CollisionPolygon2D33" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -474, 272, -442, 272, -442, 280, -450, 288, -474, 288 )
+
+[node name="CollisionPolygon2D34" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -362, 304, -386, 304, -402, 288, -418, 288, -426, 280, -426, 272, -394, 272, -394, 288, -362, 288 )
+
+[node name="CollisionPolygon2D35" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -522, 288, -474, 288, -490, 304, -522, 304, -762, 544, -762, 528 )
+
+[node name="CollisionPolygon2D38" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -298, 336, -314, 352, -338, 352, -346, 344, -346, 336, -354, 336, -362, 328, -362, 320, -282, 320, -282, 352 )
+
+[node name="CollisionPolygon2D39" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 662, 320, 694, 320, 694, 328, 686, 336, 662, 336, 582, 416, 566, 416 )
+
+[node name="CollisionPolygon2D40" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 726, 584, 734, 576, 758, 576, 758, 496, 734, 496, 726, 488, 726, 456, 734, 448, 758, 448, 758, 336, 734, 336, 726, 328, 726, 320, 774, 320, 774, 336, 1302, 336, 1350, 384, 1334, 384, 1302, 352, 1046, 352, 1046, 376, 1038, 384, 1014, 384, 1014, 392, 1006, 400, 998, 400, 998, 440, 990, 448, 958, 448, 950, 440, 950, 352, 870, 352, 870, 432, 854, 448, 854, 456, 846, 464, 838, 464, 806, 464, 806, 512, 790, 528, 790, 544, 774, 560, 774, 592, 726, 592 )
+
+[node name="CollisionPolygon2D51" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1142, 672, 1286, 672, 1350, 608, 1350, 432, 1318, 432, 1318, 440, 1310, 448, 1150, 448, 1142, 440, 1142, 408, 1150, 400, 1222, 400, 1238, 416, 1350, 416, 1350, 400, 1334, 400, 1334, 384, 1366, 384, 1366, 608, 1286, 688, 1142, 688 )
+
+[node name="CollisionPolygon2D55" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 590, 528, 574, 528, 566, 520, 566, 448, 550, 448, 550, 432, 566, 416, 582, 416, 582, 432, 590, 432, 598, 440, 598, 520 )
+
+[node name="CollisionPolygon2D62" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2630, 464, 2678, 464, 2678, 472, 2670, 480, 2630, 480 )
+
+[node name="CollisionPolygon2D63" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2710, 472, 2710, 464, 2742, 464, 2742, 480, 2718, 480 )
+
+[node name="CollisionPolygon2D72" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1310, 528, 1318, 536, 1310, 544, 1302, 536 )
+
+[node name="CollisionPolygon2D74" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 310, 560, 422, 560, 550, 432, 550, 448, 438, 560, 422, 576, 310, 576, 262, 624, 262, 608 )
+
+[node name="CollisionPolygon2D76" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 374, 752, 302, 680, 326, 656, 374, 656, 422, 704, 454, 704, 486, 736, 502, 736, 662, 576, 662, 608, 646, 608, 502, 752 )
+
+[node name="CollisionPolygon2D77" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2582, 576, 2630, 576, 2646, 592, 2646, 608, 2630, 624, 2630, 656, 2582, 656 )
+
+[node name="CollisionPolygon2D80" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1214, 640, 1222, 648, 1214, 656, 1206, 648 )
+
+[node name="CollisionPolygon2D81" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1262, 640, 1270, 648, 1262, 656, 1254, 648 )
+
+[node name="CollisionPolygon2D82" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1446, 752, 1366, 672, 1366, 656, 1350, 656, 1350, 672, 1286, 736, 1142, 736, 1142, 688, 1286, 688, 1366, 608, 1510, 752 )
+
+[node name="CollisionPolygon2D83" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 734, 672, 726, 664, 726, 656, 790, 656, 790, 720, 742, 672 )
+
+[node name="CollisionPolygon2D84" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1814, 672, 1910, 672, 1910, 688, 1814, 688 )
+
+[node name="CollisionPolygon2D86" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1750, 672, 1814, 672, 1814, 688, 1798, 704, 1798, 712, 1790, 720, 1750, 720, 1686, 784, 1670, 784 )
+
+[node name="CollisionPolygon2D88" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1830, 720, 1838, 720, 1846, 728, 1846, 944, 1718, 1072, 1718, 832 )
+
+[node name="CollisionPolygon2D92" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 646, 776, 638, 784, 630, 784, 630, 768, 646, 768 )
+
+[node name="CollisionPolygon2D94" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2630, 816, 2646, 816, 2678, 784, 2678, 768, 2694, 768, 2694, 784, 2646, 832, 2630, 832 )
+
+[node name="CollisionPolygon2D96" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 630, 792, 622, 800, 614, 800, 614, 784, 630, 784 )
+
+[node name="CollisionPolygon2D98" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1110, 792, 1110, 784, 1142, 784, 1142, 792, 1134, 800, 1118, 800 )
+
+[node name="CollisionPolygon2D99" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1622, 896, 1622, 880, 1670, 880, 1670, 784, 1686, 784, 1686, 1328, 1670, 1328, 1670, 896 )
+
+[node name="CollisionPolygon2D101" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -650, 768, -586, 832, -586, 816, -634, 768 )
+
+[node name="CollisionPolygon2D102" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2630, 848, 2566, 912, 2566, 896, 2614, 848 )
+
+[node name="CollisionPolygon2D104" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 446, 1104, 406, 1104, 278, 976, 278, 928, 246, 928, 230, 912, 214, 912, 214, 864, 614, 864, 598, 880, 454, 880, 454, 1096 )
+
+[node name="CollisionPolygon2D113" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 182, 912, 214, 912, 198, 928, 182, 928, 166, 944, 166, 928 )
+
+[node name="CollisionPolygon2D114" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 950, 944, 838, 944, 822, 928, 822, 912, 790, 880, 806, 880, 838, 912, 966, 912, 966, 928 )
+
+[node name="CollisionPolygon2D115" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1590, 920, 1590, 912, 1622, 912, 1622, 920, 1614, 928, 1598, 928 )
+
+[node name="CollisionPolygon2D120" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -753, 968, -746, 976, -746, 984, -754, 992, -762, 992, -762, 968 )
+
+[node name="CollisionPolygon2D121" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -586, 864, -570, 864, -474, 960, -426, 960, -426, 976, -474, 976 )
+
+[node name="CollisionPolygon2D122" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 54, 960, 166, 960, 166, 968, 158, 976, 54, 976 )
+
+[node name="CollisionPolygon2D124" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -658, 976, -650, 976, -650, 1040, -658, 1040, -666, 1032, -666, 984 )
+
+[node name="CollisionPolygon2D128" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1638, 1424, 1686, 1424, 1686, 1392, 1718, 1392, 1718, 1152, 1846, 1024, 1846, 1296, 1718, 1424, 1702, 1424, 1686, 1440, 1638, 1440 )
+
+[node name="CollisionPolygon2D130" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1910, 1048, 1910, 1040, 2054, 1040, 2054, 1056, 1918, 1056 )
+
+[node name="CollisionPolygon2D131" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2406, 1040, 2454, 1040, 2550, 944, 2566, 944, 2454, 1056, 2406, 1056 )
+
+[node name="CollisionPolygon2D132" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 390, 1696, 310, 1616, 310, 1488, 406, 1584, 406, 1696, 438, 1696, 438, 1184, 342, 1184, 230, 1072, 230, 1056, 342, 1168, 446, 1168, 454, 1176, 454, 1704, 446, 1712, 406, 1712, 326, 1792, 326, 1776, 390, 1712 )
+
+[node name="CollisionPolygon2D133" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 278, 1136, 390, 1248, 390, 1296, 406, 1312, 406, 1504, 278, 1376 )
+
+[node name="CollisionPolygon2D134" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1366, 1136, 1462, 1136, 1462, 1152, 1430, 1152, 1414, 1168, 1366, 1168 )
+
+[node name="CollisionPolygon2D135" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 902, 1232, 902, 1216, 1238, 1216, 1238, 1264, 1206, 1232 )
+
+[node name="CollisionPolygon2D136" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1942, 1280, 1942, 1312, 1910, 1280 )
+
+[node name="CollisionPolygon2D137" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1318, 1312, 1318, 1344, 1286, 1312 )
+
+[node name="CollisionPolygon2D138" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1350, 1400, 1350, 1392, 1326, 1392, 1318, 1384, 1318, 1376, 1398, 1376, 1398, 1392, 1382, 1392, 1382, 1400, 1374, 1408, 1358, 1408 )
+
+[node name="CollisionPolygon2D139" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2006, 1936, 1678, 1936, 1670, 1928, 1670, 1664, 1654, 1648, 1654, 1632, 1638, 1616, 1638, 1600, 1654, 1584, 1654, 1568, 1670, 1552, 1670, 1496, 1678, 1488, 1782, 1488, 1886, 1384, 1878, 1408, 1782, 1504, 1686, 1504, 1686, 1760, 1718, 1792, 1718, 1648, 1814, 1552, 1814, 1920, 2006, 1920 )
+
+[node name="CollisionPolygon2D140" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1606, 1464, 1606, 1456, 1638, 1456, 1638, 1464, 1630, 1472, 1614, 1472 )
+
+[node name="CollisionPolygon2D141" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -842, 1728, -842, 1712, -794, 1664, -730, 1664, -730, 1672, -738, 1680, -786, 1680, -834, 1728 )
+
+[node name="CollisionPolygon2D144" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1174, 1744, 1158, 1728, 1142, 1728, 1110, 1696, 1078, 1696, 1078, 1680, 1110, 1680, 1174, 1728, 1238, 1728, 1350, 1840, 1334, 1840, 1238, 1744 )
+
+[node name="CollisionPolygon2D145" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -634, 1696, -634, 1712, -650, 1712, -698, 1664, -682, 1664, -650, 1696 )
+
+[node name="CollisionPolygon2D146" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 990, 1792, 966, 1792, 870, 1696, 886, 1696, 902, 1712, 1078, 1712, 1078, 1720, 1070, 1728, 1062, 1728, 1062, 1752, 1054, 1760, 1022, 1760, 1014, 1752, 1014, 1744, 998, 1760, 998, 1784 )
+
+[node name="CollisionPolygon2D147" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2606, 1808, 2574, 1808, 2566, 1800, 2566, 1744, 2518, 1744, 2518, 1728, 2630, 1728, 2630, 1744, 2614, 1744, 2614, 1800 )
+
+[node name="CollisionPolygon2D148" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1510, 1792, 1542, 1760, 1566, 1760, 1574, 1768, 1574, 1792, 1590, 1808, 1510, 1808 )
+
+[node name="CollisionPolygon2D149" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 342, 1872, 438, 1776, 446, 1776, 454, 1784, 486, 1872 )
+
+[node name="CollisionPolygon2D150" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2526, 1840, 2534, 1848, 2534, 1896, 2526, 1904, 2518, 1904, 2518, 1840 )
+
+[node name="CollisionPolygon2D151" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2422, 1920, 2518, 1920, 2518, 1928, 2510, 1936, 2422, 1936 )
+
+[node name="CollisionPolygon2D152" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 1678, 2000, 1814, 2000, 1766, 2048, 1766, 2112, 1670, 2112, 1670, 2008 )
+
+[node name="CollisionPolygon2D153" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( 2526, 2000, 2534, 2008, 2534, 2144, 2518, 2144, 2518, 2000 )
+
+[node name="CollisionPolygon2D154" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -522, 2192, -650, 2320, -650, 2304, -522, 2176 )
+
+[node name="CollisionPolygon2D155" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -738, 2336, -786, 2336, -794, 2328, -794, 2304, -834, 2304, -842, 2296, -842, 2272, -850, 2272, -858, 2264, -858, 2256, -906, 2256, -906, 2240, -666, 2240, -666, 2304, -730, 2304, -730, 2328 )
+
+[node name="CollisionPolygon2D156" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -954, 2288, -906, 2288, -906, 2296, -914, 2304, -954, 2304 )
+
+[node name="CollisionPolygon2D157" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -650, 2320, -666, 2336, -666, 2320 )
+
+[node name="CollisionPolygon2D158" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Lowwall"]
+polygon = PoolVector2Array( -954, 2416, -874, 2416, -890, 2432, -938, 2432 )
+
+[node name="Air" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1350, 416, 1350, 400, 1334, 400, 1334, 416 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 2630, 656, 2630, 632, 2694, 696, 2694, 768, 2678, 768, 2678, 704 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 966, 848, 998, 816, 998, 784, 1014, 784, 1030, 832, 1030, 880, 982, 928, 966, 928 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1462, 1152, 1462, 1024, 1502, 1024, 1550, 1072, 1550, 1072, 1558, 1080, 1558, 1088, 1550, 1096, 1542, 1088, 1478, 1152 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1238, 1216, 1270, 1216, 1270, 1104, 1254, 1104, 1286, 1072, 1286, 1312, 1238, 1264 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 838, 1152, 838, 1168, 758, 1168, 630, 1296, 630, 1280, 758, 1152 )
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1518, 1392, 1398, 1392, 1398, 1248, 1366, 1248, 1366, 1168, 1526, 1328, 1526, 1384 )
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 646, 1424, 806, 1264, 886, 1264, 886, 1216, 902, 1216, 902, 1272, 894, 1280, 806, 1280, 646, 1440, 566, 1440, 454, 1552, 454, 1536, 566, 1424 )
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1646, 1872, 1638, 1864, 1638, 1808, 1645, 1800, 1654, 1800, 1662, 1808, 1670, 1808, 1670, 1872 )
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( 1318, 1904, 1318, 1856, 1334, 1840, 1510, 1840, 1510, 1808, 1590, 1808, 1590, 1880, 1582, 1888, 1558, 1888, 1526, 1920, 1526, 1936, 1510, 1952, 1366, 1952 )
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Navigation2D/Collisions/Air"]
+polygon = PoolVector2Array( -954, 2304, -930, 2304, -931, 2328, -881, 2328, -874, 2336, -874, 2344, -866, 2360, -866, 2376, -858, 2400, -874, 2416, -954, 2416 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -2
+
+[node name="ParallaxLayer0" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+motion_scale = Vector2( 0.6, 0.6 )
+motion_mirroring = Vector2( 640, 360 )
+
+[node name="Background" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Floor01" type="Sprite" parent="Background"]
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/Floor01"]
+position = Vector2( 1016, 1088 )
+z_index = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/Floor01"]
+visible = false
+position = Vector2( 1016, 1088 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Limiter"]
+position = Vector2( -32, -48 )
+shape = SubResource( 2 )
+
+[node name="Transition" type="Area2D" parent="Background/Floor01"]
+position = Vector2( 640, 248 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../TopHall/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Transition"]
+shape = SubResource( 3 )
+
+[node name="Position2D" type="Position2D" parent="Background/Floor01/Transition"]
+position = Vector2( 0, 48 )
+
+[node name="Transition2" type="Area2D" parent="Background/Floor01"]
+position = Vector2( 1288, 608 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16384
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+function = 4
+goal_path = NodePath("../../Tunnels/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Transition2"]
+shape = SubResource( 4 )
+
+[node name="Position2D" type="Position2D" parent="Background/Floor01/Transition2"]
+position = Vector2( 0, 32 )
+
+[node name="Transition3" type="Area2D" parent="Background/Floor01"]
+position = Vector2( 1976, 1904 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../EntranceHall/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Transition3"]
+shape = SubResource( 5 )
+
+[node name="Position2D" type="Position2D" parent="Background/Floor01/Transition3"]
+position = Vector2( -56, 8 )
+
+[node name="Transition4" type="Area2D" parent="Background/Floor01"]
+position = Vector2( -8, 952 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../LeftHall/Transition2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Transition4"]
+shape = SubResource( 6 )
+
+[node name="Position2D" type="Position2D" parent="Background/Floor01/Transition4"]
+position = Vector2( 48, 8 )
+
+[node name="Transition5" type="Area2D" parent="Background/Floor01"]
+position = Vector2( 1968, 1032 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../RightHall/Transition2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Transition5"]
+shape = SubResource( 7 )
+
+[node name="Position2D" type="Position2D" parent="Background/Floor01/Transition5"]
+position = Vector2( -48, 8 )
+
+[node name="Transition6" type="Area2D" parent="Background/Floor01"]
+position = Vector2( 232, 1816 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../LeftRoom/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Floor01/Transition6"]
+rotation = 0.785398
+shape = SubResource( 8 )
+
+[node name="Position2D" type="Position2D" parent="Background/Floor01/Transition6"]
+position = Vector2( 56, -24 )
+
+[node name="Floor01_spr" type="Sprite" parent="Background"]
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/Floor01_spr"]
+position = Vector2( 508, 544 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="TopHall" type="Sprite" parent="Background"]
+position = Vector2( 528, -768 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling1" type="Sprite" parent="Background/TopHall"]
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AmbientParticles" type="Particles2D" parent="Background/TopHall"]
+modulate = Color( 1, 1, 1, 0.439216 )
+position = Vector2( 416, 256 )
+z_index = 2
+amount = 100
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -208.276, -209.804, 412.815, 406.638 )
+process_material = SubResource( 11 )
+texture = ExtResource( 10 )
+
+[node name="Limiter" type="Area2D" parent="Background/TopHall"]
+visible = false
+position = Vector2( 456, 320 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/TopHall/Limiter"]
+position = Vector2( -15, -48 )
+shape = SubResource( 12 )
+
+[node name="Transition" type="Area2D" parent="Background/TopHall"]
+position = Vector2( 112, 576 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../Floor01/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/TopHall/Transition"]
+shape = SubResource( 13 )
+
+[node name="Position2D" type="Position2D" parent="Background/TopHall/Transition"]
+position = Vector2( 0, -40 )
+
+[node name="Transition2" type="Area2D" parent="Background/TopHall"]
+position = Vector2( 920, 328 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../RightHallTop/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/TopHall/Transition2"]
+shape = SubResource( 14 )
+
+[node name="Position2D" type="Position2D" parent="Background/TopHall/Transition2"]
+position = Vector2( -56, 8 )
+
+[node name="TopHall_spr" type="Sprite" parent="Background"]
+position = Vector2( 528, -768 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling1" type="Sprite" parent="Background/TopHall_spr"]
+z_index = 2
+texture = ExtResource( 9 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tunnels" type="Sprite" parent="Background"]
+position = Vector2( -848, -624 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling2" type="Sprite" parent="Background/Tunnels"]
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/Tunnels"]
+visible = false
+position = Vector2( 304, 168 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Tunnels/Limiter"]
+position = Vector2( 0, -12 )
+shape = SubResource( 15 )
+
+[node name="Transition" type="Area2D" parent="Background/Tunnels"]
+position = Vector2( 552, 368 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16384
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+function = 4
+goal_path = NodePath("../../Floor01/Transition2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Tunnels/Transition"]
+shape = SubResource( 16 )
+
+[node name="Position2D" type="Position2D" parent="Background/Tunnels/Transition"]
+position = Vector2( 0, -40 )
+
+[node name="Transition2" type="Area2D" parent="Background/Tunnels"]
+position = Vector2( 87, 368 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16384
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+function = 4
+goal_path = NodePath("../../LeftHall/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Tunnels/Transition2"]
+shape = SubResource( 17 )
+
+[node name="Position2D" type="Position2D" parent="Background/Tunnels/Transition2"]
+position = Vector2( 0, -40 )
+
+[node name="Tunnels_spr" type="Sprite" parent="Background"]
+position = Vector2( -848, -624 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 11 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling2" type="Sprite" parent="Background/Tunnels_spr"]
+z_index = 2
+texture = ExtResource( 12 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="EntranceHall" type="Sprite" parent="Background"]
+position = Vector2( 2368, 1488 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling5" type="Sprite" parent="Background/EntranceHall"]
+position = Vector2( -240, 0 )
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/EntranceHall"]
+visible = false
+position = Vector2( 120, 344 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/EntranceHall/Limiter"]
+shape = SubResource( 18 )
+
+[node name="Transition" type="Area2D" parent="Background/EntranceHall"]
+position = Vector2( -40, 416 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../Floor01/Transition3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/EntranceHall/Transition"]
+shape = SubResource( 19 )
+
+[node name="Position2D" type="Position2D" parent="Background/EntranceHall/Transition"]
+position = Vector2( 48, 8 )
+
+[node name="EntranceHall_spr" type="Sprite" parent="Background"]
+position = Vector2( 2368, 1488 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 13 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling5" type="Sprite" parent="Background/EntranceHall_spr"]
+position = Vector2( -120, 0 )
+z_index = 2
+texture = ExtResource( 14 )
+centered = false
+
+[node name="LeftHall" type="Sprite" parent="Background"]
+position = Vector2( -864, 64 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling4" type="Sprite" parent="Background/LeftHall"]
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/LeftHall"]
+visible = false
+position = Vector2( 320, 616 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftHall/Limiter"]
+position = Vector2( 0, -16 )
+shape = SubResource( 20 )
+
+[node name="Transition" type="Area2D" parent="Background/LeftHall"]
+position = Vector2( 392, -24 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16384
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+function = 4
+goal_path = NodePath("../../Tunnels/Transition2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftHall/Transition"]
+shape = SubResource( 21 )
+
+[node name="Position2D" type="Position2D" parent="Background/LeftHall/Transition"]
+position = Vector2( 0, 32 )
+
+[node name="Transition2" type="Area2D" parent="Background/LeftHall"]
+position = Vector2( 360, 888 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../Floor01/Transition4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftHall/Transition2"]
+shape = SubResource( 22 )
+
+[node name="Position2D" type="Position2D" parent="Background/LeftHall/Transition2"]
+position = Vector2( -48, 8 )
+
+[node name="Transition3" type="Area2D" parent="Background/LeftHall"]
+position = Vector2( 80, 1240 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../LeftHallBottom/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftHall/Transition3"]
+shape = SubResource( 23 )
+
+[node name="Position2D" type="Position2D" parent="Background/LeftHall/Transition3"]
+position = Vector2( 0, -48 )
+
+[node name="AmbientParticles" type="Particles2D" parent="Background/LeftHall"]
+modulate = Color( 1, 1, 1, 0.768627 )
+position = Vector2( 314.495, 299.357 )
+z_index = 20
+amount = 80
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -428.52, -311.729, 849.193, 647.745 )
+process_material = SubResource( 26 )
+texture = ExtResource( 17 )
+
+[node name="LeftHall_spr" type="Sprite" parent="Background"]
+position = Vector2( -864, 64 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 15 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling4" type="Sprite" parent="Background/LeftHall_spr"]
+z_index = 2
+texture = ExtResource( 16 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftHallBottom" type="Sprite" parent="Background"]
+position = Vector2( -944, 1488 )
+z_as_relative = false
+texture = ExtResource( 18 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling3" type="Sprite" parent="Background/LeftHallBottom"]
+modulate = Color( 0.0392157, 0, 0.0196078, 1 )
+scale = Vector2( 2, 2 )
+z_index = 2
+texture = ExtResource( 19 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/LeftHallBottom"]
+visible = false
+position = Vector2( 136, 176 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftHallBottom/Limiter"]
+shape = SubResource( 27 )
+
+[node name="Transition" type="Area2D" parent="Background/LeftHallBottom"]
+position = Vector2( 160, 104 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../LeftHall/Transition3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftHallBottom/Transition"]
+shape = SubResource( 28 )
+
+[node name="Position2D" type="Position2D" parent="Background/LeftHallBottom/Transition"]
+position = Vector2( 0, 48 )
+
+[node name="RightHall" type="Sprite" parent="Background"]
+position = Vector2( 2352, 304 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling3" type="Sprite" parent="Background/RightHall"]
+position = Vector2( -128, 0 )
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AmbientParticles2" type="Particles2D" parent="Background/RightHall"]
+modulate = Color( 1, 1, 1, 0.439216 )
+position = Vector2( 192, 320 )
+z_index = 2
+amount = 100
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -208.276, -209.804, 412.815, 406.638 )
+process_material = SubResource( 11 )
+texture = ExtResource( 10 )
+
+[node name="Limiter" type="Area2D" parent="Background/RightHall"]
+visible = false
+position = Vector2( 176, 392 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/RightHall/Limiter"]
+shape = SubResource( 29 )
+
+[node name="Transition" type="Area2D" parent="Background/RightHall"]
+position = Vector2( 272, 96 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../RightHallTop/Transition2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/RightHall/Transition"]
+shape = SubResource( 30 )
+
+[node name="Position2D" type="Position2D" parent="Background/RightHall/Transition"]
+position = Vector2( 0, 48 )
+
+[node name="Transition2" type="Area2D" parent="Background/RightHall"]
+position = Vector2( -8, 728 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../Floor01/Transition5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/RightHall/Transition2"]
+shape = SubResource( 31 )
+
+[node name="Position2D" type="Position2D" parent="Background/RightHall/Transition2"]
+position = Vector2( 48, 8 )
+
+[node name="RightHall_spr" type="Sprite" parent="Background"]
+position = Vector2( 2352, 304 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 20 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling3" type="Sprite" parent="Background/RightHall_spr"]
+position = Vector2( -64, 0 )
+z_index = 2
+texture = ExtResource( 21 )
+centered = false
+
+[node name="RightHallTop" type="Sprite" parent="Background"]
+position = Vector2( 2224, -624 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling4" type="Sprite" parent="Background/RightHallTop"]
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Limiter" type="Area2D" parent="Background/RightHallTop"]
+visible = false
+position = Vector2( 320, 312 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/RightHallTop/Limiter"]
+position = Vector2( 0, -16 )
+shape = SubResource( 32 )
+
+[node name="Transition" type="Area2D" parent="Background/RightHallTop"]
+position = Vector2( 16, 144 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../TopHall/Transition2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/RightHallTop/Transition"]
+shape = SubResource( 33 )
+
+[node name="Position2D" type="Position2D" parent="Background/RightHallTop/Transition"]
+position = Vector2( 56, 20 )
+
+[node name="Transition2" type="Area2D" parent="Background/RightHallTop"]
+position = Vector2( 400, 624 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../RightHall/Transition")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/RightHallTop/Transition2"]
+shape = SubResource( 34 )
+
+[node name="Position2D" type="Position2D" parent="Background/RightHallTop/Transition2"]
+position = Vector2( 0, -48 )
+
+[node name="RightHallTop_spr" type="Sprite" parent="Background"]
+position = Vector2( 2224, -624 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 22 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling4" type="Sprite" parent="Background/RightHallTop_spr"]
+z_index = 2
+texture = ExtResource( 23 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftRoom" type="Sprite" parent="Background"]
+position = Vector2( -1072, 2064 )
+z_as_relative = false
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling2" type="Sprite" parent="Background/LeftRoom"]
+z_index = 2
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AmbientParticles3" type="Particles2D" parent="Background/LeftRoom"]
+modulate = Color( 1, 1, 1, 0.439216 )
+position = Vector2( 160, 224 )
+z_index = 2
+amount = 100
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -208.276, -209.804, 412.815, 406.638 )
+process_material = SubResource( 11 )
+texture = ExtResource( 10 )
+
+[node name="Limiter" type="Area2D" parent="Background/LeftRoom"]
+visible = false
+position = Vector2( 256, 192 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 6 )
+player_vignette = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftRoom/Limiter"]
+shape = SubResource( 35 )
+
+[node name="Transition" type="Area2D" parent="Background/LeftRoom"]
+position = Vector2( 472, 136 )
+z_index = 10
+collision_layer = 0
+collision_mask = 16400
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+goal_path = NodePath("../../Floor01/Transition6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LeftRoom/Transition"]
+rotation = 0.785398
+shape = SubResource( 36 )
+
+[node name="Position2D" type="Position2D" parent="Background/LeftRoom/Transition"]
+position = Vector2( -32, 56 )
+
+[node name="LeftRoom_spr" type="Sprite" parent="Background"]
+position = Vector2( -1072, 2064 )
+scale = Vector2( 2, 2 )
+z_as_relative = false
+texture = ExtResource( 24 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling2" type="Sprite" parent="Background/LeftRoom_spr"]
+z_index = 2
+texture = ExtResource( 25 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WormholeL" parent="Background" instance=ExtResource( 26 )]
+position = Vector2( 848, 260 )
+coming_from = "S2"
+
+[node name="EatArea" parent="Background/WormholeL" index="8"]
+scale = Vector2( 0.7, 0.8 )
+
+[node name="GoreWallA1" type="StaticBody2D" parent="Background"]
+position = Vector2( 872, 1456 )
+collision_mask = 0
+physics_material_override = SubResource( 37 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallA1"]
+polygon = PoolVector2Array( -88, -161, -72, -33, -8, -1, 56, -1, 72, 15, 216, -1, 152, -65, 120, -81, 104, -129, 88, -145, 40, -145, 8, -193, -40, -273, -168, -193 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallA1"]
+position = Vector2( 0, -144 )
+texture = ExtResource( 27 )
+
+[node name="GoreWallDetails" parent="Background/GoreWallA1" instance=ExtResource( 28 )]
+position = Vector2( -19, -64 )
+frame = 0
+
+[node name="GoreWallDetails2" parent="Background/GoreWallA1" instance=ExtResource( 28 )]
+position = Vector2( -33, -201 )
+frame = 8
+version = 2
+
+[node name="GoreWallA2" type="StaticBody2D" parent="Background"]
+position = Vector2( 432, 1120 )
+collision_layer = 0
+collision_mask = 0
+physics_material_override = SubResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallA2"]
+polygon = PoolVector2Array( -112, 0, -112, -80, 16, -80, 48, -48, 48, 0, 112, 64, 144, 80, 144, 128, -48, 128, -48, 0 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallA2"]
+position = Vector2( -32, 16 )
+texture = ExtResource( 29 )
+
+[node name="GoreWallDetails3" parent="Background/GoreWallA2" instance=ExtResource( 28 )]
+position = Vector2( -95, -64 )
+frame = 4
+version = 1
+
+[node name="GoreWallB1" type="StaticBody2D" parent="Background"]
+position = Vector2( 1520, 1792 )
+collision_mask = 0
+physics_material_override = SubResource( 39 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallB1"]
+position = Vector2( 64, 112 )
+polygon = PoolVector2Array( -96, -96, -16, -96, 0, -64, 16, -64, 16, -192, -32, -208, -48, -208, -96, -176 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallB1"]
+position = Vector2( 24, -16 )
+texture = ExtResource( 30 )
+
+[node name="GoreWallDetails4" parent="Background/GoreWallB1" instance=ExtResource( 28 )]
+position = Vector2( -48, 8 )
+frame = 32
+version = 8
+
+[node name="GoreWallDetails5" parent="Background/GoreWallB1" instance=ExtResource( 28 )]
+position = Vector2( 0, -48 )
+frame = 24
+version = 6
+
+[node name="GoreWallB2" type="StaticBody2D" parent="Background"]
+position = Vector2( 1504, 1312 )
+collision_mask = 0
+physics_material_override = SubResource( 40 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallB2"]
+position = Vector2( 64, 112 )
+polygon = PoolVector2Array( -128, -48, -128, -64, -112, -80, -112, -144, -144, -176, -144, -192, -128, -208, -96, -208, -80, -192, -64, -192, -48, -208, -16, -192, 16, -160, 16, -96, -80, -96, -96, -80, -96, -64, -112, -48 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallB2"]
+position = Vector2( -24, -16 )
+texture = ExtResource( 31 )
+
+[node name="GoreWallDetails5" parent="Background/GoreWallB2" instance=ExtResource( 28 )]
+position = Vector2( -56, -40 )
+frame = 24
+version = 6
+
+[node name="GoreWallDetails6" parent="Background/GoreWallB2" instance=ExtResource( 28 )]
+position = Vector2( 24, 8 )
+frame = 28
+version = 7
+
+[node name="GoreWallDetails7" parent="Background/GoreWallB2" instance=ExtResource( 28 )]
+position = Vector2( 46, -58 )
+frame = 28
+version = 7
+
+[node name="GoreWallB3" type="StaticBody2D" parent="Background"]
+position = Vector2( 1464, 856 )
+collision_layer = 0
+collision_mask = 0
+physics_material_override = SubResource( 41 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallB3"]
+position = Vector2( 64, 112 )
+polygon = PoolVector2Array( -136, 8, -88, 24, -63, 31, -35, 19, -39, -24, -48, -35, -69.8302, -39.5941, -56, -88, -8, -120, -120, -184, -136, -136, -168, -88, -136, -56 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallB3"]
+position = Vector2( 0, 16 )
+texture = ExtResource( 32 )
+
+[node name="GoreWallDetails6" parent="Background/GoreWallB3" instance=ExtResource( 28 )]
+position = Vector2( 24, 0 )
+frame = 32
+version = 8
+
+[node name="GoreWallDetails7" parent="Background/GoreWallB3" instance=ExtResource( 28 )]
+position = Vector2( -56, -32 )
+frame = 24
+version = 6
+
+[node name="GoreWallC1" type="StaticBody2D" parent="Background"]
+position = Vector2( 816, 959 )
+collision_mask = 0
+physics_material_override = SubResource( 42 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallC1"]
+polygon = PoolVector2Array( -48, 144, -32, 80, 16, 64, 32, 16, 16, -16, -16, -48, -16, -64, 112, -96, 128, -80, 160, -32, 176, 16, 160, 48, 160, 64, 176, 96, 176, 144 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallC1"]
+position = Vector2( 73, 24 )
+z_index = 2
+texture = ExtResource( 33 )
+
+[node name="GoreWallDetails7" parent="Background/GoreWallC1" instance=ExtResource( 28 )]
+position = Vector2( -26, -50 )
+frame = 12
+version = 3
+
+[node name="GoreWallDetails8" parent="Background/GoreWallC1" instance=ExtResource( 28 )]
+position = Vector2( 144, -80 )
+rotation = 1.5708
+frame = 16
+version = 4
+
+[node name="GoreWallC2" type="StaticBody2D" parent="Background"]
+position = Vector2( 1008, 705 )
+collision_layer = 0
+collision_mask = 0
+physics_material_override = SubResource( 43 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/GoreWallC2"]
+position = Vector2( 64, 112 )
+polygon = PoolVector2Array( -128, -16, -128, -224.162, -133, -247, -128, -272, -112, -272, -96, -224, -96, -304, -64, -304, -64, -272, -32, -256, -32, -240, -16, -240, 16, -176, 16, -128, -48, -80, -48, -64, -64, -32, -48, 0, -64, 0, -80, -16, -96, -16, -112, 0 )
+
+[node name="Sprite" type="Sprite" parent="Background/GoreWallC2"]
+position = Vector2( -40, -41 )
+texture = ExtResource( 34 )
+
+[node name="GoreWallDetails8" parent="Background/GoreWallC2" instance=ExtResource( 28 )]
+position = Vector2( 16, 40 )
+frame = 20
+version = 5
+
+[node name="GoreWallDetails9" parent="Background/GoreWallC2" instance=ExtResource( 28 )]
+position = Vector2( -48, 112 )
+rotation = 3.14159
+frame = 16
+version = 4
+
+[node name="Story_King" type="Node2D" parent="Background"]
+position = Vector2( -848, 1632 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HintArea" parent="Background/Story_King" instance=ExtResource( 35 )]
+speaker_name = "STORY_CC_SOURCE"
+dialog = "STORY_CC"
+
+[node name="FleshGiantMoan" type="AudioStreamPlayer2D" parent="Background"]
+position = Vector2( 952, 1080 )
+stream = ExtResource( 36 )
+max_distance = 3000.0
+bus = "FXBus"
+
+[node name="FleshGiantDrag" type="AudioStreamPlayer2D" parent="Background"]
+position = Vector2( 952, 1080 )
+stream = ExtResource( 37 )
+max_distance = 3000.0
+bus = "FXBus"
+
+[node name="GoreSwitch_A" parent="Background" instance=ExtResource( 38 )]
+position = Vector2( -888, 2334 )
+z_index = 1
+version = 2
+
+[node name="GoreSwitch_B" parent="Background" instance=ExtResource( 38 )]
+position = Vector2( 2570.25, 584.724 )
+version = 1
+
+[node name="GoreSwitch_C" parent="Background" instance=ExtResource( 38 )]
+position = Vector2( 892.72, -433.584 )
+
+[node name="AttackTimer" parent="Background" instance=ExtResource( 39 )]
+position = Vector2( -533.165, -878.896 )
+z_index = 1
+
+[node name="Gascloud0" parent="Background/AttackTimer" instance=ExtResource( 40 )]
+position = Vector2( -65, 130 )
+
+[node name="Gascloud1" parent="Background/AttackTimer" instance=ExtResource( 40 )]
+position = Vector2( 39, 58 )
+rotation = 3.14159
+
+[node name="Gascloud2" parent="Background/AttackTimer" instance=ExtResource( 40 )]
+position = Vector2( 119, 58 )
+rotation = 3.14159
+
+[node name="Foreground" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerDummy" parent="Foreground" instance=ExtResource( 46 )]
+position = Vector2( 930.455, 516.506 )
+
+[node name="AcidBubble" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 524, 1411 )
+physics_material_override = SubResource( 47 )
+
+[node name="AcidBubble1" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1456, 1712 )
+physics_material_override = SubResource( 48 )
+
+[node name="AcidBubble10" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 596, 302 )
+physics_material_override = SubResource( 49 )
+
+[node name="AcidBubble11" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1380, 716 )
+physics_material_override = SubResource( 50 )
+
+[node name="AcidBubble11 2" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1360, 720 )
+physics_material_override = SubResource( 51 )
+
+[node name="AcidBubble11 3" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1312, 767 )
+physics_material_override = SubResource( 52 )
+
+[node name="AcidBubble2" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1520, 1872 )
+physics_material_override = SubResource( 53 )
+
+[node name="AcidBubble3" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1442, 1734 )
+physics_material_override = SubResource( 54 )
+
+[node name="AcidBubble4" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 1440, 1696 )
+physics_material_override = SubResource( 55 )
+
+[node name="AcidBubble5" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 511, 1427 )
+physics_material_override = SubResource( 56 )
+
+[node name="AcidBubble6" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 607, 1380 )
+physics_material_override = SubResource( 57 )
+
+[node name="AcidBubble7" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 419, 1026 )
+physics_material_override = SubResource( 58 )
+
+[node name="AcidBubble7 2" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 597, 1173 )
+physics_material_override = SubResource( 59 )
+
+[node name="AcidBubble7 3" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 400, 992 )
+physics_material_override = SubResource( 60 )
+
+[node name="AcidBubble73" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 592, 1152 )
+physics_material_override = SubResource( 61 )
+
+[node name="AcidBubble8" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 576, 1184 )
+physics_material_override = SubResource( 62 )
+
+[node name="AcidBubble9" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 308, 544 )
+physics_material_override = SubResource( 63 )
+
+[node name="AcidBubble9 2" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 352, 656 )
+physics_material_override = SubResource( 64 )
+
+[node name="AcidBubble9 3" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 416, 688 )
+physics_material_override = SubResource( 65 )
+
+[node name="AcidBubble9 4" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 256, 592 )
+physics_material_override = SubResource( 66 )
+
+[node name="AcidBubble95" parent="Foreground" instance=ExtResource( 47 )]
+position = Vector2( 242, 610 )
+physics_material_override = SubResource( 67 )
+
+[node name="Barrel" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 464, 496 )
+physics_material_override = SubResource( 68 )
+design = "FC"
+
+[node name="Barrel1" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 455, 488 )
+physics_material_override = SubResource( 69 )
+design = "FC"
+
+[node name="Barrel2" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 407, 488 )
+physics_material_override = SubResource( 70 )
+design = "FC"
+
+[node name="Barrel3" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 667, 324 )
+physics_material_override = SubResource( 71 )
+design = "FC"
+
+[node name="Barrel4" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 685, 318 )
+physics_material_override = SubResource( 72 )
+design = "FC"
+
+[node name="Barrel5" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 675, 300 )
+physics_material_override = SubResource( 73 )
+design = "FC"
+
+[node name="Barrel6" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 1261, -310 )
+physics_material_override = SubResource( 74 )
+design = "FC"
+
+[node name="Barrel6 2" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 1279, -316 )
+physics_material_override = SubResource( 75 )
+design = "FC"
+
+[node name="Barrel6 3" parent="Foreground" instance=ExtResource( 48 )]
+position = Vector2( 1269, -334 )
+physics_material_override = SubResource( 76 )
+design = "FC"
+
+[node name="CrateL" parent="Foreground" instance=ExtResource( 49 )]
+position = Vector2( 2528, 1792 )
+physics_material_override = SubResource( 77 )
+design = "FC"
+
+[node name="CrateL1" parent="Foreground" instance=ExtResource( 49 )]
+position = Vector2( 272, 1680 )
+physics_material_override = SubResource( 78 )
+design = "FC"
+
+[node name="CrateL2" parent="Foreground" instance=ExtResource( 49 )]
+position = Vector2( -502.889, 266.274 )
+physics_material_override = SubResource( 79 )
+design = "FC"
+
+[node name="CrateL4" parent="Foreground" instance=ExtResource( 49 )]
+position = Vector2( -585.159, 300.428 )
+physics_material_override = SubResource( 79 )
+design = "FC"
+
+[node name="CrateM" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( 2481, 1768 )
+physics_material_override = SubResource( 80 )
+design = "FC"
+
+[node name="CrateM1" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( 1632, 1488 )
+physics_material_override = SubResource( 81 )
+design = "FC"
+
+[node name="CrateM2" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( 344, 1152 )
+physics_material_override = SubResource( 82 )
+design = "FC"
+
+[node name="CrateM3" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( 1632, 1320 )
+physics_material_override = SubResource( 83 )
+design = "FC"
+
+[node name="CrateM4" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( 248, 1639 )
+physics_material_override = SubResource( 84 )
+design = "FC"
+
+[node name="CrateM5" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( 159, 896 )
+physics_material_override = SubResource( 80 )
+design = "FC"
+
+[node name="CrateM6" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( -532.379, 306.87 )
+physics_material_override = SubResource( 81 )
+design = "FC"
+
+[node name="CrateM7" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( -557.236, 325.782 )
+physics_material_override = SubResource( 81 )
+design = "FC"
+
+[node name="CrateM8" parent="Foreground" instance=ExtResource( 50 )]
+position = Vector2( -500.498, 317.137 )
+physics_material_override = SubResource( 81 )
+design = "FC"
+
+[node name="CrateS" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 2528, 1808 )
+physics_material_override = SubResource( 85 )
+design = "FC"
+
+[node name="CrateS1" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 1616, 1504 )
+physics_material_override = SubResource( 86 )
+design = "FC"
+
+[node name="CrateS10" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( -574.123, 333.87 )
+physics_material_override = SubResource( 87 )
+design = "FC"
+
+[node name="CrateS11" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( -586.688, 317.39 )
+physics_material_override = SubResource( 88 )
+design = "FC"
+
+[node name="CrateS12" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( -611.408, 314.695 )
+physics_material_override = SubResource( 89 )
+design = "FC"
+
+[node name="CrateS2" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 1627, 1515 )
+physics_material_override = SubResource( 87 )
+design = "FC"
+
+[node name="CrateS3" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 312, 1168 )
+physics_material_override = SubResource( 90 )
+design = "FC"
+
+[node name="CrateS3 2" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 336, 1168 )
+physics_material_override = SubResource( 91 )
+design = "FC"
+
+[node name="CrateS4" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 1616, 1280 )
+physics_material_override = SubResource( 92 )
+design = "FC"
+
+[node name="CrateS5" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 200, 1552 )
+physics_material_override = SubResource( 93 )
+design = "FC"
+
+[node name="CrateS6" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( -544, 272 )
+physics_material_override = SubResource( 88 )
+design = "FC"
+
+[node name="CrateS7" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( -539.54, 283.895 )
+physics_material_override = SubResource( 89 )
+design = "FC"
+
+[node name="CrateS8" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 984, 313 )
+physics_material_override = SubResource( 85 )
+design = "FC"
+
+[node name="CrateS13" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 999, 321 )
+physics_material_override = SubResource( 85 )
+design = "FC"
+
+[node name="CrateS14" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( 1009, 311 )
+physics_material_override = SubResource( 85 )
+design = "FC"
+
+[node name="CrateS9" parent="Foreground" instance=ExtResource( 51 )]
+position = Vector2( -472.729, 303.957 )
+physics_material_override = SubResource( 86 )
+design = "FC"
+
+[node name="Door" type="Sprite" parent="Foreground"]
+position = Vector2( 2272, -448 )
+texture = ExtResource( 52 )
+offset = Vector2( 0, -32 )
+hframes = 4
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FallenKing" parent="Foreground" instance=ExtResource( 53 )]
+position = Vector2( 2168, 1768 )
+
+[node name="Flagpole" type="Sprite" parent="Foreground"]
+position = Vector2( 368, 1840 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Pole" type="Sprite" parent="Foreground/Flagpole"]
+position = Vector2( 0, -32 )
+scale = Vector2( 1, 6 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+frame = 1
+
+[node name="Flag" type="Sprite" parent="Foreground/Flagpole"]
+modulate = Color( 1, 0.810547, 0.242188, 1 )
+position = Vector2( 26, -228 )
+texture = ExtResource( 55 )
+hframes = 4
+frame = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Foreground/Flagpole"]
+autoplay = "wave"
+anims/wave = SubResource( 94 )
+
+[node name="Flagpole1" type="Sprite" parent="Foreground"]
+position = Vector2( 1127, 608 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Pole" type="Sprite" parent="Foreground/Flagpole1"]
+position = Vector2( 0, -32 )
+scale = Vector2( 1, 4 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+frame = 1
+
+[node name="Flag" type="Sprite" parent="Foreground/Flagpole1"]
+modulate = Color( 1, 0.810547, 0.242188, 1 )
+position = Vector2( 26, -148 )
+texture = ExtResource( 55 )
+hframes = 4
+frame = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Foreground/Flagpole1"]
+autoplay = "wave"
+anims/wave = SubResource( 94 )
+
+[node name="Flagpole2" type="Sprite" parent="Foreground"]
+position = Vector2( 1232, 704 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Pole" type="Sprite" parent="Foreground/Flagpole2"]
+position = Vector2( 0, -32 )
+scale = Vector2( 1, 4 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+frame = 1
+
+[node name="Flag" type="Sprite" parent="Foreground/Flagpole2"]
+modulate = Color( 1, 0.810547, 0.242188, 1 )
+position = Vector2( 26, -148 )
+texture = ExtResource( 55 )
+hframes = 4
+frame = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Foreground/Flagpole2"]
+autoplay = "wave"
+anims/wave = SubResource( 94 )
+
+[node name="Flagpole3" type="Sprite" parent="Foreground"]
+position = Vector2( 688, 640 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Pole" type="Sprite" parent="Foreground/Flagpole3"]
+position = Vector2( 0, -32 )
+scale = Vector2( 1, 5 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -16 )
+hframes = 2
+frame = 1
+
+[node name="Flag" type="Sprite" parent="Foreground/Flagpole3"]
+modulate = Color( 1, 0.810547, 0.242188, 1 )
+position = Vector2( 26, -196 )
+texture = ExtResource( 55 )
+hframes = 4
+frame = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Foreground/Flagpole3"]
+autoplay = "wave"
+anims/wave = SubResource( 94 )
+
+[node name="Furniture" type="Sprite" parent="Foreground"]
+position = Vector2( 1152, 592 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+
+[node name="Furniture1" type="Sprite" parent="Foreground"]
+position = Vector2( -720, 944 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 5
+
+[node name="Furniture2" type="Sprite" parent="Foreground"]
+position = Vector2( -720, 976 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 6
+
+[node name="Furniture3" type="Sprite" parent="Foreground"]
+position = Vector2( -816, 928 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+
+[node name="Furniture4" type="Sprite" parent="Foreground"]
+position = Vector2( 2384, -496 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 4
+
+[node name="Furniture5" type="Sprite" parent="Foreground"]
+position = Vector2( 2368, -496 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 2
+
+[node name="Furniture6" type="Sprite" parent="Foreground"]
+position = Vector2( 2672, -192 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+
+[node name="Furniture7" type="Sprite" parent="Foreground"]
+position = Vector2( 2576, -192 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 3
+
+[node name="Furniture8" type="Sprite" parent="Foreground"]
+position = Vector2( 1200, 592 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 1
+
+[node name="Furniture9" type="Sprite" parent="Foreground"]
+position = Vector2( 1248, 480 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -8 )
+hframes = 11
+frame = 2
+
+[node name="Grass" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 896, 1760 )
+physics_material_override = SubResource( 95 )
+design = "S"
+
+[node name="Grass1" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 936, 1744 )
+physics_material_override = SubResource( 96 )
+design = "S"
+
+[node name="Grass10" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1104, 1376 )
+physics_material_override = SubResource( 97 )
+design = "S"
+
+[node name="Grass10 10" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 726, 1095 )
+physics_material_override = SubResource( 98 )
+design = "S"
+
+[node name="Grass10 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 806, 1003 )
+physics_material_override = SubResource( 99 )
+design = "S"
+
+[node name="Grass10 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1235, 1323 )
+physics_material_override = SubResource( 100 )
+design = "S"
+
+[node name="Grass10 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 984, 1247 )
+physics_material_override = SubResource( 101 )
+design = "S"
+
+[node name="Grass10 5" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 984, 1222 )
+physics_material_override = SubResource( 102 )
+design = "S"
+
+[node name="Grass10 6" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 912, 1264 )
+physics_material_override = SubResource( 103 )
+design = "S"
+
+[node name="Grass10 7" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 656, 1120 )
+physics_material_override = SubResource( 104 )
+design = "S"
+
+[node name="Grass10 8" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1104, 1232 )
+physics_material_override = SubResource( 105 )
+design = "S"
+
+[node name="Grass10 9" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 640, 1088 )
+physics_material_override = SubResource( 106 )
+design = "S"
+
+[node name="Grass2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 968, 1776 )
+physics_material_override = SubResource( 107 )
+design = "S"
+
+[node name="Grass3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 943, 1783 )
+physics_material_override = SubResource( 108 )
+design = "S"
+
+[node name="Grass4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 904, 1782 )
+physics_material_override = SubResource( 109 )
+design = "S"
+
+[node name="Grass4 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 992, 1792 )
+physics_material_override = SubResource( 110 )
+design = "S"
+
+[node name="Grass4 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 919, 1803 )
+physics_material_override = SubResource( 111 )
+design = "S"
+
+[node name="Grass4 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 903, 1873 )
+physics_material_override = SubResource( 112 )
+design = "S"
+
+[node name="Grass410" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1072, 1232 )
+physics_material_override = SubResource( 113 )
+design = "S"
+
+[node name="Grass410 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 999, 1243 )
+physics_material_override = SubResource( 114 )
+design = "S"
+
+[node name="Grass410 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 983, 1313 )
+physics_material_override = SubResource( 115 )
+design = "S"
+
+[node name="Grass43" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 848, 1776 )
+physics_material_override = SubResource( 116 )
+design = "S"
+
+[node name="Grass44" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 922, 1759 )
+physics_material_override = SubResource( 117 )
+design = "S"
+
+[node name="Grass45" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 943, 1808 )
+physics_material_override = SubResource( 118 )
+design = "S"
+
+[node name="Grass46" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 882, 1844 )
+physics_material_override = SubResource( 119 )
+design = "S"
+
+[node name="Grass46 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 890, 1831 )
+physics_material_override = SubResource( 120 )
+design = "S"
+
+[node name="Grass46 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 872, 1808 )
+physics_material_override = SubResource( 121 )
+design = "S"
+
+[node name="Grass463" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 784, 1790 )
+physics_material_override = SubResource( 122 )
+design = "S"
+
+[node name="Grass464" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 766, 1767 )
+physics_material_override = SubResource( 123 )
+design = "S"
+
+[node name="Grass465" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 952, 1248 )
+physics_material_override = SubResource( 124 )
+design = "S"
+
+[node name="Grass465 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 970, 1271 )
+physics_material_override = SubResource( 125 )
+design = "S"
+
+[node name="Grass465 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1328, 1392 )
+physics_material_override = SubResource( 126 )
+design = "S"
+
+[node name="Grass465 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 752, 1360 )
+physics_material_override = SubResource( 127 )
+design = "S"
+
+[node name="Grass47" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 816, 1856 )
+physics_material_override = SubResource( 128 )
+design = "S"
+
+[node name="Grass47 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 813, 1762 )
+physics_material_override = SubResource( 129 )
+design = "S"
+
+[node name="Grass47 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 837, 1767 )
+physics_material_override = SubResource( 130 )
+design = "S"
+
+[node name="Grass47 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 784, 1808 )
+physics_material_override = SubResource( 131 )
+design = "S"
+
+[node name="Grass47 5" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 816, 1718 )
+physics_material_override = SubResource( 132 )
+design = "S"
+
+[node name="Grass47 6" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 742, 1735 )
+physics_material_override = SubResource( 133 )
+design = "S"
+
+[node name="Grass473" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 893, 1202 )
+physics_material_override = SubResource( 134 )
+design = "S"
+
+[node name="Grass474" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 917, 1207 )
+physics_material_override = SubResource( 135 )
+design = "S"
+
+[node name="Grass475" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1344, 1376 )
+physics_material_override = SubResource( 136 )
+design = "S"
+
+[node name="Grass476" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 752, 1094 )
+physics_material_override = SubResource( 137 )
+design = "S"
+
+[node name="Grass477" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 676, 1099 )
+physics_material_override = SubResource( 138 )
+design = "S"
+
+[node name="Grass48" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 745, 1857 )
+physics_material_override = SubResource( 139 )
+design = "S"
+
+[node name="Grass48 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 672, 1868 )
+physics_material_override = SubResource( 140 )
+design = "S"
+
+[node name="Grass48 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 696, 1873 )
+physics_material_override = SubResource( 141 )
+design = "S"
+
+[node name="Grass48 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 675, 1824 )
+physics_material_override = SubResource( 142 )
+design = "S"
+
+[node name="Grass483" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1160, 1284 )
+physics_material_override = SubResource( 143 )
+design = "S"
+
+[node name="Grass484" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1174, 1313 )
+physics_material_override = SubResource( 144 )
+design = "S"
+
+[node name="Grass485" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1163, 1240 )
+physics_material_override = SubResource( 145 )
+design = "S"
+
+[node name="Grass49" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 768, 1664 )
+physics_material_override = SubResource( 146 )
+design = "S"
+
+[node name="Grass49 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 832, 1600 )
+physics_material_override = SubResource( 147 )
+design = "S"
+
+[node name="Grass49 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 787, 1620 )
+physics_material_override = SubResource( 148 )
+design = "S"
+
+[node name="Grass49 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 716, 1743 )
+physics_material_override = SubResource( 149 )
+design = "S"
+
+[node name="Grass493" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 768, 1024 )
+physics_material_override = SubResource( 150 )
+design = "S"
+
+[node name="Grass494" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 757, 1049 )
+physics_material_override = SubResource( 151 )
+design = "S"
+
+[node name="Grass495" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 832, 1056 )
+physics_material_override = SubResource( 152 )
+design = "S"
+
+[node name="Grass5" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 974, 1715 )
+physics_material_override = SubResource( 153 )
+design = "S"
+
+[node name="Grass50" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 856, 1067 )
+physics_material_override = SubResource( 154 )
+design = "S"
+
+[node name="Grass50 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1023, 1248 )
+physics_material_override = SubResource( 155 )
+design = "S"
+
+[node name="Grass50 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1128, 1248 )
+physics_material_override = SubResource( 156 )
+design = "S"
+
+[node name="Grass50 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 962, 1284 )
+physics_material_override = SubResource( 157 )
+design = "S"
+
+[node name="Grass50 5" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1056, 1264 )
+physics_material_override = SubResource( 158 )
+design = "S"
+
+[node name="Grass50 6" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 928, 1216 )
+physics_material_override = SubResource( 159 )
+design = "S"
+
+[node name="Grass50 7" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 672, 1328 )
+physics_material_override = SubResource( 160 )
+design = "S"
+
+[node name="Grass6" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 832, 1824 )
+physics_material_override = SubResource( 161 )
+design = "S"
+
+[node name="Grass7" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 790, 1719 )
+physics_material_override = SubResource( 162 )
+design = "S"
+
+[node name="Grass7 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 830, 1703 )
+physics_material_override = SubResource( 163 )
+design = "S"
+
+[node name="Grass7 3" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 750, 1808 )
+physics_material_override = SubResource( 164 )
+design = "S"
+
+[node name="Grass7 4" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 837, 1742 )
+physics_material_override = SubResource( 165 )
+design = "S"
+
+[node name="Grass7 5" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 798, 1741 )
+physics_material_override = SubResource( 166 )
+design = "S"
+
+[node name="Grass7 6" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 726, 1783 )
+physics_material_override = SubResource( 167 )
+design = "S"
+
+[node name="Grass7 7" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 756, 1747 )
+physics_material_override = SubResource( 168 )
+design = "S"
+
+[node name="Grass73" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 766, 1079 )
+physics_material_override = SubResource( 169 )
+design = "S"
+
+[node name="Grass74" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 704, 1312 )
+physics_material_override = SubResource( 170 )
+design = "S"
+
+[node name="Grass75" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 794, 992 )
+physics_material_override = SubResource( 171 )
+design = "S"
+
+[node name="Grass76" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 592, 1072 )
+physics_material_override = SubResource( 172 )
+design = "S"
+
+[node name="Grass77" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 896, 1232 )
+physics_material_override = SubResource( 173 )
+design = "S"
+
+[node name="Grass78" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 800, 1040 )
+physics_material_override = SubResource( 174 )
+design = "S"
+
+[node name="Grass8" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 721, 1841 )
+physics_material_override = SubResource( 175 )
+design = "S"
+
+[node name="Grass8 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 696, 1848 )
+physics_material_override = SubResource( 176 )
+design = "S"
+
+[node name="Grass83" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 1184, 1264 )
+physics_material_override = SubResource( 177 )
+design = "S"
+
+[node name="Grass9" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 704, 1712 )
+physics_material_override = SubResource( 178 )
+design = "S"
+
+[node name="Grass9 2" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 800, 1632 )
+physics_material_override = SubResource( 179 )
+design = "S"
+
+[node name="Grass93" parent="Foreground" instance=ExtResource( 57 )]
+position = Vector2( 736, 1008 )
+physics_material_override = SubResource( 180 )
+design = "S"
+
+[node name="Kiepchen" parent="Foreground" instance=ExtResource( 58 )]
+position = Vector2( 354.55, 1576.59 )
+dialog_id = 30
+
+[node name="Leaf" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 2496, 1936 )
+design = "FC"
+
+[node name="Leaf1" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 2480, 2000 )
+design = "FC"
+
+[node name="Leaf10" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1808, 1216 )
+design = "FC"
+
+[node name="Leaf11" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -800, 1760 )
+design = "FC"
+
+[node name="Leaf12" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -816, 1744 )
+design = "FC"
+
+[node name="Leaf13" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -875, 1705 )
+design = "FC"
+
+[node name="Leaf13 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -864, 1728 )
+design = "FC"
+
+[node name="Leaf133" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -803, 1663 )
+design = "FC"
+
+[node name="Leaf134" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -735.3, 622.673 )
+design = "FC"
+
+[node name="Leaf14" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -875, 1770 )
+design = "FC"
+
+[node name="Leaf14 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -859, 1786 )
+design = "FC"
+
+[node name="Leaf143" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -803, 1728 )
+design = "FC"
+
+[node name="Leaf15" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -768, 1654 )
+design = "FC"
+
+[node name="Leaf16" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -819, 1647 )
+design = "FC"
+
+[node name="Leaf16 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -760, 1686 )
+design = "FC"
+
+[node name="Leaf16 3" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -800, 1712 )
+design = "FC"
+
+[node name="Leaf17" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -768, 768 )
+design = "FC"
+
+[node name="Leaf18" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 176, 944 )
+design = "FC"
+
+[node name="Leaf2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 2481, 1816 )
+design = "FC"
+
+[node name="Leaf3" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1664, 1920 )
+design = "FC"
+
+[node name="Leaf4" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1552, 1952 )
+design = "FC"
+
+[node name="Leaf5" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1453, 1951 )
+design = "FC"
+
+[node name="Leaf6" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1436, 1993 )
+design = "FC"
+
+[node name="Leaf7" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1516, 1976 )
+design = "FC"
+
+[node name="Leaf8" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 465, 1520 )
+design = "FC"
+
+[node name="Leaf8 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 528, 1545 )
+design = "FC"
+
+[node name="Leaf8 3" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 544, 1504 )
+design = "FC"
+
+[node name="Leaf8 4" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 224, 1408 )
+design = "FC"
+
+[node name="Leaf83" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 368, 1072 )
+design = "FC"
+
+[node name="Leaf84" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 656, 1008 )
+design = "FC"
+
+[node name="Leaf85" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 192, 1120 )
+design = "FC"
+
+[node name="Leaf86" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1056, 864 )
+design = "FC"
+
+[node name="Leaf87" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 544, 896 )
+design = "FC"
+
+[node name="Leaf88" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 576, 352 )
+design = "FC"
+
+[node name="Leaf88 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 640, 320 )
+design = "FC"
+
+[node name="Leaf89" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1824, 1022 )
+design = "FC"
+
+[node name="Leaf89 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 1856, 1040 )
+design = "FC"
+
+[node name="Leaf9" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( 416, 592 )
+design = "FC"
+
+[node name="Leaf90" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -752, 1776 )
+design = "FC"
+
+[node name="Leaf91" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -768, 1760 )
+design = "FC"
+
+[node name="Leaf92" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -832, 1728 )
+design = "FC"
+
+[node name="Leaf92 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -811, 1737 )
+design = "FC"
+
+[node name="Leaf923" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -870, 1763 )
+design = "FC"
+
+[node name="Leaf924" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -763, 1647 )
+design = "FC"
+
+[node name="Leaf925" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -800, 1696 )
+design = "FC"
+
+[node name="Leaf925 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -736, 1680 )
+design = "FC"
+
+[node name="Leaf926" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -774.593, 553.215 )
+design = "FC"
+
+[node name="Leaf93" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -827, 1786 )
+design = "FC"
+
+[node name="Leaf93 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -886, 1747 )
+design = "FC"
+
+[node name="Leaf933" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -708.854, 828.003 )
+design = "FC"
+
+[node name="Leaf94" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -779, 1696 )
+design = "FC"
+
+[node name="Leaf94 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -779, 1631 )
+design = "FC"
+
+[node name="Leaf95" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -771, 1728 )
+design = "FC"
+
+[node name="Leaf95 2" parent="Foreground" instance=ExtResource( 59 )]
+position = Vector2( -771, 1663 )
+design = "FC"
+
+[node name="Pod" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 416, 1520 )
+wake_up_dist = 200
+version = "S"
+
+[node name="Pod1" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 720, 1312 )
+wake_up_dist = 200
+version = "S"
+
+[node name="Pod10" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -633.896, 326.942 )
+wake_up_dist = 100
+alert_dist = 120
+version = "S"
+
+[node name="Pod11" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -627.327, 358.085 )
+wake_up_dist = 100
+alert_dist = 120
+version = "S"
+
+[node name="Pod12" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -623.04, 372.66 )
+wake_up_dist = 100
+alert_dist = 120
+version = "S"
+
+[node name="Pod13" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -665.909, 359.799 )
+wake_up_dist = 100
+alert_dist = 120
+version = "S"
+
+[node name="Pod14" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -663.337, 414.671 )
+wake_up_dist = 100
+alert_dist = 120
+version = "S"
+
+[node name="Pod15" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -733.641, 490.12 )
+wake_up_dist = 100
+alert_dist = 120
+version = "S"
+
+[node name="Pod2" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 1184, 1280 )
+wake_up_dist = 100
+version = "S"
+
+[node name="Pod3" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 1296, 1385 )
+wake_up_dist = 100
+version = "S"
+
+[node name="Pod4" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 1798, 668 )
+wake_up_dist = 100
+version = "S"
+
+[node name="Pod5" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 1632.16, 767.715 )
+wake_up_dist = 90
+alert_dist = 100
+version = "S"
+
+[node name="Pod6" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 1645.05, 748.182 )
+wake_up_dist = 50
+alert_dist = 30
+version = "S"
+
+[node name="Pod7" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 480, 544 )
+wake_up_dist = 200
+alert_dist = 50
+version = "S"
+
+[node name="Pod8" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( 496, 576 )
+wake_up_dist = 10
+alert_dist = 50
+version = "S"
+
+[node name="Pod9" parent="Foreground" instance=ExtResource( 60 )]
+position = Vector2( -614.467, 346.081 )
+wake_up_dist = 10
+alert_dist = 50
+version = "S"
+
+[node name="Poles" type="Sprite" parent="Foreground"]
+position = Vector2( 624, 1504 )
+texture = ExtResource( 61 )
+offset = Vector2( 40, -80 )
+hframes = 3
+
+[node name="Poles1" type="Sprite" parent="Foreground"]
+position = Vector2( 736, 1536 )
+texture = ExtResource( 61 )
+offset = Vector2( 40, -80 )
+hframes = 3
+frame = 1
+
+[node name="Poles2" type="Sprite" parent="Foreground"]
+position = Vector2( 1216, 1792 )
+texture = ExtResource( 61 )
+offset = Vector2( 40, -80 )
+hframes = 3
+frame = 2
+
+[node name="Poles3" type="Sprite" parent="Foreground"]
+position = Vector2( 1053, 1883 )
+texture = ExtResource( 61 )
+offset = Vector2( 43, -75 )
+hframes = 3
+frame = 1
+
+[node name="Poles4" type="Sprite" parent="Foreground"]
+position = Vector2( 1184, 1392 )
+texture = ExtResource( 61 )
+offset = Vector2( -24, -80 )
+flip_h = true
+hframes = 3
+frame = 2
+
+[node name="Poles5" type="Sprite" parent="Foreground"]
+position = Vector2( 1218, 1344 )
+texture = ExtResource( 61 )
+offset = Vector2( -42, -80 )
+flip_h = true
+hframes = 3
+frame = 1
+
+[node name="Poles6" type="Sprite" parent="Foreground"]
+position = Vector2( 2593, 800 )
+texture = ExtResource( 61 )
+offset = Vector2( -41, -80 )
+flip_h = true
+hframes = 3
+frame = 1
+
+[node name="Poles7" type="Sprite" parent="Foreground"]
+position = Vector2( 2512, 896 )
+texture = ExtResource( 61 )
+offset = Vector2( -44, -81 )
+flip_h = true
+hframes = 3
+frame = 2
+
+[node name="Poles8" type="Sprite" parent="Foreground"]
+position = Vector2( 576, 518 )
+texture = ExtResource( 61 )
+offset = Vector2( 46, -80 )
+flip_h = true
+hframes = 3
+
+[node name="Poles9" type="Sprite" parent="Foreground"]
+position = Vector2( 424, 535 )
+texture = ExtResource( 61 )
+offset = Vector2( -42, -81 )
+flip_h = true
+hframes = 3
+frame = 1
+
+[node name="Sack" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2512, 1808 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack1" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2452, 1771 )
+physics_material_override = SubResource( 182 )
+
+[node name="Sack10" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 130, 899 )
+physics_material_override = SubResource( 182 )
+
+[node name="Sack11" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1660, 728.363 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack12" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1707.04, 682.434 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack13" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1698.05, 709.437 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack14" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1665.2, 700.35 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack15" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1680.17, 715.599 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack16" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1718.65, 697.994 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack17" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1619.68, 750.964 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack2" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2468, 1787 )
+physics_material_override = SubResource( 183 )
+
+[node name="Sack3" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2512, -384 )
+physics_material_override = SubResource( 184 )
+
+[node name="Sack3 2" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2448, -448 )
+physics_material_override = SubResource( 185 )
+
+[node name="Sack3 3" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2339, -421 )
+physics_material_override = SubResource( 186 )
+
+[node name="Sack33" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2432, -400 )
+physics_material_override = SubResource( 187 )
+
+[node name="Sack34" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2480, -384 )
+physics_material_override = SubResource( 188 )
+
+[node name="Sack35" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2440, -414 )
+physics_material_override = SubResource( 189 )
+
+[node name="Sack35 2" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2488, -398 )
+physics_material_override = SubResource( 190 )
+
+[node name="Sack353" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2577, -227 )
+physics_material_override = SubResource( 191 )
+
+[node name="Sack354" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 250, 536 )
+physics_material_override = SubResource( 192 )
+
+[node name="Sack36" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2569, -268 )
+physics_material_override = SubResource( 193 )
+
+[node name="Sack36 2" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2561, -259 )
+physics_material_override = SubResource( 194 )
+
+[node name="Sack37" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1576, 946 )
+physics_material_override = SubResource( 195 )
+
+[node name="Sack37 2" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1568, 960 )
+physics_material_override = SubResource( 196 )
+
+[node name="Sack37 3" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1584, 912 )
+physics_material_override = SubResource( 197 )
+
+[node name="Sack37 4" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 240, 542 )
+physics_material_override = SubResource( 198 )
+
+[node name="Sack4" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2523, -373 )
+physics_material_override = SubResource( 199 )
+
+[node name="Sack5" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2451, -406 )
+physics_material_override = SubResource( 200 )
+
+[node name="Sack6" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 2593, -259 )
+physics_material_override = SubResource( 201 )
+
+[node name="Sack7" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 272, 544 )
+physics_material_override = SubResource( 202 )
+
+[node name="Sack7 2" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1587, 954 )
+physics_material_override = SubResource( 203 )
+
+[node name="Sack7 3" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 283, 553 )
+physics_material_override = SubResource( 204 )
+
+[node name="Sack8" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 1696.28, 691.677 )
+physics_material_override = SubResource( 181 )
+
+[node name="Sack9" parent="Foreground" instance=ExtResource( 62 )]
+position = Vector2( 146, 915 )
+physics_material_override = SubResource( 183 )
+
+[node name="SirThomasVanScrap" parent="Foreground" instance=ExtResource( 63 )]
+position = Vector2( 1416, 1531.75 )
+evil_version = true
+
+[node name="SirThomasVanScrap1" parent="Foreground" instance=ExtResource( 63 )]
+position = Vector2( 800, 1792 )
+wake_up_dist = 240
+evil_version = true
+
+[node name="SirThomasVanScrap2" parent="Foreground" instance=ExtResource( 63 )]
+position = Vector2( 1120, 864 )
+wake_up_dist = 150
+evil_version = true
+
+[node name="Stalls1" type="Sprite" parent="Foreground"]
+position = Vector2( 1272, -315 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 64 )
+offset = Vector2( 24, -24 )
+hframes = 4
+frame = 3
+
+[node name="Stalls2" type="Sprite" parent="Foreground"]
+position = Vector2( 600, 447 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 64 )
+offset = Vector2( 24, -24 )
+flip_h = true
+hframes = 4
+frame = 2
+
+[node name="Stalls3" type="Sprite" parent="Foreground"]
+position = Vector2( 488, 479 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 64 )
+offset = Vector2( 24, -24 )
+hframes = 4
+frame = 2
+
+[node name="Tents" type="Sprite" parent="Foreground"]
+position = Vector2( 1135, -492 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 65 )
+offset = Vector2( 64, -40 )
+hframes = 3
+frame = 2
+
+[node name="Trash" parent="Foreground" instance=ExtResource( 66 )]
+position = Vector2( 1568, 896 )
+
+[node name="Trash1" parent="Foreground" instance=ExtResource( 66 )]
+position = Vector2( 2592, -288 )
+
+[node name="Trash2" parent="Foreground" instance=ExtResource( 66 )]
+position = Vector2( 1360, 1136 )
+
+[node name="Unfuni" parent="Foreground" instance=ExtResource( 67 )]
+position = Vector2( 2496, -352 )
+wake_up_dist = 200
+evil_version = true
+
+[node name="Unfuni1" parent="Foreground" instance=ExtResource( 67 )]
+position = Vector2( 688, 896 )
+wake_up_dist = 150
+alert_dist = 100
+evil_version = true
+
+[node name="Unfuni2" parent="Foreground" instance=ExtResource( 67 )]
+position = Vector2( 1072, 968 )
+wake_up_dist = 180
+evil_version = true
+
+[node name="BarricadeL" parent="Foreground" instance=ExtResource( 68 )]
+position = Vector2( 840, 464 )
+
+[node name="ParallaxForeground" type="ParallaxBackground" parent="."]
+layer = 5
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxForeground"]
+z_as_relative = false
+motion_scale = Vector2( 0.8, 0.8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Gore" type="Sprite" parent="ParallaxForeground/ParallaxLayer"]
+modulate = Color( 1, 1, 1, 0.235294 )
+position = Vector2( -75.9999, 656 )
+scale = Vector2( 0.86, 0.86 )
+texture = ExtResource( 69 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxForeground"]
+z_as_relative = false
+motion_scale = Vector2( 1.2, 1.2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Gore strings" type="Sprite" parent="ParallaxForeground/ParallaxLayer2"]
+modulate = Color( 1, 1, 1, 0.184314 )
+position = Vector2( -752, -768 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 70 )
+centered = false
+flip_h = true
+flip_v = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParticleLayerL" type="ParallaxLayer" parent="ParallaxForeground"]
+modulate = Color( 1, 0.286275, 0.639216, 1 )
+z_as_relative = false
+motion_scale = Vector2( 1.5, 1.5 )
+
+[node name="Particles2D" type="Particles2D" parent="ParallaxForeground/ParticleLayerL"]
+modulate = Color( 1, 1, 1, 0.180392 )
+position = Vector2( 1128, 1408 )
+amount = 300
+lifetime = 5.0
+visibility_rect = Rect2( -1994.33, -1992.04, 4003.92, 3984.7 )
+process_material = SubResource( 207 )
+texture = ExtResource( 71 )
+
+[node name="ParticleLayerS" type="ParallaxLayer" parent="ParallaxForeground"]
+modulate = Color( 0.819608, 0, 0.364706, 1 )
+z_as_relative = false
+motion_scale = Vector2( 1.1, 1.1 )
+
+[node name="Particles2D" type="Particles2D" parent="ParallaxForeground/ParticleLayerS"]
+modulate = Color( 1, 1, 1, 0.313726 )
+position = Vector2( 945, 1108 )
+amount = 800
+lifetime = 5.0
+visibility_rect = Rect2( -2035.88, -2046.01, 4048.46, 4085.29 )
+process_material = SubResource( 210 )
+texture = ExtResource( 10 )
+
+[node name="Events" type="Node2D" parent="."]
+z_index = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ExitA" type="Area2D" parent="Events"]
+position = Vector2( 2512, 2176 )
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+function = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ExitA"]
+shape = SubResource( 211 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PreloadS1" type="Area2D" parent="Events"]
+position = Vector2( 1619, 1920 )
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+function = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/PreloadS1"]
+shape = SubResource( 212 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ExitB" type="Area2D" parent="Events"]
+position = Vector2( 1264, 352 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+function = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/ExitB"]
+shape = SubResource( 213 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PreloadS3" type="Area2D" parent="Events"]
+position = Vector2( 619.985, 567.128 )
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+function = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/PreloadS3"]
+shape = SubResource( 214 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MeetKing1" type="Area2D" parent="Events"]
+position = Vector2( 2504, 2016 )
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/MeetKing1"]
+shape = SubResource( 215 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MeetKing2" type="Area2D" parent="Events"]
+position = Vector2( -824, 2352 )
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/MeetKing2"]
+shape = SubResource( 216 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MeetKing3" type="Area2D" parent="Events"]
+position = Vector2( 1023, 358 )
+rotation = 0.300197
+z_index = 9
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 72 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/MeetKing3"]
+shape = SubResource( 217 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1427.52, 171.868 )
+scale = Vector2( 6.40001, 6.4 )
+z_index = 11
+
+[editable path="Background/WormholeL"]

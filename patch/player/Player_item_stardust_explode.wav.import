@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Player_item_stardust_explode.wav-8e1b1a8bc6c4322e61742fab2d9931af.sample"
+
+[deps]
+
+source_file="res://player/Player_item_stardust_explode.wav"
+dest_files=[ "res://.import/Player_item_stardust_explode.wav-8e1b1a8bc6c4322e61742fab2d9931af.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

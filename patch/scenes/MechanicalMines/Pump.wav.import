@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Pump.wav-91a7bd9c37eb50dcd4cc8b257a12773d.sample"
+
+[deps]
+
+source_file="res://scenes/MechanicalMines/Pump.wav"
+dest_files=[ "res://.import/Pump.wav-91a7bd9c37eb50dcd4cc8b257a12773d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

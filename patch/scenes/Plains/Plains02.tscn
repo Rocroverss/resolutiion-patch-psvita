@@ -1,0 +1,401 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://scenes/Plains/Plains02.gd" type="Script" id=1]
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Plains/ThePlains02_background01.png" type="Texture" id=3]
+[ext_resource path="res://scenes/Plains/ThePlains02_background02.png" type="Texture" id=4]
+[ext_resource path="res://scenes/Plains/ThePlains02_background04.png" type="Texture" id=5]
+[ext_resource path="res://scenes/Plains/ThePlains02_Floor1.png" type="Texture" id=6]
+[ext_resource path="res://scenes/Plains/ThePlains02_Floor1_ceiling.png" type="Texture" id=7]
+[ext_resource path="res://objects/AreaEvent.gd" type="Script" id=8]
+[ext_resource path="res://scenes/Plains/ThePlains02_Floor2_0.png" type="Texture" id=9]
+[ext_resource path="res://scenes/Plains/ThePlains02_Floor3.png" type="Texture" id=10]
+[ext_resource path="res://scenes/Plains/ThePlains02_Floor3_ceiling.png" type="Texture" id=11]
+[ext_resource path="res://global/Shapes/octagon-blurred-XS.png" type="Texture" id=12]
+[ext_resource path="res://global/Shapes/octagon-blurred-L.png" type="Texture" id=13]
+[ext_resource path="res://player/PlayerDummy.scn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/Plains/ThePlains02_foreground01.png" type="Texture" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="PhysicsMaterial" id=2]
+
+[sub_resource type="PhysicsMaterial" id=3]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.288462, 0.644231, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 600, 400, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 5.0
+angular_velocity = 1.03421e-15
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.6
+color_ramp = SubResource( 5 )
+
+[sub_resource type="ParticlesMaterial" id=7]
+emission_shape = 2
+emission_box_extents = Vector3( 600, 400, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 5.0
+angular_velocity = 1.03421e-15
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 5 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 10, 18.9566 )
+
+[node name="P2" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D",
+"_edit_lock_": true
+}
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+
+[node name="Collisions" type="Node2D" parent="Navigation2D"]
+
+[node name="Highwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_mask = 0
+
+[node name="Lowwall" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 1024
+collision_mask = 0
+
+[node name="Air" type="StaticBody2D" parent="Navigation2D/Collisions"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Wall" type="TileMap" parent="Navigation2D"]
+modulate = Color( 1, 1, 1, 0.4 )
+z_index = 5
+z_as_relative = false
+cell_size = Vector2( 16, 16 )
+collision_use_kinematic = true
+bake_navigation = true
+format = 1
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -2
+
+[node name="ParallaxLayer0" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground/ParallaxLayer0"]
+modulate = Color( 0.992188, 0.751892, 0.988433, 1 )
+position = Vector2( 0.207214, -9.21574 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.6, 0.6 )
+motion_mirroring = Vector2( 0, 1194 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clouds2" type="Sprite" parent="ParallaxBackground/ParallaxLayer1"]
+modulate = Color( 0.992188, 0.751892, 0.988433, 1 )
+position = Vector2( -3.50702, -100.493 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+motion_mirroring = Vector2( 0, 1209 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clouds4" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+modulate = Color( 0.992188, 0.751892, 0.988433, 1 )
+position = Vector2( -123.507, 59.507 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FloorStart" type="Sprite" parent="Background"]
+position = Vector2( 0, 288 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/FloorStart"]
+z_index = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ExitA" type="Area2D" parent="Background/FloorStart"]
+position = Vector2( 0, -32 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/FloorStart/ExitA"]
+scale = Vector2( 6, 3 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Background/FloorStart"]
+collision_layer = 1025
+collision_mask = 0
+physics_material_override = SubResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/FloorStart/StaticBody2D"]
+polygon = PoolVector2Array( 48, -296, 48, -104, 40, -104, 32, -96, 32, -8, -32, -8, -32, -96, -40, -104, -48, -104, -48, -296, -88, -296, -88, 24, 88, 24, 88, -296 )
+
+[node name="FloorStart_spr" type="Sprite" parent="Background"]
+position = Vector2( 0, 288 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/FloorStart_spr"]
+z_index = 1
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FloorSegment" type="Sprite" parent="Background"]
+position = Vector2( -1008, 0 )
+offset = Vector2( 0, -281 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/FloorSegment"]
+z_index = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Background/FloorSegment"]
+collision_layer = 1025
+collision_mask = 0
+physics_material_override = SubResource( 2 )
+
+[node name="CollisionPolygon2D_R" type="CollisionPolygon2D" parent="Background/FloorSegment/StaticBody2D"]
+polygon = PoolVector2Array( 96, -561, 96, -1, 48, -1, 48, -561 )
+
+[node name="CollisionPolygon2D_L" type="CollisionPolygon2D" parent="Background/FloorSegment/StaticBody2D"]
+polygon = PoolVector2Array( -48, -561, -96, -561, -96, -1, -48, -1 )
+
+[node name="FloorSegment_spr" type="Sprite" parent="Background"]
+position = Vector2( -1008, 281 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+offset = Vector2( 0, -281 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/FloorSegment_spr"]
+z_index = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FloorEnd" type="Sprite" parent="Background"]
+position = Vector2( 0, -696 )
+offset = Vector2( 0, -408 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ExitB" type="Area2D" parent="Background/FloorEnd"]
+position = Vector2( 0, -448 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/FloorEnd/ExitB"]
+scale = Vector2( 6, 3 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/FloorEnd"]
+z_index = 1
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D1" type="StaticBody2D" parent="Background/FloorEnd"]
+position = Vector2( 0, -408 )
+collision_layer = 1025
+collision_mask = 0
+physics_material_override = SubResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/FloorEnd/StaticBody2D1"]
+polygon = PoolVector2Array( -32, 48, -32, -24, 32, -24, 32, 48, 40, 56, 96, 56, 96, 152, 40, 152, 32, 160, 32, 208, 40, 216, 48, 216, 96, 264, 48, 312, 48, 408, 168, 408, 168, -120, -184, -120, -184, 408, -48, 408, -48, 312, -96, 264, -48, 216, -40, 216, -32, 208, -32, 160, -40, 152, -96, 152, -96, 56, -40, 56 )
+
+[node name="FloorEnd_spr" type="Sprite" parent="Background"]
+position = Vector2( 0, -288 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+offset = Vector2( 0, -408 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Ceiling" type="Sprite" parent="Background/FloorEnd_spr"]
+position = Vector2( 0, -408 )
+z_index = 1
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Particles" type="Node2D" parent="Background"]
+z_index = 2
+
+[node name="AmbientParticles1" type="Particles2D" parent="Background/Particles"]
+modulate = Color( 1, 0.101961, 0.396078, 0.54902 )
+z_index = 20
+amount = 100
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -617.427, -412.617, 1210.53, 816.118 )
+local_coords = false
+process_material = SubResource( 6 )
+texture = ExtResource( 12 )
+
+[node name="AmbientParticles2" type="Particles2D" parent="Background/Particles"]
+modulate = Color( 0, 0.764706, 1, 0.352941 )
+z_index = 20
+amount = 30
+lifetime = 5.0
+preprocess = 2.0
+visibility_rect = Rect2( -617.427, -412.617, 1210.53, 816.118 )
+local_coords = false
+process_material = SubResource( 7 )
+texture = ExtResource( 13 )
+
+[node name="Foreground" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerDummy" parent="Foreground" instance=ExtResource( 14 )]
+position = Vector2( 0, 120 )
+
+[node name="ParallaxForeground" type="ParallaxBackground" parent="."]
+layer = 1
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxForeground"]
+motion_scale = Vector2( 1.2, 1.2 )
+motion_mirroring = Vector2( 0, 2968 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cord" type="Sprite" parent="ParallaxForeground/ParallaxLayer2"]
+position = Vector2( 0, 528 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxForeground"]
+motion_scale = Vector2( 1.6, 1.6 )
+motion_mirroring = Vector2( 0, 1194 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clouds" type="Sprite" parent="ParallaxForeground/ParallaxLayer1"]
+modulate = Color( 0, 0, 0, 0.247059 )
+position = Vector2( 60, -12 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Events" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PreloadP3" type="Area2D" parent="Events"]
+position = Vector2( 0, 40 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/PreloadP3"]
+scale = Vector2( 6, 3 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerEnter" type="Area2D" parent="Events"]
+position = Vector2( 0, 149.453 )
+z_index = 2
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Events/PlayerEnter"]
+scale = Vector2( 6, 3 )
+shape = SubResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1441.45, -1790.55 )
+scale = Vector2( 6.40001, 6.4 )
+z_index = 50

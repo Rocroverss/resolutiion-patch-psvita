@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float size_pixel=0.008;
+
+void fragment() {
+	vec2 uv = SCREEN_UV;
+	uv-=mod(uv,vec2(size_pixel,size_pixel));
+	COLOR.rgb= textureLod(SCREEN_TEXTURE,uv,0.0).rgb;
+}
+
+"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/size_pixel = -4.22

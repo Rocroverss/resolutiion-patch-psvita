@@ -1,0 +1,781 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://scenes/StartMenu/StartMenu.gd" type="Script" id=1]
+[ext_resource path="res://player/PlayerCamera2D.scn" type="PackedScene" id=2]
+[ext_resource path="res://global/Shapes/rectangle.png" type="Texture" id=3]
+[ext_resource path="res://scenes/StartMenu/logo_mom.png" type="Texture" id=4]
+[ext_resource path="res://scenes/StartMenu/layer_01_monolith.png" type="Texture" id=5]
+[ext_resource path="res://scenes/StartMenu/layer_02_sun.png" type="Texture" id=6]
+[ext_resource path="res://scenes/StartMenu/layer_01_logo.png" type="Texture" id=7]
+[ext_resource path="res://scenes/StartMenu/layer_01_clouds.png" type="Texture" id=8]
+[ext_resource path="res://scenes/StartMenu/layer_03_tower.png" type="Texture" id=9]
+[ext_resource path="res://scenes/StartMenu/layer_04_hills.png" type="Texture" id=10]
+[ext_resource path="res://scenes/StartMenu/layer_05_hills.png" type="Texture" id=11]
+[ext_resource path="res://global/Shapes/octagon-normal-XS.png" type="Texture" id=12]
+[ext_resource path="res://scenes/StartMenu/layer_06_hills.png" type="Texture" id=13]
+[ext_resource path="res://scenes/StartMenu/layer_07_cave.png" type="Texture" id=14]
+[ext_resource path="res://scenes/StartMenu/layer_10_stalactites.png" type="Texture" id=15]
+[ext_resource path="res://scenes/StartMenu/layer_08_stalactites.png" type="Texture" id=16]
+[ext_resource path="res://scenes/StartMenu/layer_09_cradle.png" type="Texture" id=17]
+[ext_resource path="res://scenes/StartMenu/layer_15_cables.png" type="Texture" id=18]
+[ext_resource path="res://scenes/StartMenu/layer_11_clouds.png" type="Texture" id=19]
+[ext_resource path="res://scenes/StartMenu/layer_12_trees.png" type="Texture" id=20]
+[ext_resource path="res://scenes/StartMenu/layer_13_trees.png" type="Texture" id=21]
+[ext_resource path="res://scenes/StartMenu/layer_14_valor.png" type="Texture" id=22]
+[ext_resource path="res://global/Themes/ThemeM.theme" type="Theme" id=23]
+[ext_resource path="res://global/Themes/icon_off.png" type="Texture" id=24]
+[ext_resource path="res://global/License.gd" type="Script" id=25]
+[ext_resource path="res://global/Themes/icon_exit.png" type="Texture" id=26]
+[ext_resource path="res://global/config.scn" type="PackedScene" id=27]
+[ext_resource path="res://global/Shapes/square-4-full.png" type="Texture" id=28]
+
+[sub_resource type="Animation" id=1]
+resource_name = "pan1"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Background/MoMLogo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2.6, 4.4, 5.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/Monolyth:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3.4, 7.4, 8.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 320, 840 ), Vector2( 320, 840 ), Vector2( 320, 168 ), Vector2( 320, -216 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/Logo:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3.4, 4.9, 7.4, 10.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 1.0, 1.0, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/Sun:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = false
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 6.5, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 1.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/Clouds1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = false
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 7.4, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 78 ), Vector2( 0, -102 ), Vector2( 0, -432 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/Tower:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = false
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 5.4, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 400 ), Vector2( 0, 400 ), Vector2( 0, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Background/Hills4:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = false
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 8.8, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 368 ), Vector2( 0, 368 ), Vector2( 0, 112 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Background/Hills5:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = false
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 9.4, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 488 ), Vector2( 0, 488 ), Vector2( 0, 192 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Background/Hills6:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = false
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 10.1, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 552 ), Vector2( 0, 552 ), Vector2( 0, 248 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("BGColor:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = false
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 4.4, 7.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.00392157, 0.309804, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "pan2"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("BGColor:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 2, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0.00392157, 0.309804, 1 ), Color( 0.0627451, 0, 0.27451, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/Monolyth:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 320, -216 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/Sun:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/Tower:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -536 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/Hills4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 112 ), Vector2( 0, -336 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/Hills5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 192 ), Vector2( 0, -320 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Background/Hills6:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 248 ), Vector2( 0, -360 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Background/Cave:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2, 9.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1016 ), Vector2( 0, 368 ), Vector2( 0, -632 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Background/Stalactites8:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 3, 9.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1488 ), Vector2( 0, 268 ), Vector2( 0, -120 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Background/Stalactites10:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 3, 9.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1568 ), Vector2( 0, 332 ), Vector2( 0, -8 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Background/Cradle:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.2, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1696 ), Vector2( 0, 1072 ), Vector2( 0, 104 ) ]
+}
+tracks/11/type = "method"
+tracks/11/path = NodePath(".")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 11 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "change_music_effect"
+} ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "pan3"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("BGColor:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 4, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.0627451, 0, 0.27451, 1 ), Color( 0.0705882, 0, 0.219608, 1 ), Color( 0.0705882, 0, 0.219608, 1 ), Color( 0.160261, 0.0192157, 0.379739, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/Cave:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -632 ), Vector2( 0, -808 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/Stalactites8:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -120 ), Vector2( 0, -408 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/Stalactites10:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -8 ), Vector2( 0, -312 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/Cradle:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 120 ), Vector2( 0, -584 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/Clouds2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.1, 1, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 2040 ), Vector2( 0, 392 ), Vector2( 0, 364 ), Vector2( 0, -112 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Background/Trees12:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2, 5.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 2040 ), Vector2( 0, 392 ), Vector2( 0, -8 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Background/Trees13:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 4, 6.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 2040 ), Vector2( 0, 392 ), Vector2( 0, 88 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Background/Valor:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 376 ), Vector2( 0, -400 ) ]
+}
+tracks/9/type = "method"
+tracks/9/path = NodePath(".")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 6 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "change_music_effect"
+} ]
+}
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0.0894737, 0.715789, 1 )
+colors = PoolColorArray( 0.133333, 0, 0.282353, 1, 1, 0.00392157, 0.309804, 1, 1, 0.937255, 0.956863, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 60, 360, 1 )
+flag_disable_z = true
+spread = 50.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 30.0
+angular_velocity = 14.708
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.0
+scale_random = 0.48
+color_ramp = SubResource( 5 )
+hue_variation = -1.0
+
+[node name="StartMenu" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "Script"
+}
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+position = Vector2( 320, 180 )
+current = true
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/pan1 = SubResource( 1 )
+anims/pan2 = SubResource( 2 )
+anims/pan3 = SubResource( 3 )
+
+[node name="BGColor" type="Sprite" parent="."]
+modulate = Color( 1, 0.00392157, 0.309804, 1 )
+position = Vector2( -8, -8 )
+scale = Vector2( 10.25, 5.875 )
+z_index = -10
+texture = ExtResource( 3 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MoMLogo" type="Sprite" parent="Background"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 320, 160 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Monolyth" type="Sprite" parent="Background"]
+position = Vector2( 320, -216 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="Sun" type="Sprite" parent="Background"]
+position = Vector2( 1.4248, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Logo" type="Sprite" parent="Background"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, 61 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Clouds1" type="Sprite" parent="Background"]
+visible = false
+modulate = Color( 0.603922, 0, 0.227451, 1 )
+position = Vector2( 0, -432 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Tower" type="Sprite" parent="Background"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Hills4" type="Sprite" parent="Background"]
+position = Vector2( 0, 112 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="Hills5" type="Sprite" parent="Background"]
+position = Vector2( 0, 192 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="Particles2D" type="Particles2D" parent="Background/Hills5"]
+position = Vector2( 320, 114 )
+rotation = -1.5708
+amount = 30
+lifetime = 10.0
+preprocess = 10.0
+visibility_rect = Rect2( -34.3475, -361.702, 309.805, 807.635 )
+process_material = SubResource( 6 )
+texture = ExtResource( 12 )
+
+[node name="Hills6" type="Sprite" parent="Background"]
+position = Vector2( 0.902527, 248 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="Cave" type="Sprite" parent="Background"]
+position = Vector2( 0, 1016 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="Stalactites10" type="Sprite" parent="Background"]
+position = Vector2( 0, 1568 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Stalactites8" type="Sprite" parent="Background"]
+position = Vector2( 0, 1488 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 16 )
+centered = false
+
+[node name="Cradle" type="Sprite" parent="Background"]
+position = Vector2( 0, 1696 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Cables" type="Sprite" parent="Background/Cradle"]
+position = Vector2( 0, 176 )
+z_as_relative = false
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Clouds2" type="Sprite" parent="Background"]
+position = Vector2( 0, 2040 )
+scale = Vector2( 2, 2 )
+z_index = -2
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Trees12" type="Sprite" parent="Background"]
+position = Vector2( 0, 2040 )
+scale = Vector2( 2, 2 )
+z_index = -2
+texture = ExtResource( 20 )
+centered = false
+
+[node name="Trees13" type="Sprite" parent="Background"]
+position = Vector2( 0, 2040 )
+scale = Vector2( 2, 2 )
+z_index = -2
+texture = ExtResource( 21 )
+centered = false
+
+[node name="Valor" type="Sprite" parent="Background"]
+position = Vector2( 0, 376 )
+scale = Vector2( 2, 2 )
+z_index = -2
+z_as_relative = false
+texture = ExtResource( 22 )
+centered = false
+
+[node name="SaveGames" type="Control" parent="."]
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SGContainer" type="ScrollContainer" parent="SaveGames"]
+anchor_bottom = 1.0
+margin_left = 24.0
+margin_top = 64.0
+margin_right = 640.0
+margin_bottom = 320.0
+focus_neighbour_top = NodePath("../../Control/SaveGames")
+theme = ExtResource( 23 )
+scroll_vertical_enabled = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SaveGames/SGContainer"]
+focus_neighbour_top = NodePath("../../../Control/SaveGames")
+mouse_filter = 2
+theme = ExtResource( 23 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ResumeGame" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 28.0
+focus_neighbour_right = NodePath("../SaveGames")
+theme = ExtResource( 23 )
+shortcut_in_tooltip = false
+text = "CONTINUE"
+clip_text = true
+
+[node name="SaveGames" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 124.0
+margin_top = 4.0
+margin_right = 236.0
+margin_bottom = 28.0
+theme = ExtResource( 23 )
+toggle_mode = true
+shortcut_in_tooltip = false
+action_mode = 0
+text = "LOAD GAME"
+clip_text = true
+
+[node name="NewGame" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 244.0
+margin_top = 4.0
+margin_right = 356.0
+margin_bottom = 28.0
+theme = ExtResource( 23 )
+shortcut_in_tooltip = false
+text = "NEW GAME"
+clip_text = true
+
+[node name="Settings" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 364.0
+margin_top = 4.0
+margin_right = 476.0
+margin_bottom = 28.0
+focus_neighbour_bottom = NodePath("../../ConfigSetup")
+theme = ExtResource( 23 )
+toggle_mode = true
+shortcut_in_tooltip = false
+text = "SETTINGS"
+clip_text = true
+
+[node name="FadingLabel" type="Label" parent="Control/Settings"]
+visible = false
+margin_left = 25.0
+margin_top = -14.0
+margin_right = 103.0
+margin_bottom = 182.0
+text = "PRUEBA"
+
+[node name="Backdrop" type="Sprite" parent="Control/Settings/FadingLabel"]
+modulate = Color( 0.0352941, 0, 0.0784314, 1 )
+position = Vector2( 5160, 2108 )
+scale = Vector2( 508, 498 )
+z_index = -1
+texture = ExtResource( 28 )
+
+[node name="Logo" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 484.0
+margin_top = 4.0
+margin_right = 513.0
+margin_bottom = 28.0
+rect_clip_content = true
+focus_neighbour_left = NodePath("../Settings")
+theme = ExtResource( 23 )
+toggle_mode = true
+shortcut_in_tooltip = false
+icon = ExtResource( 24 )
+clip_text = true
+
+[node name="License" type="Node" parent="Control/Logo"]
+script = ExtResource( 25 )
+
+[node name="Exit" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 521.0
+margin_top = 4.0
+margin_right = 550.0
+margin_bottom = 28.0
+rect_clip_content = true
+theme = ExtResource( 23 )
+shortcut_in_tooltip = false
+icon = ExtResource( 26 )
+clip_text = true
+
+[node name="ConfigSetup" parent="." instance=ExtResource( 27 )]
+visible = false
+
+[node name="Version" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="Version" type="Label" parent="Version"]
+margin_left = 8.0
+margin_top = 336.0
+margin_right = 112.0
+margin_bottom = 352.0
+mouse_filter = 1
+size_flags_vertical = 0
+theme = ExtResource( 23 )
+text = "version"
+valign = 1
+
+[connection signal="pressed" from="Control/ResumeGame" to="." method="_on_ResumeGame_pressed"]
+[connection signal="toggled" from="Control/SaveGames" to="." method="_on_SaveGames_toggled"]
+[connection signal="pressed" from="Control/NewGame" to="." method="_on_NewGame_pressed"]
+[connection signal="toggled" from="Control/Settings" to="." method="_on_Settings_toggled"]
+[connection signal="toggled" from="Control/Logo" to="." method="_on_Logo_toggled"]
+[connection signal="pressed" from="Control/Exit" to="." method="_on_Exit_pressed"]

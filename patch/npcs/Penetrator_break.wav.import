@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Penetrator_break.wav-fb1fd1762d55e9d3520aed0e516c784a.sample"
+
+[deps]
+
+source_file="res://npcs/Penetrator_break.wav"
+dest_files=[ "res://.import/Penetrator_break.wav-fb1fd1762d55e9d3520aed0e516c784a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

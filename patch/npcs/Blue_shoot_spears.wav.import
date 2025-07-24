@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Blue_shoot_spears.wav-919747985903037d8b67c8b24d72e230.sample"
+
+[deps]
+
+source_file="res://npcs/Blue_shoot_spears.wav"
+dest_files=[ "res://.import/Blue_shoot_spears.wav-919747985903037d8b67c8b24d72e230.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
